@@ -1,0 +1,678 @@
+# Cryptography and Network Security
+
+> Google Colab Link : https://colab.research.google.com/drive/1sitIUV4qGfi1LyTQP7pxje6LYQCLl9Ny?usp=sharing
+>
+> ⚠️ You will require Google account signed-in to execute(run) colab
+
+## Practical 1 : Caesar Cipher
+
+```python copy filename="Encryption"
+def encrypt(plaintext, shift=3):
+    encrypted_text = ""
+    for char in plaintext:
+        if char.isalpha():
+            shift_base = ord('A') if char.isupper() else ord('a')
+            encrypted_char = chr((ord(char) - shift_base + shift) % 26 + shift_base)
+            encrypted_text += encrypted_char
+        elif char.isdigit():
+            encrypted_digit = (int(char) + shift) % 10
+            encrypted_text += str(encrypted_digit)
+        else:
+            encrypted_text += char
+    return encrypted_text
+
+if __name__ == "__main__":
+    text = input("Enter the text to encrypt: ")
+    encrypted = encrypt(text)
+    print(f"Encrypted: {encrypted}")
+```
+
+```python copy filename="Decryption"
+def decrypt(ciphertext, shift=3):
+    decrypted_text = ""
+    for char in ciphertext:
+        if char.isalpha():
+            shift_base = ord('A') if char.isupper() else ord('a')
+            decrypted_char = chr((ord(char) - shift_base - shift) % 26 + shift_base)
+            decrypted_text += decrypted_char
+        elif char.isdigit():
+            decrypted_digit = (int(char) - shift) % 10
+            decrypted_text += str(decrypted_digit)
+        else:
+            decrypted_text += char
+    return decrypted_text
+
+if __name__ == "__main__":
+    text = input("Enter the text to decrypt: ")
+    decrypted = decrypt(text)
+    print(f"Decrypted: {decrypted}")
+```
+
+## Practical 2 : Mono-alphabetic Cipher
+
+```python copy filename="Encryption"
+def mono_alphabetic_cipher_encrypt(text, cipher_map):
+    encrypted_text = ""
+    for char in text:
+        if char.isalpha():
+            if char.isupper():
+                encrypted_text += cipher_map[ord(char) - ord('A')]
+            else:
+                encrypted_text += cipher_map[ord(char) - ord('a')].lower()
+        elif char.isdigit():
+            encrypted_digit = (int(char) + 1) % 10
+            encrypted_text += str(encrypted_digit)
+        else:
+            encrypted_text += char
+    return encrypted_text
+
+def main():
+    cipher_map = [
+        'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
+        'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+        'Z', 'A', 'B', 'C', 'D', 'E'
+    ]
+    text = input("Enter the text to encrypt: ")
+    encrypted_text = mono_alphabetic_cipher_encrypt(text, cipher_map)
+    print("Encrypted text:", encrypted_text)
+
+if __name__ == "__main__":
+    main()
+```
+
+```python copy filename="Decryption"
+def mono_alphabetic_cipher_decrypt(text, cipher_map):
+    reverse_map = {v: chr(i + ord('A')) for i, v in enumerate(cipher_map)}
+    decrypted_text = ""
+    for char in text:
+        if char.isalpha():
+            if char.isupper():
+                decrypted_text += reverse_map[char]
+            else:
+                decrypted_text += reverse_map[char.upper()].lower()
+        elif char.isdigit():
+            decrypted_digit = (int(char) - 1) % 10
+            decrypted_text += str(decrypted_digit)
+        else:
+            decrypted_text += char
+    return decrypted_text
+
+def main():
+    cipher_map = [
+        'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
+        'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+        'Z', 'A', 'B', 'C', 'D', 'E'
+    ]
+    text = input("Enter the text to decrypt: ")
+    decrypted_text = mono_alphabetic_cipher_decrypt(text, cipher_map)
+    print("Decrypted text:", decrypted_text)
+
+if __name__ == "__main__":
+    main()
+```
+
+## Practical 3 : Hill Cipher
+
+```python copy filename="Encryption"
+def getKeyMatrix(key):
+    keyMatrix = [[0] * 3 for _ in range(3)]
+    k = 0
+    for i in range(3):
+        for j in range(3):
+            keyMatrix[i][j] = ord(key[k]) % 65
+            k += 1
+    return keyMatrix
+
+def encrypt(messageVector, keyMatrix):
+    cipherMatrix = [[0] for _ in range(3)]
+    print("\nMatrix Multiplication Steps:")
+    for i in range(3):
+        for j in range(1):
+            cipherMatrix[i][j] = 0
+            row_calculation = []
+            for x in range(3):
+                product = keyMatrix[i][x] * messageVector[x][j]
+                cipherMatrix[i][j] += product
+                row_calculation.append(f"({keyMatrix[i][x]} * {messageVector[x][j]})")
+            print(f"Row {i + 1}: {' + '.join(row_calculation)} = {cipherMatrix[i][j]}")
+            cipherMatrix[i][j] = cipherMatrix[i][j] % 26
+    return cipherMatrix
+
+def HillCipher(message, key):
+    if len(key) != 9 or len(message) != 3:
+        print("Key must be 9 characters long and message must be 3 characters long.")
+        return
+
+    keyMatrix = getKeyMatrix(key)
+    messageVector = [[ord(message[i]) % 65] for i in range(3)]
+    cipherMatrix = encrypt(messageVector, keyMatrix)
+    CipherText = [chr(cipherMatrix[i][0] + 65) for i in range(3)]
+
+    print("\nKey Matrix:")
+    for row in keyMatrix:
+        print(row)
+    print("Message Vector:")
+    for row in messageVector:
+        print(row)
+    print("Cipher Matrix:")
+    for row in cipherMatrix:
+        print(row)
+    print("Ciphertext: ", "".join(CipherText))
+
+def main():
+    message = input("Enter a 3-letter message (uppercase): ").strip().upper()
+    key = input("Enter a 9-letter key (uppercase): ").strip().upper()
+    HillCipher(message, key)
+
+if __name__ == "__main__":
+    main()
+```
+
+```python copy filename="Decryption"
+def getKeyMatrix(key):
+    keyMatrix = [[0] * 3 for _ in range(3)]
+    k = 0
+    for i in range(3):
+        for j in range(3):
+            keyMatrix[i][j] = ord(key[k]) % 65
+            k += 1
+    return keyMatrix
+
+def encrypt(messageVector, keyMatrix):
+    cipherMatrix = [[0] for _ in range(3)]
+    print("\nMatrix Multiplication Steps:")
+    for i in range(3):
+        for j in range(1):
+            cipherMatrix[i][j] = 0
+            row_calculation = []
+            for x in range(3):
+                product = keyMatrix[i][x] * messageVector[x][j]
+                cipherMatrix[i][j] += product
+                row_calculation.append(f"({keyMatrix[i][x]} * {messageVector[x][j]})")
+            print(f"Row {i + 1}: {' + '.join(row_calculation)} = {cipherMatrix[i][j]}")
+            cipherMatrix[i][j] = cipherMatrix[i][j] % 26
+    return cipherMatrix
+
+def HillCipher(message, key):
+    if len(key) != 9 or len(message) != 3:
+        print("Key must be 9 characters long and message must be 3 characters long.")
+        return
+
+    keyMatrix = getKeyMatrix(key)
+    messageVector = [[ord(message[i]) % 65] for i in range(3)]
+    cipherMatrix = encrypt(messageVector, keyMatrix)
+    CipherText = [chr(cipherMatrix[i][0] + 65) for i in range(3)]
+
+    print("\nKey Matrix:")
+    for row in keyMatrix:
+        print(row)
+    print("Message Vector:")
+    for row in messageVector:
+        print(row)
+    print("Cipher Matrix:")
+    for row in cipherMatrix:
+        print(row)
+    print("Ciphertext: ", "".join(CipherText))
+
+def main():
+    message = input("Enter a 3-letter message (uppercase): ").strip().upper()
+    key = input("Enter a 9-letter key (uppercase): ").strip().upper()
+    HillCipher(message, key)
+
+if __name__ == "__main__":
+    main()
+```
+
+## Practical 4 : Poly-alphabetic Cipher (Vigenere Cipher)
+
+```python copy filename="Encryption"
+def generateKey(message, key):
+    key = list(key)
+    if len(key) == len(message):
+        return "".join(key)
+    else:
+        for i in range(len(message) - len(key)):
+            key.append(key[i % len(key)])
+    return "".join(key)
+
+def vigenereEncrypt(message, key):
+    cipher_text = []
+    for i in range(len(message)):
+        x = (ord(message[i]) + ord(key[i])) % 26
+        x += ord('A')
+        cipher_text.append(chr(x))
+    return "".join(cipher_text)
+
+def main():
+    message = input("Enter the message (uppercase): ").strip().upper()
+    key = input("Enter the key (uppercase): ").strip().upper()
+    key = generateKey(message, key)
+    cipher_text = vigenereEncrypt(message, key)
+    print("Generated Key: ", key)
+    print("Ciphertext: ", cipher_text)
+
+if __name__ == "__main__":
+    main()
+```
+
+```python copy filename="Decryption"
+def generateKey(message, key):
+    key = list(key)
+    if len(key) == len(message):
+        return "".join(key)
+    else:
+        for i in range(len(message) - len(key)):
+            key.append(key[i % len(key)])
+    return "".join(key)
+
+def vigenereDecrypt(cipher_text, key):
+    orig_text = []
+    for i in range(len(cipher_text)):
+        x = (ord(cipher_text[i]) - ord(key[i]) + 26) % 26
+        x += ord('A')
+        orig_text.append(chr(x))
+    return "".join(orig_text)
+
+def main():
+    cipher_text = input("Enter the ciphertext (uppercase): ").strip().upper()
+    key = input("Enter the key (uppercase): ").strip().upper()
+    key = generateKey(cipher_text, key)
+    decrypted_text = vigenereDecrypt(cipher_text, key)
+    print("Generated Key: ", key)
+    print("Decrypted Text: ", decrypted_text)
+
+if __name__ == "__main__":
+    main()
+```
+
+## Practical 5 : Playfair Cipher
+
+```python copy filename="Encryption"
+import random
+
+def create_playfair_matrix(keyword):
+    keyword = ''.join(sorted(set(keyword), key=keyword.index)).replace(" ", "").upper()
+    matrix = []
+    alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
+    for char in keyword:
+        if char not in matrix and char in alphabet:
+            matrix.append(char)
+    for char in alphabet:
+        if char not in matrix:
+            matrix.append(char)
+    return matrix
+
+def print_matrix(matrix):
+    print("Playfair Cipher Matrix:")
+    for i in range(5):
+        print(' '.join(matrix[i * 5:(i + 1) * 5]))
+
+def prepare_text(text):
+    text = text.upper().replace("J", "I").replace(" ", "")
+    prepared_text = []
+    i = 0
+    while i < len(text):
+        if i + 1 < len(text) and text[i] == text[i + 1]:
+            prepared_text.append(text[i] + 'X')
+            i += 1
+        else:
+            if i + 1 < len(text):
+                prepared_text.append(text[i] + text[i + 1])
+                i += 2
+            else:
+                prepared_text.append(text[i] + 'X')
+                i += 1
+    return prepared_text
+
+def encrypt(plaintext, matrix):
+    encrypted_text = ""
+    pairs = prepare_text(plaintext)
+    for pair in pairs:
+        row1, col1 = divmod(matrix.index(pair[0]), 5)
+        row2, col2 = divmod(matrix.index(pair[1]), 5)
+        if row1 == row2:
+            encrypted_text += matrix[row1 * 5 + (col1 + 1) % 5]
+            encrypted_text += matrix[row2 * 5 + (col2 + 1) % 5]
+        elif col1 == col2:
+            encrypted_text += matrix[((row1 + 1) % 5) * 5 + col1]
+            encrypted_text += matrix[((row2 + 1) % 5) * 5 + col2]
+        else:
+            encrypted_text += matrix[row1 * 5 + col2]
+            encrypted_text += matrix[row2 * 5 + col1]
+    return encrypted_text
+
+def main():
+    keyword = input("Enter the keyword for the Playfair cipher: ")
+    plaintext = input("Enter the plaintext to encrypt: ")
+    matrix = create_playfair_matrix(keyword)
+    print_matrix(matrix)
+    encrypted_text = encrypt(plaintext, matrix)
+    print("Encrypted Text:", encrypted_text)
+
+if __name__ == "__main__":
+    main()
+```
+
+## Practical 6.1 : Rail-Fence Cipher
+
+```python copy filename="Decryption"
+def encryptRailFence(text, key):
+    if key <= 1:
+        return text, [[char] for char in text]
+
+    rail = [['\n' for _ in range(len(text))] for _ in range(key)]
+    dir_down = False
+    row, col = 0, 0
+
+    for i in range(len(text)):
+        if row == 0 or row == key - 1:
+            dir_down = not dir_down
+        rail[row][col] = text[i]
+        col += 1
+        if dir_down:
+            row += 1
+        else:
+            row -= 1
+
+    result = []
+    for i in range(key):
+        for j in range(len(text)):
+            if rail[i][j] != '\n':
+                result.append(rail[i][j])
+    return "".join(result), rail
+
+def printRailMatrix(rail):
+    for row in rail:
+        print(" ".join(char if char != '\n' else ' ' for char in row))
+
+if __name__ == "__main__":
+    text = input("Enter the text to encrypt: ")
+    key = int(input("Enter the key: "))
+    encrypted_text, rail_matrix = encryptRailFence(text, key)
+    print("\nEncrypted Text:", encrypted_text)
+    print("\nRail Matrix:")
+    printRailMatrix(rail_matrix)
+```
+
+## Practical 6.2 : Simple Columnar Encryption
+
+```python copy filename="Encryption with number of columns"
+def create_matrix(num_cols, text):
+    num_rows = len(text) // num_cols + (len(text) % num_cols > 0)
+    matrix = [[' '] * num_cols for _ in range(num_rows)]
+    index = 0
+    for i in range(num_rows):
+        for j in range(num_cols):
+            if index < len(text):
+                matrix[i][j] = text[index]
+                index += 1
+            else:
+                matrix[i][j] = ' '
+    return matrix
+
+def encrypt(text, num_cols):
+    matrix = create_matrix(num_cols, text)
+    print("Matrix for Encryption:")
+    for row in matrix:
+        print(' '.join(row))
+    ciphertext = ''
+    for col in range(num_cols):
+        for row in matrix:
+            if row[col] != ' ':
+                ciphertext += row[col]
+    return ciphertext
+
+if __name__ == "__main__":
+    for round_num in range(1, 4):
+        plaintext = input(f"Enter the plaintext for round {round_num}: ")
+        num_cols = int(input("Enter the number of columns: "))
+        encrypted_text = encrypt(plaintext, num_cols)
+        print("Encrypted Text:", encrypted_text)
+```
+
+```python copy filename="Encryption with string key"
+def create_matrix(num_cols, text):
+    num_rows = len(text) // num_cols + (len(text) % num_cols > 0)
+    matrix = [[''] * num_cols for _ in range(num_rows)]
+    index = 0
+    for i in range(num_rows):
+        for j in range(num_cols):
+            if index < len(text):
+                matrix[i][j] = text[index]
+                index += 1
+            else:
+                matrix[i][j] = ''
+    return matrix
+
+def encrypt(text, key):
+    num_cols = len(key)
+    matrix = create_matrix(num_cols, text)
+    print("Matrix for Encryption:")
+    for row in matrix:
+        print(' '.join(row))
+    key_order = sorted((key[i], i) for i in range(num_cols))
+    ciphertext = ''
+    for _, col_index in key_order:
+        for row in matrix:
+            if row[col_index] != '':
+                ciphertext += row[col_index]
+    return ciphertext
+
+if __name__ == "__main__":
+    for round_num in range(1, 4):
+        plaintext = input(f"Enter the plaintext for round {round_num}: ")
+        key = input("Enter the key (string): ")
+        encrypted_text = encrypt(plaintext, key)
+        print("Encrypted Text:", encrypted_text)
+```
+
+## Practical 7 : S-DES Algorithm
+
+```python copy filename="Encryption"
+class SDES_Encryption:
+    def __init__(self, key1, key2, IP, EP, P4, IP_inv, S0, S1):
+        self.key1 = key1
+        self.key2 = key2
+        self.IP = IP
+        self.EP = EP
+        self.P4 = P4
+        self.IP_inv = IP_inv
+        self.S0 = S0
+        self.S1 = S1
+
+    def encryption(self, plaintext):
+        arr = [plaintext[i - 1] for i in self.IP]
+        arr1 = self.function(arr, self.key1)
+        after_swap = self.swap(arr1)
+        arr2 = self.function(after_swap, self.key2)
+        ciphertext = [arr2[i - 1] for i in self.IP_inv]
+        return ciphertext
+
+    def binary_(self, val):
+        return format(val, '02b')
+
+    def function(self, ar, key_):
+        l = ar[:4]
+        r = ar[4:]
+        ep = [r[i - 1] for i in self.EP]
+        ar = [ep[i] ^ key_[i] for i in range(8)]
+        l_1 = ar[:4]
+        r_1 = ar[4:]
+        row = int(f"{l_1[0]}{l_1[3]}", 2)
+        col = int(f"{l_1[1]}{l_1[2]}", 2)
+        val = self.S0[row][col]
+        str_l = self.binary_(val)
+        row = int(f"{r_1[0]}{r_1[3]}", 2)
+        col = int(f"{r_1[1]}{r_1[2]}", 2)
+        val = self.S1[row][col]
+        str_r = self.binary_(val)
+        r_ = [int(str_l[i]) for i in range(2)] + [int(str_r[i]) for i in range(2)]
+        r_p4 = [r_[i - 1] for i in self.P4]
+        l = [l[i] ^ r_p4[i] for i in range(4)]
+        output = l + r
+        return output
+
+    def swap(self, array):
+        return array[4:] + array[:4]
+
+if __name__ == "__main__":
+    key1 = [1, 0, 0, 0, 0, 1, 1, 1]
+    key2 = [0, 1, 1, 0, 1, 0, 0, 1]
+    IP = [2, 6, 3, 1, 4, 8, 5, 7]
+    EP = [4, 1, 2, 3, 2, 3, 4, 1]
+    P4 = [2, 4, 3, 1]
+    IP_inv = [4, 1, 3, 5, 7, 2, 8, 6]
+    S0 = [[1, 0, 3, 2],
+          [3, 2, 1, 0],
+          [0, 2, 1, 3],
+          [3, 1, 3, 2]]
+    S1 = [[0, 1, 2, 3],
+          [2, 0, 1, 3],
+          [3, 0, 1, 0],
+          [2, 1, 0, 3]]
+
+    sdes_enc = SDES_Encryption(key1, key2, IP, EP, P4, IP_inv, S0, S1)
+    plaintext = [1, 0, 1, 0, 0, 1, 1, 0]
+
+    print("\nYour plain Text is:")
+    print(" ".join(map(str, plaintext)))
+    print("\nYour key1 is:")
+    print(" ".join(map(str, key1)))
+    print("\nYour key2 is:")
+    print(" ".join(map(str, key2)))
+
+    ciphertext = sdes_enc.encryption(plaintext)
+    print("\nYour cipher Text is:")
+    print(" ".join(map(str, ciphertext)))
+```
+
+## Practical 8 : RSA Asymmetric Encryption
+
+```python copy filename="Encryption and Decryption"
+def power(base, expo, m):
+    res = 1
+    base = base % m
+    while expo > 0:
+        if expo & 1:
+            res = (res * base) % m
+        base = (base * base) % m
+        expo = expo // 2
+    return res
+
+def modInverse(e, phi):
+    for d in range(2, phi):
+        if (e * d) % phi == 1:
+            return d
+    return -1
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def generateKeys():
+    p = 7919
+    q = 1009
+    n = p * q
+    phi = (p - 1) * (q - 1)
+    e = 0
+    for i in range(2, phi):
+        if gcd(i, phi) == 1:
+            e = i
+            break
+    d = modInverse(e, phi)
+    return e, d, n
+
+def encrypt(m, e, n):
+    return power(m, e, n)
+
+def decrypt(c, d, n):
+    return power(c, d, n)
+
+def stringToAscii(s):
+    return [ord(char) for char in s]
+
+def asciiToString(ascii_values):
+    return ''.join(chr(value) for value in ascii_values)
+
+if __name__ == "__main__":
+    e, d, n = generateKeys()
+    print(f"Public Key (e, n): ({e}, {n})")
+    print(f"Private Key (d, n): ({d}, {n})")
+    print('\n')
+
+    message = input("Enter the message to encrypt: ")
+    ascii_values = stringToAscii(message)
+    print(f"ASCII Values: {ascii_values}")
+
+    encrypted_values = [encrypt(m, e, n) for m in ascii_values]
+    print(f"Encrypted Values: {encrypted_values}")
+    print('\n')
+
+    decrypted_values = [decrypt(c, d, n) for c in encrypted_values]
+    print(f"Decrypted ASCII Values: {decrypted_values}")
+
+    decrypted_message = asciiToString(decrypted_values)
+    print(f"Decrypted Message: {decrypted_message}")
+```
+
+## Practical 9 : Diffie-Hellman Key Exchange
+
+```python copy filename="Implementation"
+def power(a, b, q):
+    return pow(a, b, q)
+
+def diffie_hellman():
+    q = int(input("Enter a prime number (q): "))
+    alpha = int(input("Enter a primitive root (alpha): "))
+    print("\nThe value of q (prime):", q)
+    print("The value of alpha (primitive root):", alpha)
+
+    XA = int(input("\nEnter the private key for A (XA): "))
+    YA = power(alpha, XA, q)
+    print("The public key YA for A:", YA)
+
+    XB = int(input("\nEnter the private key for B (XB): "))
+    YB = power(alpha, XB, q)
+    print("The public key YB for B:", YB)
+
+    K1 = power(YB, XA, q)
+    K2 = power(YA, XB, q)
+
+    print("\nSecret key for A (K1):", K1)
+    print("Secret key for B (K2):", K2)
+
+if __name__ == "__main__":
+    diffie_hellman()
+```
+
+## Practical 10 : Digital Signature Algorithm
+
+```python copy filename="Implementation"
+import hmac
+import hashlib
+import secrets
+
+def generate_secret_key():
+    return secrets.token_bytes(32)
+
+def create_digital_signature(message, secret_key):
+    signature = hmac.new(secret_key, message, hashlib.sha256).digest()
+    return signature
+
+def verify_digital_signature(message, signature, secret_key):
+    expected_signature = hmac.new(secret_key, message, hashlib.sha256).digest()
+    return hmac.compare_digest(signature, expected_signature)
+
+def main():
+    message = input("Enter the message to sign: ").encode()
+    secret_key = generate_secret_key()
+    signature = create_digital_signature(message, secret_key)
+    print("\nGenerated Digital Signature (Hex):")
+    print(signature.hex())
+    is_verified = verify_digital_signature(message, signature, secret_key)
+    print("\nSignature Verification Result:", is_verified)
+
+if __name__ == "__main__":
+    main()
+```

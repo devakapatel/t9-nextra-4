@@ -1,0 +1,5 @@
+.next
+node_modules
+.vercel
+/pages/.obsidian
+_pagefind/
