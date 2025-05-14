@@ -1,6 +1,8 @@
 import { importPage } from "nextra/pages";
 import { useMDXComponents as getMDXComponents } from "../../mdx-components";
 
+export const runtime = 'edge';
+
 export async function generateMetadata(props) {
   const params = await props.params;
   const { metadata } = await importPage(params.mdxPath);
