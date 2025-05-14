@@ -11,9 +11,11 @@
     "dev": "next --turbopack",
     "build": "next build",
     "start": "next start",
+    "pages:build": "npx @cloudflare/next-on-pages",
     "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.12",
     "pagefind": "^1.3.0"
   }
 }
