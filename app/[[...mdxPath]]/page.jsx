@@ -3,21 +3,20 @@ import { useMDXComponents as getMDXComponents } from "../../mdx-components";
 
 export const runtime = 'edge';
 
-export async function generateMetadata(props) {
-  const params = await props.params;
+export async function generateMetadata({ params }) {
   const { metadata } = await importPage(params.mdxPath);
   return metadata;
 }
 
 const Wrapper = getMDXComponents().wrapper;
 
-export default async function Page(props) {
-  const params = await props.params;
+export default async function Page({ params }) {
   const result = await importPage(params.mdxPath);
   const { default: MDXContent, toc, metadata } = result;
+
   return (
     <Wrapper toc={toc} metadata={metadata}>
-      <MDXContent {...props} params={params} />
+      <MDXContent params={params} />
     </Wrapper>
   );
 }
