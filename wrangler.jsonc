@@ -1,6 +1,7 @@
 {
   "name": "t9",
   "compatibility_date": "2024-09-23",
+  "node_version": "22",
   "compatibility_flags": [
     "nodejs_compat"
   ],
