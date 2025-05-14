@@ -1,5 +1,4 @@
 import nextra from "nextra";
-import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
 
 // Set up Nextra with its configuration
 const withNextra = nextra({
