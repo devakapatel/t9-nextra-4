@@ -6,11 +6,13 @@ const withNextra = nextra({
   // ... Add Nextra-specific options here
 });
 
-if (process.env.NODE_ENV === 'development') {
-  await setupDevPlatform();
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true // mandatory, otherwise won't export
+  }
 }
 
-// Export the final Next.js config with Nextra included
 export default withNextra({
   // ... Add regular Next.js options here
 });
