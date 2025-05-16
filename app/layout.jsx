@@ -3,6 +3,7 @@ import { Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 import "../styles/styles.css"
+import { preload } from "react-dom";
 
 export const metadata = {
   // Define your metadata here
@@ -49,6 +50,9 @@ export default async function RootLayout({ children }) {
           editLink={null}
           feedback={{
             content: null
+          }}
+          searchOptions={{
+            preload: true
           }}
           // ... Your additional layout options
         >
