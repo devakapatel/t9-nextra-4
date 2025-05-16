@@ -51,11 +51,6 @@ export default async function RootLayout({ children }) {
           feedback={{
             content: null
           }}
-          search={{
-            searchOptions={
-              preload:true
-            }
-          }}
           // ... Your additional layout options
         >
           {children}
