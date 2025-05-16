@@ -7,6 +7,7 @@ const require = createRequire(import.meta.url);
 
 // Set up Nextra with its configuration
 const withNextra = nextra({
+  latex: true
   // ... Add other Nextra-specific options here
 });
 
