@@ -31,7 +31,7 @@ As the sole owner of this website, I make all decisions—but I value your input
 
 ### What I Use:
 
-- **Technology:** [Nextra](https://nextra.site) by Next.js
+- **Technology:** [Nextra 4](https://nextra.site) by Next.js
 - **Hosting:** [Cloudflare](https://cloudflare.com)
 - **Forms:** [Tally.so](https://tally.so)
 - **Content:** Written in Markdown using [VSCode](https://code.visualstudio.com/) and [Obsidian](https://obsidian.md).
