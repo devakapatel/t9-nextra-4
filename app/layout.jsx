@@ -47,6 +47,9 @@ export default async function RootLayout({ children }) {
             next: false,
           }}
           editLink={null}
+          feedback={{
+            content: null
+          }}
           // ... Your additional layout options
         >
           {children}
