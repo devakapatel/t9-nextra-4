@@ -12,10 +12,10 @@ const withNextra = nextra({
 
 // Define your regular Next.js configurations separately
 const regularNextConfig = {
-  // output: 'export', // Uncomment if you need static export
-  // images: {
-  //   unoptimized: true // Uncomment if you need static export and have images
-  // },
+  output: 'export', // Uncomment if you need static export
+  images: {
+    unoptimized: true // Uncomment if you need static export and have images
+  },
 
   // Add the webpack configuration here
   webpack: (config, { isServer, webpack }) => {
