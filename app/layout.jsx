@@ -3,7 +3,6 @@ import { Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 import "../styles/styles.css"
-import { preload } from "react-dom";
 
 export const metadata = {
   // Define your metadata here
