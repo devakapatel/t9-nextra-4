@@ -35,3 +35,16 @@ a.nextra-card:hover {
     0 30px 40px -10px rgba(0, 140, 255, 0.1),
     inset 0 1px 3px rgba(30, 30, 50, 0.25) !important;
 }
+
+
+div.x\:mx-auto  {
+  max-width: 100%;
+}
+
+nav.x\:mx-auto {
+  max-width: 100%;
+}
+
+footer.x\:mx-auto {
+  max-width: 100%;
+}
