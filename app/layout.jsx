@@ -5,6 +5,9 @@ import "nextra-theme-docs/style.css";
 import "../styles/styles.css"
 
 export const metadata = {
+  icons: {
+    icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox=\'0 0 100 100\'><text y=\'80\' font-size=\'80\'>🏁</text></svg>',
+  },
   // Define your metadata here
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
 };
