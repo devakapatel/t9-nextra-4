@@ -9,3 +9,5 @@ asIndexPage: true
 - ### [Unit 2](./distributed-systems/unit-2)
 
 - ### [Unit 3](./distributed-systems/unit-3)
+
+- ### [Unit 4](./distributed-systems/unit-4)
