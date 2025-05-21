@@ -48,50 +48,63 @@ The ArrayList class in Java is a part of the Java Collections Framework and prov
 
 1.  **Import the ArrayList class**:
     You need to import the ArrayList class from the `java.util` package before using it in your code:
-        ```java
-        import java.util.ArrayList;
 
-        ```
+    ```java
+    import java.util.ArrayList;
+
+    ```
+
 2.  **Create an ArrayList**:
     You can create an ArrayList of a specific type by specifying the type within angle brackets (`<>`). For example, to create an ArrayList of Strings:
-        ```java
-        ArrayList<String> names = new ArrayList<>();
 
-        ```
+    ```java
+    ArrayList<String> names = new ArrayList<>();
+
+    ```
+
 3.  **Adding Elements**:
     You can add elements to the ArrayList using the `add()` method:
-        ```java
-        names.add("Alice");
-        names.add("Bob");
-        names.add("Charlie");
 
-        ```
+    ```java
+    names.add("Alice");
+    names.add("Bob");
+    names.add("Charlie");
+
+    ```
+
 4.  **Accessing Elements**:
     You can access elements by their index using the `get()` method:
-        ```java
-        String firstElement = names.get(0); // Retrieves "Alice"
 
-        ```
+    ```java
+    String firstElement = names.get(0); // Retrieves "Alice"
+
+    ```
+
 5.  **Iterating Over ArrayList**:
     You can iterate over the ArrayList using a loop, such as a for loop or an enhanced for loop:
-        ```java
-        for (String name : names) {
-            System.out.println(name);
-        }
 
-        ```
+    ```java
+    for (String name : names) {
+        System.out.println(name);
+    }
+
+    ```
+
 6.  **Removing Elements**:
     You can remove elements by index or by object using the `remove()` method:
-        ```java
-        names.remove(1); // Removes the element at index 1
 
-        ```
+    ```java
+    names.remove(1); // Removes the element at index 1
+
+    ```
+
 7.  **Size of ArrayList**:
     You can get the size of the ArrayList using the `size()` method:
-        ```java
-        int size = names.size(); // Returns the number of elements in the ArrayList
 
-        ```
+    ```java
+    int size = names.size(); // Returns the number of elements in the ArrayList
+
+    ```
 
 ### Example of Using ArrayList
 
@@ -134,50 +147,63 @@ The LinkedList class in Java is a part of the Java Collections Framework and pro
 
 1.  **Import the LinkedList class**:
     You need to import the LinkedList class from the `java.util` package before using it in your code:
-        ```java
-        import java.util.LinkedList;
 
-        ```
+    ```java
+    import java.util.LinkedList;
+
+    ```
+
 2.  **Create a LinkedList**:
     You can create a LinkedList of a specific type by specifying the type within angle brackets (`<>`). For example, to create a LinkedList of Integers:
-        ```java
-        LinkedList<Integer> numbers = new LinkedList<>();
 
-        ```
+    ```java
+    LinkedList<Integer> numbers = new LinkedList<>();
+
+    ```
+
 3.  **Adding Elements**:
     You can add elements to the LinkedList using the `add()` method:
-        ```java
-        numbers.add(10);
-        numbers.add(20);
-        numbers.add(30);
 
-        ```
+    ```java
+    numbers.add(10);
+    numbers.add(20);
+    numbers.add(30);
+
+    ```
+
 4.  **Accessing Elements**:
     You can access elements by their index using the `get()` method:
-        ```java
-        int firstElement = numbers.get(0); // Retrieves the element at index 0
 
-        ```
+    ```java
+    int firstElement = numbers.get(0); // Retrieves the element at index 0
+
+    ```
+
 5.  **Iterating Over LinkedList**:
     You can iterate over the LinkedList using a loop, such as a for loop or an enhanced for loop:
-        ```java
-        for (Integer number : numbers) {
-            System.out.println(number);
-        }
 
-        ```
+    ```java
+    for (Integer number : numbers) {
+        System.out.println(number);
+    }
+
+    ```
+
 6.  **Removing Elements**:
     You can remove elements by index or by object using the `remove()` method:
-        ```java
-        numbers.remove(1); // Removes the element at index 1
 
-        ```
+    ```java
+    numbers.remove(1); // Removes the element at index 1
+
+    ```
+
 7.  **Size of LinkedList**:
     You can get the size of the LinkedList using the `size()` method:
-        ```java
-        int size = numbers.size(); // Returns the number of elements in the LinkedList
 
-        ```
+    ```java
+    int size = numbers.size(); // Returns the number of elements in the LinkedList
+
+    ```
 
 ### Example of Using LinkedList
 
@@ -220,50 +246,63 @@ The Vector class in Java is a part of the Java Collections Framework and provide
 
 1.  **Import the Vector class**:
     You need to import the Vector class from the `java.util` package before using it in your code:
-        ```java
-        import java.util.Vector;
 
-        ```
+    ```java
+    import java.util.Vector;
+
+    ```
+
 2.  **Create a Vector**:
     You can create a Vector of a specific type by specifying the type within angle brackets (`<>`). For example, to create a Vector of Doubles:
-        ```java
-        Vector<Double> prices = new Vector<>();
 
-        ```
+    ```java
+    Vector<Double> prices = new Vector<>();
+
+    ```
+
 3.  **Adding Elements**:
     You can add elements to the Vector using the `add()` method:
-        ```java
-        prices.add(10.5);
-        prices.add(20.0);
-        prices.add(15.75);
 
-        ```
+    ```java
+    prices.add(10.5);
+    prices.add(20.0);
+    prices.add(15.75);
+
+    ```
+
 4.  **Accessing Elements**:
     You can access elements by their index using the `get()` method:
-        ```java
-        double firstPrice = prices.get(0); // Retrieves the element at index 0
 
-        ```
+    ```java
+    double firstPrice = prices.get(0); // Retrieves the element at index 0
+
+    ```
+
 5.  **Iterating Over Vector**:
     You can iterate over the Vector using a loop, such as a for loop or an enhanced for loop:
-        ```java
-        for (Double price : prices) {
-            System.out.println(price);
-        }
 
-        ```
+    ```java
+    for (Double price : prices) {
+        System.out.println(price);
+    }
+
+    ```
+
 6.  **Removing Elements**:
     You can remove elements by index or by object using the `remove()` method:
-        ```java
-        prices.remove(1); // Removes the element at index 1
 
-        ```
+    ```java
+    prices.remove(1); // Removes the element at index 1
+
+    ```
+
 7.  **Size of Vector**:
     You can get the size of the Vector using the `size()` method:
-        ```java
-        int size = prices.size(); // Returns the number of elements in the Vector
 
-        ```
+    ```java
+    int size = prices.size(); // Returns the number of elements in the Vector
+
+    ```
 
 ### Example of Using Vector
 
@@ -308,34 +347,41 @@ Here's how to use Enumeration with examples:
 
 1.  **Import the Enumeration interface**:
     You need to import the Enumeration interface from the `java.util` package before using it in your code:
-        ```java
-        import java.util.Enumeration;
 
-        ```
+    ```java
+    import java.util.Enumeration;
+
+    ```
+
 2.  **Create a Vector or Hashtable**:
     Enumeration is commonly used with legacy collections like Vector and Hashtable. Here's an example of creating a Vector:
-        ```java
-        Vector<String> names = new Vector<>();
-        names.add("Alice");
-        names.add("Bob");
-        names.add("Charlie");
 
-        ```
+    ```java
+    Vector<String> names = new Vector<>();
+    names.add("Alice");
+    names.add("Bob");
+    names.add("Charlie");
+
+    ```
+
 3.  **Get an Enumeration**:
     You can obtain an Enumeration from the Vector or Hashtable using the `elements()` method:
-        ```java
-        Enumeration<String> enumeration = names.elements();
 
-        ```
+    ```java
+    Enumeration<String> enumeration = names.elements();
+
+    ```
+
 4.  **Iterate Over Elements**:
     You can use the `hasMoreElements()` and `nextElement()` methods to iterate over the elements of the Enumeration:
-        ```java
-        while (enumeration.hasMoreElements()) {
-            String name = enumeration.nextElement();
-            System.out.println(name);
-        }
 
-        ```
+    ```java
+    while (enumeration.hasMoreElements()) {
+        String name = enumeration.nextElement();
+        System.out.println(name);
+    }
+
+    ```
 
 ### Example of Using Enumeration
 
