@@ -1,6 +1,6 @@
 # Unit 3
 
-## 1) Explain File constructors, any two methods of class File and method seek.
+## <mark> 1) Explain File constructors, any two methods of class File and method seek. </mark>
 
 ### File Constructors
 
@@ -40,7 +40,7 @@ raf.seek(10); // Set the file pointer to position 10
 
 In this example, the `seek()` method sets the file pointer to position 10, so the next read or write operation will start from that position.
 
-## 2) Explain use of Array List collection class with example.
+## <mark> 2) Explain use of Array List collection class with example. </mark>
 
 The ArrayList class in Java is a part of the Java Collections Framework and provides dynamic arrays that can grow as needed. Here's an explanation of how to use the ArrayList collection class with an example:
 
@@ -139,7 +139,7 @@ public class ArrayListExample {
 
 In this example, we create an ArrayList of Strings, add fruits to the list, print the fruits, remove "Banana" from the list, and then print the updated list.
 
-## 3) Explain use of Linked List collection class with example.
+## <mark> 3) Explain use of Linked List collection class with example. </mark>
 
 The LinkedList class in Java is a part of the Java Collections Framework and provides a linked-list data structure. Here's an explanation of how to use the LinkedList collection class with an example:
 
@@ -238,7 +238,7 @@ public class LinkedListExample {
 
 In this example, we create a LinkedList of Strings, add colors to the list, print the colors, remove "Green" from the list, and then print the updated list.
 
-## 4) Explain use of Vector collection class with example.
+## <mark> 4) Explain use of Vector collection class with example. </mark>
 
 The Vector class in Java is a part of the Java Collections Framework and provides a dynamic array that can grow or shrink as needed. Here's an explanation of how to use the Vector collection class with an example:
 
@@ -337,7 +337,7 @@ public class VectorExample {
 
 In this example, we create a Vector of Strings, add names to the vector, print the names, remove "Bob" from the vector, and then print the updated vector.
 
-## 5) Explain use of Enumeration with examples.
+## <mark> 5) Explain use of Enumeration with examples. </mark>
 
 Enumeration is an interface in Java that provides a way to iterate over the elements of a collection. It is a legacy interface and has been superseded by the Iterator interface, which provides more functionality and flexibility.
 
@@ -424,7 +424,7 @@ In this example, we create a Vector of Strings, obtain an Enumeration from the V
 
 It's important to note that Enumeration is a legacy interface, and it's generally recommended to use the more modern Iterator interface instead, as it provides additional functionality and flexibility.
 
-## 6)Explain Client-Server Communication in java networking with proper diagrams only [No Code].
+## <mark> 6)Explain Client-Server Communication in java networking with proper diagrams only [No Code]. </mark>
 
 ### Client-Server Communication Diagram
 
@@ -505,7 +505,7 @@ This sequence diagram illustrates the step-by-step communication between the Cli
 
 This communication process can be repeated multiple times during a single session, with the Client and Server exchanging data as needed.
 
-## 7) Write a client-server program using TCP sockets to echo the message sent by the client.
+## <mark> 7) Write a client-server program using TCP sockets to echo the message sent by the client. </mark>
 
 Sure, here's a simple client-server program using TCP sockets in Java to echo the message sent by the client:
 
@@ -576,7 +576,7 @@ public class EchoClient {
 
 ```
 
-## How it works
+### How it works
 
 1. The server creates a `ServerSocket` and listens for incoming connections on port 8080.
 2. The client creates a `Socket` and connects to the server's IP address (in this case, "localhost") and port 8080.
@@ -594,7 +594,7 @@ To run the program:
 
 This example demonstrates the basic client-server communication using TCP sockets in Java, where the server echoes the message sent by the client.
 
-## 8) Write the use of InetAddress class. List and explain the methods of it.
+## <mark> 8) Write the use of InetAddress class. List and explain the methods of it. </mark>
 
 ### Use of InetAddress Class
 
@@ -661,7 +661,7 @@ public class InetAddressExample {
 
 In this example, we retrieve the local host's IP address, resolve the IP address for "[www.google.com](http://www.google.com/)", and check if Google is reachable within a 5-second timeout.
 
-## 9) Explain java.util package with examples.
+## <mark> 9) Explain java.util package with examples. </mark>
 
 The `java.util` package, also known as the Java utilities package, is part of the Java Standard Edition (Java SE) and provides several classes and interfaces for handling common operations such as date and time manipulation, data structure management, random number generation, string parsing and scanning, and system property access, among others.
 
@@ -743,7 +743,7 @@ String username = properties.getProperty("username");
 
 These are just a few examples of the classes provided by the `java.util` package. This package provides many more classes that provide utility functions to the programmer.
 
-## 10) Differentiate Byte Streams and Character Streams in java with suitable example programs for both.
+## <mark> 10) Differentiate Byte Streams and Character Streams in java with suitable example programs for both. </mark>
 
 ### Byte Streams vs. Character Streams in Java
 
@@ -812,7 +812,7 @@ In the byte stream example, we copy the contents of a file using `FileInputStrea
 
 The choice between byte streams and character streams depends on the type of data being handled and the specific requirements of the application.
 
-## 11) Explain FileOutputStream in java with an example program.
+## <mark> 11) Explain FileOutputStream in java with an example program. </mark>
 
 ### Explanation of FileOutputStream in Java
 
@@ -859,7 +859,7 @@ In this example:
 
 By using `FileOutputStream`, you can write data to files byte by byte or in chunks, making it a versatile class for handling file output operations in Java.
 
-## 12) Explain FileInputStream in java with an example program.
+## <mark> 12) Explain FileInputStream in java with an example program. </mark>
 
 ### Explanation of FileInputStream in Java
 
@@ -908,7 +908,7 @@ In this example:
 
 By using `FileInputStream`, you can read data from files byte by byte or in chunks, making it a versatile class for handling file input operations in Java.
 
-## 13) Explain the following terms with respect to exception handling.
+## <mark> 13) Explain the following terms with respect to exception handling. </mark>
 
 i) try ii) catch ii) throw iv) throws v) finally
 
@@ -976,7 +976,7 @@ In this example:
 - The `throw` statement is used to throw an `ArithmeticException` in the `divide` method.
 - The `finally` block contains cleanup code that will always run, regardless of whether an exception is thrown or not.
 
-## 14) Explain Built in Exception.
+## <mark> 14) Explain Built in Exception. </mark>
 
 ### Explanation of Built-in Exceptions in Java
 
@@ -1013,7 +1013,7 @@ In this example:
 
 Built-in exceptions in Java provide a standardized way to handle errors and exceptional conditions, making it easier to write robust and reliable Java programs.
 
-## 15) Explain Custom Exception.
+## <mark> 15) Explain Custom Exception. </mark>
 
 ### Explanation of Custom Exceptions in Java
 
@@ -1074,7 +1074,7 @@ Custom exceptions are particularly useful when:
 
 Using custom exceptions can improve the maintainability and readability of your code by making it clearer where and why exceptions are being thrown.
 
-## 16) Explain Throwable Class.
+## <mark> 16) Explain Throwable Class. </mark>
 
 ### Explanation of Throwable Class in Java
 
@@ -1124,7 +1124,7 @@ In this example:
 
 By using the `Throwable` class, you can catch and handle exceptions of different types in a more general way, providing a fallback mechanism to deal with unexpected errors in your Java programs.
 
-## 17) Give the difference between throw and throws keywords with example.
+## <mark> 17) Give the difference between throw and throws keywords with example. </mark>
 
 ### Difference Between `throw` and `throws` Keywords in Java
 
@@ -1180,7 +1180,7 @@ public class ThrowsExample {
 
 In this example, the `throws` keyword is used in the method signature of `readFile()` to declare that the method may throw an `IOException`. The actual handling of the exception is done in the calling method.
 
-## 18) Write an application that generates custom exception if any value from its command line arguments Is negative.
+## <mark> 18) Write an application that generates custom exception if any value from its command line arguments Is negative. </mark>
 
 Here is a Java application that generates a custom exception if any value from its command line arguments is negative:
 
@@ -1231,7 +1231,7 @@ Here's how the application works:
 
 Note that this application assumes that the command line arguments are integers. If you want to handle other types of values, you may need to modify the application accordingly.
 
-## 19) Write the program to print the IP address of the local machine.
+## <mark> 19) Write the program to print the IP address of the local machine. </mark>
 
 Here is a Java program that prints the IP address of the local machine:
 
@@ -1257,7 +1257,7 @@ When you run this program, it will retrieve the IP address of the local machine 
 
 Make sure to handle the `UnknownHostException` that may occur if the local host's IP address cannot be determined.
 
-## 20) What is Server Socket? How does it work in java ? Explain it with an example.
+## <mark> 20) What is Server Socket? How does it work in java ? Explain it with an example. </mark>
 
 ### What is ServerSocket in Java?
 
@@ -1318,7 +1318,7 @@ To run this example, you would need to create a client-side program that connect
 
 By using `ServerSocket`, you can create server-side applications in Java that can handle multiple clients concurrently and communicate with them using sockets.
 
-## 21) Explain the following classes with their use.
+## <mark> 21) Explain the following classes with their use. </mark>
 
 - DatagramSocket
 - DatagramPacket class
@@ -1395,7 +1395,7 @@ In this example, the server creates a `DatagramSocket` and listens for incoming 
 
 `DatagramSocket` and `DatagramPacket` are useful for building UDP-based applications that require fast, lightweight communication between clients and servers.
 
-## 22) List and write the use of classes available in java.net Package.
+## <mark> 22) List and write the use of classes available in java.net Package. </mark>
 
 The `java.net` package in Java provides a wide range of classes for network programming. Here's a list of some of the most commonly used classes and their uses:
 

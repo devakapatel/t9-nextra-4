@@ -1,6 +1,6 @@
 # Unit 1
 
-## 1) Explain features of java with Example.
+## <mark> 1) Explain features of java with Example. </mark>
 
 Java is a high-level programming language with several key features:
 
@@ -10,7 +10,7 @@ Java is a high-level programming language with several key features:
 - **Multi-threaded:** Java supports multithreading, allowing multiple operations to run concurrently, improving the efficiency of programs. For example, a Java application could handle multiple user inputs simultaneously by assigning a separate thread to each user.
 - **Secure:** Java is designed with security as a priority. Its platform independence and lack of explicit pointer use make it more secure against viral attacks and hacker threats. For example, Java’s security manager and bytecode verifier work together to ensure that class files adhere to Java’s safety rules.
 
-## 2) Explain JVM, JDK and JRE.
+## <mark> 2) Explain JVM, JDK and JRE. </mark>
 
 1. **Java Virtual Machine (JVM):**
    - **Definition:** JVM is a crucial part of the Java platform that provides an execution environment for Java bytecode. It interprets the bytecode and translates it into machine-specific code, enabling Java programs to run on any device with a JVM installed.
@@ -25,7 +25,7 @@ Java is a high-level programming language with several key features:
    - **Functionality:** JRE does not contain development tools like the JDK; instead, it focuses on executing Java applications. It ensures that Java programs can run smoothly by providing the necessary runtime environment.
    - **Deployment:** End-users who want to run Java applications need to install the JRE on their systems. It allows them to execute Java programs without the need for development tools.
 
-## 3) What is variable? Give one example program for defining variables in java. Also list rules for valid variable names.
+## <mark> 3) What is variable? Give one example program for defining variables in java. Also list rules for valid variable names. </mark>
 
 A variable is a name given to a memory location in Java. It's a way to store data for later use. Each variable in Java has a specific data type, which determines the size and layout of the variable's memory, the range of values that can be stored within that memory, and the set of operations that can be applied to the variable.
 
@@ -49,7 +49,7 @@ The rules for naming variables in Java are:
 - After the first character, variable names can contain any combination of letters, numbers, underscores, or dollar signs.
 - Reserved words (like `int`, `double`, `if`, etc.) cannot be used as variable names.
 
-## 4) Explain this keyword with Example.
+## <mark> 4) Explain this keyword with Example. </mark>
 
 In Java, `this` is a reference variable that refers to the current object. It can be used to refer to the instance variables of the current class, to invoke the instance methods, or to return the current class instance.
 
@@ -80,7 +80,7 @@ public class Main {
 
 In this example, `this.color` refers to the `color` instance variable of the `Car` class. It is used to distinguish between the instance variable `color` and the parameter `color` in the `Car` constructor.
 
-## 5) Explain static keyword with Example.
+## <mark> 5) Explain static keyword with Example. </mark>
 
 In Java, the `static` keyword is used to create fields and methods that belong to the class, rather than to an instance of the class. This means that you can access the static field or call the static method without creating an instance of the class.
 
@@ -113,7 +113,7 @@ public class Main {
 
 In this example, `count` is a static variable that is shared by all instances of the `Counter` class. The `incrementCount()` and `displayCount()` are static methods that can be called without creating an instance of the `Counter` class.
 
-## 6) Explain finalize() and garbage collection with Example.
+## <mark> 6) Explain finalize() and garbage collection with Example. </mark>
 
 In Java, garbage collection is an automatic memory management system that frees up memory that is no longer needed. When an object is no longer reachable or referenced by any part of the program, it is considered eligible for garbage collection. The garbage collector, a part of the JVM, deallocates memory for these objects, preventing memory leaks and optimizing the use of system resources.
 
@@ -146,7 +146,7 @@ public class Main {
 
 In this example, we override the `finalize()` method in our `MyClass` class to perform some cleanup operation. We then create an instance of `MyClass` in our `main` method, set the instance `obj` to `null` to make it eligible for garbage collection, and call `System.gc()` to request the JVM to run the garbage collector.
 
-## 7) Explain Ragged Array With Examples.
+## <mark> 7) Explain Ragged Array With Examples. </mark>
 
 A ragged array, also known as a jagged array, is a multi-dimensional array in which the length of each array element can be different. This is in contrast to a rectangular multi-dimensional array where every row must have the same number of columns. In other words, a ragged array is an array of arrays of potentially different sizes.
 
@@ -176,7 +176,7 @@ public class Main {
 
 In this example, `raggedArray` is a 2-dimensional ragged array. The first row has 3 elements, the second row has 2 elements, and the third row has 4 elements. This is a valid ragged array because each row can have a different number of columns.
 
-## 8) Write a java program that creates and initialises a four integer element array. Calculate and display the average of its values.
+## <mark> 8) Write a java program that creates and initialises a four integer element array. Calculate and display the average of its values. </mark>
 
 Here is the Java program:
 
@@ -202,7 +202,7 @@ public class Main {
 
 In this program, we first create and initialize an array of four integer elements. We then calculate the sum of the array elements using a for-each loop. Finally, we calculate the average by dividing the sum by the length of the array and display the result.
 
-## 9) Declare a class called employee having employee_id and employee_name as members. Extend class employees to have a subclass called salary having designation and monthly_salary as members.
+## <mark> 9) Declare a class called employee having employee_id and employee_name as members. Extend class employees to have a subclass called salary having designation and monthly_salary as members. </mark>
 
 Define following:
 
@@ -264,7 +264,7 @@ public class Main {
 
 In this code, we have an `Employee` class with `employee_id` and `employee_name` as members. The `Salary` class extends `Employee` and adds `designation` and `monthly_salary` as members. The `Salary` class also has a `displayDetails` method that displays the details of employees with a salary more than Rs. 20000/-. Finally, in the `main` method, we create an array of `Salary` objects and call the `displayDetails` method on each of them.
 
-## 10) Differentiate String class and StringBuffer class with explanation of its methods.
+## <mark> 10) Differentiate String class and StringBuffer class with explanation of its methods. </mark>
 
 | Aspect        | `String`                                                                                                                              | `StringBuffer`                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -283,7 +283,7 @@ In this code, we have an `Employee` class with `employee_id` and `employee_name`
 
 In summary, both `String` and `StringBuffer` classes have their own uses in Java programming. `String` is ideal for string literals and fixed strings, while `StringBuffer` is more suited for dynamic strings where modification operations are frequently performed.
 
-## 11) Differentiate StringBuilder class and StringBuffer class with explanation of its methods.
+## <mark> 11) Differentiate StringBuilder class and StringBuffer class with explanation of its methods. </mark>
 
 | Aspect        | StringBuilder                                                                                     | StringBuffer                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -302,7 +302,7 @@ In summary, both `String` and `StringBuffer` classes have their own uses in Java
 
 In summary, both `StringBuilder` and `StringBuffer` classes are used for creating mutable strings. However, `StringBuilder` is generally preferred over `StringBuffer` for single-threaded applications, as it is faster due to the lack of synchronization.
 
-## 12) What is a Wrapper class in Java? Explain with examples.
+## <mark> 12) What is a Wrapper class in Java? Explain with examples. </mark>
 
 A wrapper class in Java is a class that encapsulates (or "wraps") primitive data types so that they can be used as objects. Java provides a wrapper class for each of the eight primitive data types. These are Integer, Character, Double, Float, Byte, Short, Long, and Boolean.
 
@@ -321,7 +321,7 @@ System.out.println("Primitive int value: " + primitiveInt); // prints "Primitive
 
 In this example, we first create an `Integer` object from an `int` value using the `Integer.valueOf()` method. We then convert the `Integer` object back to an `int` value using the `Integer.intValue()` method.
 
-## 13) There is no destructor in Java. Justify.
+## <mark> 13) There is no destructor in Java. Justify. </mark>
 
 In Java, the concept of destructors, as known in languages such as C++ and others, does not exist. This is primarily because Java has an in-built garbage collector which handles the task of memory management.
 
@@ -335,7 +335,7 @@ Java does provide a mechanism that resembles destructors - the `finalize()` meth
 
 In conclusion, Java's automated garbage collection and the lack of explicit pointer manipulation eliminates the need for destructors in the language. This design choice simplifies memory management and helps avoid common errors such as memory leaks and dangling pointers that are often encountered in languages where developers have to manually manage memory.
 
-## 14) Differentiate POP and OOP.
+## <mark> 14) Differentiate POP and OOP. </mark>
 
 | Aspect               | Procedure Oriented Programming (POP)                                                   | Object Oriented Programming (OOP)                                                                                                                    |
 | -------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -346,7 +346,7 @@ In conclusion, Java's automated garbage collection and the lack of explicit poin
 | Data Security        | In POP, data is exposed to the whole program, which can lead to unauthorized access.   | In OOP, data hiding is possible, making it more secure.                                                                                              |
 | Examples             | Examples of POP languages include C, FORTRAN, and COBOL.                               | Examples of OOP languages include Java, C++, and Python.                                                                                             |
 
-## 15) State whether any error exists in the following code. If so, correct the error and give output.
+## <mark> 15) State whether any error exists in the following code. If so, correct the error and give output. </mark>
 
 class Test {
 public static void main(String args[]) {
@@ -395,7 +395,7 @@ Hello, World!
 
 ```
 
-## 16) Write a java program to do the sum of command line arguments passed two Double numbers.
+## <mark> 16) Write a java program to do the sum of command line arguments passed two Double numbers. </mark>
 
 ```java
 public class Main {
@@ -422,7 +422,7 @@ public class Main {
 
 This Java program takes two command line arguments, converts them to double values, sums them, and then prints the result. If less than two arguments are provided, or if the arguments cannot be converted to double values, an error message is printed.
 
-## 17) Discuss public, private, protected and default access modifiers with examples. OR What is a visibility modifier? Explain all with examples.
+## <mark> 17) Discuss public, private, protected and default access modifiers with examples. OR What is a visibility modifier? Explain all with examples. </mark>
 
 In Java, access modifiers are keywords that set the access levels for classes, variables, methods, and constructors. They are used to restrict the scope of variables, methods, classes, and constructors. There are four types of access modifiers in Java:
 
@@ -480,7 +480,7 @@ In this example, both the class `MyDefaultClass` and the method `myDefaultMethod
 
 In conclusion, access modifiers are an important part of Java because they manage the visibility of class, interface, variables, methods, and constructors. By using them properly, we can ensure proper encapsulation in our code.
 
-## 18) Explain recursion in java with example.
+## <mark> 18) Explain recursion in java with example. </mark>
 
 Recursion in Java is a process where a method calls itself continuously. A method in Java that calls itself is called a recursive method. It makes the code compact but complex to understand. The basic idea is to divide the problem into smaller sub-problems until it becomes simple enough to be solved directly.
 
@@ -508,7 +508,7 @@ In this example, the `factorial` method calls itself to find the factorial of a 
 
 Please note, it's crucial to have a base case in recursive methods to prevent them from calling themselves infinitely, which would result in a `StackOverflowError`.
 
-## 19) Define Inner class. List and explain nested class with example.
+## <mark> 19) Define Inner class. List and explain nested class with example. </mark>
 
 An Inner class, or nested class, is a class defined within another class in Java. Nested classes are divided into two types: static and non-static. Non-static nested classes are also known as inner classes.
 

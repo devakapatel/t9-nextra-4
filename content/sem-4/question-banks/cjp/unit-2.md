@@ -1,6 +1,6 @@
 # Unit 2
 
-## 1) Differentiate abstract class and interface with example.
+## <mark> 1) Differentiate abstract class and interface with example. </mark>
 
 Both abstract classes and interfaces are used to declare methods in Java that are then implemented by other classes. However, they are used in different scenarios and have different characteristics:
 
@@ -42,7 +42,7 @@ class Cat implements AnimalInterface {
 
 ```
 
-## 2) Explain inheritance and its types with Example.
+## <mark> 2) Explain inheritance and its types with Example. </mark>
 
 Inheritance in Java is a mechanism where a new class is derived from an existing class. In Java, classes are used to create objects (specific data structures), and methods are used to perform actions. The new class, known as the derived class, inherits attributes and behavior from the pre-existing class, which is known as the base class or superclass. Inheritance is essential in object-oriented programming because it promotes code reuse and is a way to model relationships between your classes.
 
@@ -134,13 +134,13 @@ class Dog implements Animal, Mammal {
 
 In this example, the `Dog` class is implementing `Animal` and `Mammal` interfaces. Therefore, a `Dog` object can invoke `eat` and `giveBirth` methods.
 
-## 3) Why multiple inheritance is not supported in java.
+## <mark> 3) Why multiple inheritance is not supported in java. </mark>
 
 Multiple inheritance is not supported in Java to avoid the "diamond problem". The "diamond problem" is an ambiguity that arises when a class has two superclasses that have a common superclass, and all three superclasses have a method with the same name. It's unclear which superclass method the subclass would inherit in this case. By disallowing multiple inheritance, Java avoids this issue altogether.
 
 However, Java does support multiple inheritance of types. This means a class can implement multiple interfaces, which can contain default methods. If the interfaces contain methods with the same name, the implementing class or interface must override the method. This provides a clear and specific implementation for the method, circumventing the "diamond problem".
 
-## 4) What is package? Explain type of packages.
+## <mark> 4) What is package? Explain type of packages. </mark>
 
 A package in Java is a namespace that organizes a set of related classes and interfaces. Conceptually, you can think of packages as being similar to different folders on your computer. You might keep HTML pages in one folder, images in another, and scripts or applications in yet another. Because software written in the Java programming language can be composed of hundreds or thousands of individual classes, it makes sense to keep things organized by placing related classes and interfaces into packages.
 
@@ -167,7 +167,7 @@ public class MyClass {
 
 In the above code, `mypackage` is the package we've defined, and `MyClass` is a class under that package.
 
-## 5) Explain ways to import packages with examples.
+## <mark> 5) Explain ways to import packages with examples. </mark>
 
 There are two ways to import packages in Java - using the wildcard (\*) character and specifying the full class name.
 
@@ -191,7 +191,7 @@ In this example, only the `ArrayList` class can be used from the `java.util` pac
 
 Remember, even though using the wildcard (\*) character to import all classes and interfaces might seem convenient, it is generally recommended to import only the necessary classes or interfaces to keep the namespace clean and avoid name conflicts.
 
-## 6) Explain method overriding with example.
+## <mark> 6) Explain method overriding with example. </mark>
 
 Method overriding in Java occurs when a subclass provides a specific implementation of a method that is already provided by its parent class. It is used for runtime polymorphism and to provide the specific implementation of the method.
 
@@ -221,7 +221,7 @@ class Dog extends Animal {
 
 In this example, the `Dog` class overrides the `eat` method of the `Animal` class. So, when you create a `Dog` object and call the `eat` method, it will print "eating bread...", which is the implementation of the `eat` method in the `Dog` class.
 
-## 7) Differentiate Method Overloading and Method Overriding with examples.
+## <mark> 7) Differentiate Method Overloading and Method Overriding with examples. </mark>
 
 Both method overloading and method overriding are techniques used in Java to implement methods with the same name, but they serve different purposes and have different rules.
 
@@ -274,7 +274,7 @@ class Dog extends Animal {
 
 In summary, method overloading deals with multiple methods in the same class with the same name but different parameters, whereas method overriding deals with two methods, one in the parent class and the other in the subclass, that have the same name, return type, and parameters.
 
-## 8) Explain super keywords.
+## <mark> 8) Explain super keywords. </mark>
 
 The `super` keyword in Java is a reference variable that is used to refer to the immediate parent class object. It can be used in three scenarios:
 
@@ -340,7 +340,7 @@ class Child extends Parent {
 
 In the above example, `super()` is used in the `Child` class constructor to call the constructor of the `Parent` class. This will print "Parent Constructor" before printing "Child Constructor".
 
-## 9) Explain Final keywords.
+## <mark> 9) Explain Final keywords. </mark>
 
 The `final` keyword in Java is used to restrict the user. The `final` keyword can be used in various contexts:
 
@@ -384,7 +384,7 @@ class Child extends MyFinalClass { // This will give an error because you can't 
 
 In summary, the `final` keyword provides a way to create constants in Java (final variables), prevent method overriding (final methods), and prevent inheritance (final classes).
 
-## 10) Explain Dynamic method dispatch or runtime polymorphism.
+## <mark> 10) Explain Dynamic method dispatch or runtime polymorphism. </mark>
 
 Dynamic method dispatch, also known as runtime polymorphism, is a process used in object-oriented programming that allows the identification of the method to be called at runtime rather than at compile-time. In Java, this is achieved through method overriding and interface methods.
 
@@ -416,7 +416,7 @@ public class Main {
 
 In this example, the `eat` method of the `Dog` class is called despite the reference being of type `Animal`. This is because the actual object being referred to is of the `Dog` class. This decision is made at runtime, hence the term 'runtime polymorphism'.
 
-## 11) Explain instanceof operator.
+## <mark> 11) Explain instanceof operator. </mark>
 
 The `instanceof` operator in Java is used to test whether an object is an instance of a specific class or an interface. It is a binary operator used to test the type of an object during runtime. The `instanceof` operator is used for type checking and also for downcasting. If we apply `instanceof` operator with any variable that has a `null` value, it returns `false`.
 
@@ -446,7 +446,7 @@ public class Main {
 
 In this example, the `instanceof` operator is used to check if `d`, which is an instance of `Dog`, is also an instance of `Animal`. Since `Dog` is a subclass of `Animal`, the operator returns `true`.
 
-## 12) Explain single level and multiple inheritances in java. Write a program to demonstrate a combination of both types of inheritance as shown in figure.
+## <mark> 12) Explain single level and multiple inheritances in java. Write a program to demonstrate a combination of both types of inheritance as shown in figure. </mark>
 
 ![2-11.png](./2-11.png)
 
@@ -518,7 +518,7 @@ class Child extends Parent2 implements Parent1 {
 
 In this example, `Child` class extends the `Parent2` class and implements `Parent1` interface. Therefore, a `Child` object can invoke `parent1Method` and `parent2Method` methods. This example corresponds to the inheritance diagram provided in the question.
 
-## 13) What is error? Explain various types of errors. How can we handle run time errors in java.
+## <mark> 13) What is error? Explain various types of errors. How can we handle run time errors in java. </mark>
 
 An error in Java is a serious problem that is not expected to be caught under normal circumstances. It is usually caught during runtime and indicates that something severely went wrong, such as system malfunction.
 
@@ -556,7 +556,7 @@ public class Main {
 
 In this example, attempting to access an array element out of bounds throws an `ArrayIndexOutOfBoundsException`. The exception is caught and handled by the catch block, and the program continues to run without crashing.
 
-## 14) Explain the importance of Exception handling in java. Write a program to handle ArithmeticException, ArrayIndexOutofBoundsException using try-catch-finally and throw.
+## <mark> 14) Explain the importance of Exception handling in java. Write a program to handle ArithmeticException, ArrayIndexOutofBoundsException using try-catch-finally and throw. </mark>
 
 Exception handling is a powerful mechanism in Java that is used to handle runtime errors so that the normal flow of the program can be maintained. It is mainly used for handling checked exceptions (known exceptions that occur during compile-time), however, it can also be used for handling unchecked exceptions (exceptions that occur during runtime).
 
@@ -596,7 +596,7 @@ public class Main {
 
 In this program, we are purposely causing an `ArithmeticException` and an `ArrayIndexOutOfBoundsException`. When these exceptions occur, they are caught and handled by corresponding catch blocks, and a meaningful message is printed to the user. The finally block is executed after the try and catch blocks regardless of whether an exception was thrown and handled or not.
 
-## 15) What is Is-A relationship in Java?
+## <mark> 15) What is Is-A relationship in Java? </mark>
 
 The "Is-A" relationship in Java is a way of saying that one object is a type of another and is established through the inheritance mechanism. In other words, "Is-A" represents the parent-child relationship between classes. If we have a class `Child` that extends a class `Parent`, we can say that `Child` "Is-A" `Parent`.
 
@@ -627,11 +627,11 @@ public class Main {
 
 In this example, `Dog` extends `Animal`, so it inherits the `eat` method from `Animal`. This means that `Dog` "Is-A" `Animal`. The `Dog` class also has its own method `bark`. The "Is-A" relationship means that a `Dog` object can do anything that an `Animal` object can do, but not necessarily the other way around.
 
-## 16) Are constructor and instance initialization block inherited to subclass?
+## <mark> 16) Are constructor and instance initialization block inherited to subclass? </mark>
 
 No, constructors and instance initialization blocks are not inherited by subclasses in Java. While a subclass can call a constructor of the superclass using the `super` keyword, it does not inherit the constructor itself. Similarly, instance initialization blocks are not inherited. Each class (both superclass and subclass) has its own instance initialization block.
 
-## 17) Are static members inherited to subclass in Java?
+## <mark> 17) Are static members inherited to subclass in Java? </mark>
 
 No, static members are not inherited to subclasses in Java. When a subclass is created, it does not inherit the static members (variables or methods) of its superclass. Static members belong to the class itself rather than instances of the class, so they are not part of the inheritance hierarchy. Each class, including the superclass and subclass, has its own copy of static members.
 
@@ -660,7 +660,7 @@ public class Main {
 
 In this example, `SubClass` does not define its own `staticVar` or `staticMethod`, but it can still access and use them as if they were inherited. However, this is because the static members are accessible through the class itself (`SubClass.staticVar` and `SubClass.staticMethod()`), not because they are inherited from `SuperClass`.
 
-## 18) Will the code successfully compiled? If yes, what is the output?
+## <mark> 18) Will the code successfully compiled? If yes, what is the output? </mark>
 
 public class A {
 int x = 20;
@@ -691,7 +691,7 @@ Yes, the code will compile successfully. However, the output will be:
 
 In the `Test` class, when `b.x` is called, it prints `30` because `b` is an instance of class `B` and `x` in `B` has a value of `30`. When `a.x` is called, it prints `20` because `a` is an instance of class `A` and `x` in `A` has a value of `20`. Finally, when `a2.x` is called, it prints `20` because `a2` is also an instance of class `A` (even though it was initialized as an instance of class `B`) and `x` in `A` has a value of `20`.
 
-## 19) Will this code run successfully? If yes, what will be the output?
+## <mark> 19) Will this code run successfully? If yes, what will be the output? </mark>
 
 public class A
 {
@@ -724,7 +724,7 @@ Explanation:
 - In the `Test` class, an instance of `B` is created and assigned to a variable of type `A`.
 - When `m1` is called on the `A` reference `a`, it prints the value of `x`, which is `50`. Even though `x` is private in `A`, it can still be accessed within `A`'s methods.
 
-## 20) Can I import same package/class twice? Will the JVM load the package twice at runtime?
+## <mark> 20) Can I import same package/class twice? Will the JVM load the package twice at runtime? </mark>
 
 Yes, you can import the same package or class multiple times in Java without any issues. The compiler will not complain about duplicate imports, and the JVM will not load the package or class multiple times at runtime.
 

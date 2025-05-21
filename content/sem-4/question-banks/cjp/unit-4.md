@@ -1,6 +1,6 @@
 # Unit 4
 
-## 1) Draw and explain the life cycle of thread. Also list and explain various methods of thread.
+## <mark> 1) Draw and explain the life cycle of thread. Also list and explain various methods of thread. </mark>
 
 ![4-1.png](./4-1.png)
 
@@ -77,7 +77,7 @@ public class MyThread extends Thread {
 
 In this example, the thread goes through the life cycle stages and uses various methods like `start()`, `sleep()`, `join()`, and `isAlive()` to demonstrate the thread's behavior and state transitions.
 
-## 2) What is multitasking? And how to achieve it?
+## <mark> 2) What is multitasking? And how to achieve it? </mark>
 
 ### Multitasking in Computing
 
@@ -137,7 +137,7 @@ public class MyRunnable implements Runnable {
 
 By creating and running multiple threads, Java allows you to achieve multitasking, where different parts of a program can execute concurrently, improving performance and responsiveness.
 
-## 3) What is Multithreading and Multiprocessing with examples? Write a program to create two threads with thread class and runnable interface.
+## <mark> 3) What is Multithreading and Multiprocessing with examples? Write a program to create two threads with thread class and runnable interface. </mark>
 
 ### Multithreading vs. Multiprocessing
 
@@ -203,7 +203,7 @@ When you run this program, it will create two threads and execute their `run()` 
 
 By using threads, you can achieve multitasking in Java, allowing different parts of your program to run simultaneously and improve performance and responsiveness.
 
-## 4) What do you mean by Generic Method in Java? Explain Generic class constructors with an example program.
+## <mark> 4) What do you mean by Generic Method in Java? Explain Generic class constructors with an example program. </mark>
 
 ### Generic Method in Java
 
@@ -270,7 +270,7 @@ In this example:
 
 By using generic methods and generic class constructors in Java, you can create flexible and reusable code that can work with different data types while maintaining type safety.
 
-## 5) What is Generics? Explain wildcards with examples.
+## <mark> 5) What is Generics? Explain wildcards with examples. </mark>
 
 ### Generics in Java
 
@@ -342,7 +342,7 @@ In this example:
 
 Wildcards provide flexibility when working with generic types, allowing you to write code that can handle different types of collections without needing to know the exact type in advance.
 
-## 6) Explain Applet initialization and termination with example.
+## <mark> 6) Explain Applet initialization and termination with example. </mark>
 
 ### Applet Initialization and Termination in Java
 
@@ -401,7 +401,7 @@ In this example:
 
 By implementing these methods in your applet, you can control the initialization and termination behavior of the applet, allowing you to perform setup tasks when the applet is loaded and clean-up tasks when the applet is closed or removed.
 
-## 7) What is priority in thread? Explain Thread Priority with an example.
+## <mark> 7) What is priority in thread? Explain Thread Priority with an example. </mark>
 
 ### Thread Priority in Java
 
@@ -443,7 +443,7 @@ In this example:
 
 By setting thread priorities, you can influence the order in which threads are executed by the scheduler. However, thread priorities are only hints to the scheduler and do not guarantee the exact order of execution. It is important to use thread priorities judiciously and avoid relying heavily on them for critical application logic.
 
-## 8) Explain applet life cycle with proper diagram.
+## <mark> 8) Explain applet life cycle with proper diagram. </mark>
 
 ![4-8.png](./4-8.png)
 
@@ -498,7 +498,7 @@ Finally, when the applet is about to be destroyed, the `destroy()` method is cal
 
 By understanding the applet life cycle and implementing the appropriate methods, you can control the behavior of your applet at different stages of its execution and ensure that it functions correctly within the web browser or applet viewer.
 
-## 9) Write a program to create a thread by implementing Runnable Interface.
+## <mark> 9) Write a program to create a thread by implementing Runnable Interface. </mark>
 
 Here's an example program that demonstrates creating a thread by implementing the `Runnable` interface in Java:
 
@@ -537,7 +537,7 @@ By implementing the `Runnable` interface, you can create a class that represents
 
 The `Runnable` interface is preferred over extending the `Thread` class directly because it allows your class to extend other classes if needed, as Java does not support multiple inheritance for classes.
 
-## 10) Explain: wait, sleep with example. OR Compare the methods of wait and sleep.
+## <mark> 10) Explain: wait, sleep with example. OR Compare the methods of wait and sleep. </mark>
 
 ### Comparison of `wait()` and `sleep()` Methods in Java
 
@@ -611,7 +611,7 @@ The key differences are:
 
 In summary, `wait()` is used for inter-thread communication and synchronization, while `sleep()` is used for pausing the execution of a thread for a specified amount of time.
 
-## 11) Explain synchronization in thread with example.
+## <mark> 11) Explain synchronization in thread with example. </mark>
 
 ### Synchronization in Java Threads
 
@@ -669,7 +669,7 @@ Synchronization in Java can be achieved using the `synchronized` keyword on meth
 
 By using synchronization, you can avoid issues like data corruption, race conditions, and inconsistent state in multi-threaded applications, making your code thread-safe and reliable.
 
-## 12) Explain the problem occurs in thread without synchronization.
+## <mark> 12) Explain the problem occurs in thread without synchronization. </mark>
 
 ### Problem of Thread Interference without Synchronization
 
@@ -736,7 +736,7 @@ In this example:
 
 To avoid these problems, it is essential to use synchronization mechanisms such as `synchronized` blocks or methods to control access to shared resources and critical sections of code in multi-threaded applications. Synchronization ensures thread safety, prevents data corruption, and maintains consistency in shared data access.
 
-## 13) Explain Thread communication.
+## <mark> 13) Explain Thread communication. </mark>
 
 ### Thread Communication in Java
 
@@ -826,7 +826,7 @@ In this example:
 
 By using thread communication mechanisms, you can coordinate the actions of multiple threads in a multi-threaded application, ensuring that they work together efficiently and safely.
 
-## 14) Explain Deadlock.
+## <mark> 14) Explain Deadlock. </mark>
 
 ### Deadlock in Multithreading
 
@@ -903,7 +903,7 @@ To prevent deadlock, you can follow strategies like:
 
 By understanding the causes of deadlock and implementing proper synchronization strategies, you can minimize the risk of deadlock in multithreaded applications and ensure smooth and efficient execution of threads.
 
-## 15) Differentiate Thread class and Runnable interface.
+## <mark> 15) Differentiate Thread class and Runnable interface. </mark>
 
 ### Difference Between Thread Class and Runnable Interface in Java
 
@@ -960,7 +960,7 @@ public class MyRunnable implements Runnable {
 
 In summary, using the `Runnable` interface is generally preferred over extending the `Thread` class as it promotes better code design, flexibility, and code reusability in multithreaded applications.
 
-## 16) What is the difference between an Applet and a Java Application ?
+## <mark> 16) What is the difference between an Applet and a Java Application ? </mark>
 
 ### Difference Between an Applet and a Java Application
 
@@ -988,7 +988,7 @@ In summary, using the `Runnable` interface is generally preferred over extending
 
 In summary, applets are designed for web-based interactive content, while Java applications are standalone programs that run on the local machine. Each has its own deployment, security, and user interaction characteristics, making them suitable for different types of applications.
 
-## 17) What are the ways to resize an Applet?
+## <mark> 17) What are the ways to resize an Applet? </mark>
 
 There are two main ways to resize an applet in Java:
 
@@ -1031,7 +1031,7 @@ Additionally, it's recommended to use the `setSize()` method over the `resize()`
 
 Keep in mind that the actual size of the applet may be affected by the web browser's layout and the HTML code embedding the applet. The applet's size can be further adjusted using HTML attributes or CSS styles.
 
-## 18) What is the role of the destroy () method in an Applet?
+## <mark> 18) What is the role of the destroy () method in an Applet? </mark>
 
 ### Role of the `destroy()` Method in an Applet
 
@@ -1081,7 +1081,7 @@ In this example:
 
 By implementing the `destroy()` method in an applet, you can ensure that resources are properly released and cleanup tasks are performed before the applet is removed from memory, promoting efficient memory management and proper shutdown of the applet.
 
-## 19) What are signed Applets and unsigned Applets?
+## <mark> 19) What are signed Applets and unsigned Applets? </mark>
 
 ### Signed Applets and Unsigned Applets in Java
 
@@ -1118,7 +1118,7 @@ By implementing the `destroy()` method in an applet, you can ensure that resourc
 
 In summary, the distinction between **Signed Applets** and **Unsigned Applets** lies in their security permissions, deployment requirements, and access to system resources. Signed applets provide more flexibility and capabilities, while unsigned applets operate within the secure confines of the sandbox to prevent potential security risks.
 
-## 20) How can you pass parameters to Applets?
+## <mark> 20) How can you pass parameters to Applets? </mark>
 
 There are two main ways to pass parameters to applets in Java:
 
