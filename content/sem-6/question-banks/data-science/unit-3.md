@@ -2,7 +2,7 @@
 
 ## <mark> 1) What is Machine Learning?Explain the Modeling Process in Machine Learning. What are its key steps? </mark>
 
-### **1. What is Machine Learning?**
+### 1. What is Machine Learning?
 
 **Machine Learning (ML)** is a branch of artificial intelligence (AI) that enables computers to **learn from data** and make predictions or decisions **without explicit programming**. It uses algorithms to identify patterns and improve performance over time.
 
@@ -12,71 +12,71 @@
 - **Unsupervised Learning** → Works with unlabeled data (e.g., Customer segmentation, Anomaly detection).
 - **Reinforcement Learning** → Learns by rewards and penalties (e.g., Robotics, Game playing).
 
-### **2. The Machine Learning Modeling Process**
+### 2. The Machine Learning Modeling Process
 
 The **ML modeling process** involves key steps that guide the development of an effective predictive model.
 
-### **Key Steps in the Machine Learning Modeling Process**
+### Key Steps in the Machine Learning Modeling Process
 
-#### **Step 1: Problem Definition**
+#### Step 1: Problem Definition
 
 - Identify the **business objective** or problem to be solved.
 - Example: Predicting customer churn in a telecom company.
 
-#### **Step 2: Data Collection**
+#### Step 2: Data Collection
 
 - Gather relevant **structured** (e.g., databases, spreadsheets) and **unstructured** (e.g., text, images) data.
 - Sources: Databases, APIs, Web scraping.
 
-#### **Step 3: Data Preprocessing**
+#### Step 3: Data Preprocessing
 
 - **Handling missing values** → Fill or remove missing data.
 - **Removing duplicates** → Clean redundant records.
 - **Feature selection** → Choose relevant variables.
 - **Feature scaling** → Normalize/standardize data for consistency.
 
-#### **Step 4: Exploratory Data Analysis (EDA)**
+#### Step 4: Exploratory Data Analysis (EDA)
 
 - **Visualize** the data using graphs, histograms, and scatter plots.
 - **Check data distribution** and identify outliers or patterns.
 
-#### **Step 5: Model Selection**
+#### Step 5: Model Selection
 
 - Choose an appropriate ML algorithm:
   - **Regression** → Predict continuous values (e.g., House prices).
   - **Classification** → Predict categories (e.g., Spam vs. Non-spam).
   - **Clustering** → Group similar data points (e.g., Customer Segmentation).
 
-#### **Step 6: Model Training**
+#### Step 6: Model Training
 
 - **Split the dataset** into **Training Set** (for learning) and **Test Set** (for evaluation).
 - Train the model using **training data**.
 
-#### **Step 7: Model Evaluation**
+#### Step 7: Model Evaluation
 
 - Test model performance using metrics:
   - **Accuracy, Precision, Recall, F1-score** for classification.
   - **Mean Squared Error (MSE), R²-score** for regression.
 - Perform **cross-validation** to ensure generalization.
 
-#### **Step 8: Hyperparameter Tuning**
+#### Step 8: Hyperparameter Tuning
 
 - Optimize model parameters using techniques like:
   - **Grid Search** → Testing multiple parameter combinations.
   - **Random Search** → Selecting random parameters.
   - **Bayesian Optimization** → More efficient parameter search.
 
-#### **Step 9: Model Deployment**
+#### Step 9: Model Deployment
 
 - Deploy the trained model in a real-world environment using:
   - **APIs, Cloud Services, or Edge Devices**.
 
-#### **Step 10: Model Monitoring & Maintenance**
+#### Step 10: Model Monitoring & Maintenance
 
 - Continuously monitor model performance.
 - Update the model if accuracy drops (due to data drift).
 
-### **3. Summary of Key Steps in Machine Learning**
+### 3. Summary of Key Steps in Machine Learning
 
 | **Step**                               | **Description**                        |
 | -------------------------------------- | -------------------------------------- |
@@ -91,35 +91,35 @@ The **ML modeling process** involves key steps that guide the development of an 
 | **9. Model Deployment**                | Deploy the model for real use.         |
 | **10. Monitoring & Maintenance**       | Continuously track model performance.  |
 
-### **4. Conclusion**
+### 4. Conclusion
 
 The **Machine Learning modeling process** follows a systematic approach: from defining the problem, preparing data, selecting and training models, and deploying them in real-world applications. It is an **iterative process**, as models often require fine-tuning and continuous improvement over time.
 
 ## <mark> 2) Explain the following key terminologies in Machine Learning: Features, Target, Training Data, Testing Data, Overfitting, and Underfitting. </mark>
 
-### **Key Terminologies in Machine Learning**
+### Key Terminologies in Machine Learning
 
-#### **1. Features**
+#### 1. Features
 
 - **Definition:** Features are the **input variables** used to train a machine learning model. They represent different characteristics of the data.
 - **Example:** In a house price prediction model, features could be **size (sq. ft.), number of bedrooms, location, and age of the house**.
 
-#### **2. Target (Label)**
+#### 2. Target (Label)
 
 - **Definition:** The target (or label) is the **output variable** the model aims to predict.
 - **Example:** In a house price prediction model, the target is the **house price**.
 
-#### **3. Training Data**
+#### 3. Training Data
 
 - **Definition:** The dataset used to train the machine learning model. It contains both **features (inputs)** and **target (outputs)** so that the model can learn patterns.
 - **Example:** If we have **1,000 houses**, we might use **800 houses** for training.
 
-#### **4. Testing Data**
+#### 4. Testing Data
 
 - **Definition:** A separate dataset used to evaluate the trained model’s performance. It contains features but is not seen by the model during training.
 - **Example:** The remaining **200 houses** from our dataset will be used for testing.
 
-#### **5. Overfitting**
+#### 5. Overfitting
 
 - **Definition:** When a model learns **too much from training data**, capturing **noise and unnecessary details**, making it perform poorly on unseen data.
 - **Cause:** Too complex models, too many features, or small training data.
@@ -127,7 +127,7 @@ The **Machine Learning modeling process** follows a systematic approach: from de
 
 ✅ **Solution:** Use **regularization, more training data, and simpler models**.
 
-#### **6. Underfitting**
+#### 6. Underfitting
 
 - **Definition:** When a model is **too simple** and fails to learn patterns, leading to **poor performance on both training and testing data**.
 - **Cause:** Not enough training, choosing a model that is too simple, or missing key features.
@@ -135,7 +135,7 @@ The **Machine Learning modeling process** follows a systematic approach: from de
 
 ✅ **Solution:** Use a **more complex model, feature engineering, and longer training**.
 
-### **Summary Table**
+### Summary Table
 
 | **Term**          | **Definition**                                                     |
 | ----------------- | ------------------------------------------------------------------ |
@@ -150,11 +150,11 @@ By understanding these concepts, we can **improve model performance and generali
 
 ## <mark> 3) What are the four main phases in the machine learning modeling process? </mark>
 
-### **Four Main Phases in the Machine Learning Modeling Process**
+### Four Main Phases in the Machine Learning Modeling Process
 
 The **Machine Learning Modeling Process** consists of **four key phases**, which guide the development of an effective model.
 
-### **1. Data Preparation Phase**
+### 1. Data Preparation Phase
 
 ✅ **Goal:** Collect, clean, and preprocess data to ensure it is ready for modeling.
 
@@ -167,7 +167,7 @@ The **Machine Learning Modeling Process** consists of **four key phases**, which
 
 📌 **Example:** Preparing customer purchase data for a recommendation system.
 
-### **2. Model Training Phase**
+### 2. Model Training Phase
 
 ✅ **Goal:** Select and train the best machine learning model.
 
@@ -179,7 +179,7 @@ The **Machine Learning Modeling Process** consists of **four key phases**, which
 
 📌 **Example:** Training a fraud detection model on past transactions.
 
-### **3. Model Evaluation Phase**
+### 3. Model Evaluation Phase
 
 ✅ **Goal:** Assess the model’s performance on unseen data.
 
@@ -193,7 +193,7 @@ The **Machine Learning Modeling Process** consists of **four key phases**, which
 
 📌 **Example:** Testing a spam detection model with real emails.
 
-### **4. Model Deployment & Monitoring Phase**
+### 4. Model Deployment & Monitoring Phase
 
 ✅ **Goal:** Deploy the trained model for real-world use and monitor its performance.
 
@@ -205,7 +205,7 @@ The **Machine Learning Modeling Process** consists of **four key phases**, which
 
 📌 **Example:** Deploying a chatbot for customer support.
 
-### **Summary Table**
+### Summary Table
 
 | **Phase**                      | **Key Steps**                                       | **Example**                                          |
 | ------------------------------ | --------------------------------------------------- | ---------------------------------------------------- |
@@ -214,24 +214,24 @@ The **Machine Learning Modeling Process** consists of **four key phases**, which
 | **3. Model Evaluation**        | Test on new data, measure accuracy, cross-validate. | Checking a spam filter’s accuracy.                   |
 | **4. Deployment & Monitoring** | Deploy, track, and update models.                   | Deploying a self-driving car model.                  |
 
-### **Final Thoughts**
+### Final Thoughts
 
 These **four phases** ensure a **structured** and **efficient** approach to building machine learning models, leading to better performance and real-world applicability. 🚀
 
 ## <mark> 4) What is the role of feature engineering in Machine Learning? </mark>
 
-### **Role of Feature Engineering in Machine Learning**
+### Role of Feature Engineering in Machine Learning
 
 ✅ **Feature Engineering** is the process of **creating, transforming, or selecting relevant features** from raw data to improve a machine learning model’s performance. It plays a **critical role** in making the model more accurate and efficient.
 
-### **Why is Feature Engineering Important?**
+### Why is Feature Engineering Important?
 
 - **Improves Model Accuracy** → Better features help the model make better predictions.
 - **Reduces Overfitting** → Removing irrelevant features prevents memorization.
 - **Handles Data Complexity** → Converts raw data into a meaningful format.
 - **Boosts Model Efficiency** → Reduces computational cost by keeping only useful features.
 
-### **Key Feature Engineering Techniques**
+### Key Feature Engineering Techniques
 
 1️⃣ **Feature Creation**
 
@@ -258,7 +258,7 @@ These **four phases** ensure a **structured** and **efficient** approach to buil
   - 📌 _Example:_ Convert **City = {New York, Paris, Tokyo}** into binary columns.
 - **Label Encoding:** Assigns a unique number to each category.
 
-### **Impact of Feature Engineering on Model Performance**
+### Impact of Feature Engineering on Model Performance
 
 🚀 **Good Features → Simpler & More Accurate Model**  
 📉 **Poor Features → Overfitting, Underfitting & Low Accuracy**
@@ -269,17 +269,17 @@ These **four phases** ensure a **structured** and **efficient** approach to buil
 | Features: Area, Location | Features: Area, Location, Price/Sq. Ft., Age, No. of Rooms |
 | Poor accuracy | Better predictions |
 
-### **Conclusion**
+### Conclusion
 
 Feature Engineering is a **crucial step** in machine learning that **directly impacts model accuracy and efficiency**. Well-engineered features can make **simple models perform better** than complex ones trained on raw data! 🚀
 
 ## <mark> 5) What is the role of model training in machine learning? What is its significance? </mark>
 
-### **Role of Model Training in Machine Learning**
+### Role of Model Training in Machine Learning
 
 ✅ **Model training** is the process where a machine learning algorithm **learns patterns** from data by adjusting its parameters to make accurate predictions. This phase is crucial in building an effective model that can generalize well to unseen data.
 
-### **Key Steps in Model Training**
+### Key Steps in Model Training
 
 1️⃣ **Select a Machine Learning Algorithm**
 
@@ -301,7 +301,7 @@ Feature Engineering is a **crucial step** in machine learning that **directly im
 - Split data into **training and validation sets** to check if the model is learning correctly.
 - Example: If the model overfits, regularization techniques like **Lasso, Ridge Regression** are applied.
 
-### **Significance of Model Training in ML**
+### Significance of Model Training in ML
 
 ✅ **Improves Accuracy** → Trained models make better predictions.  
 ✅ **Enables Generalization** → Learns underlying patterns, not just memorization.  
@@ -310,19 +310,19 @@ Feature Engineering is a **crucial step** in machine learning that **directly im
 
 📌 **Example:** Training a **speech recognition model** helps it learn voice patterns, enabling virtual assistants like **Alexa or Siri** to understand commands.
 
-### **Final Thoughts**
+### Final Thoughts
 
 Model training is the **core of machine learning**, enabling models to **learn from data, improve over time, and make accurate decisions** in real-world scenarios. 🚀
 
 ## <mark> 6) What is model selection and validation, and why is it important in machine learning? How is model scoring used to assess the effectiveness of a machine learning model? </mark>
 
-### **Model Selection and Validation in Machine Learning**
+### Model Selection and Validation in Machine Learning
 
 ✅ **Model Selection** refers to choosing the best machine learning model based on performance metrics. Different models (e.g., Decision Trees, Neural Networks, SVMs) may perform differently on a given dataset.
 
 ✅ **Model Validation** ensures the selected model generalizes well to **unseen data** by evaluating its performance using techniques like **cross-validation** and **test sets**.
 
-### **Why is Model Selection and Validation Important?**
+### Why is Model Selection and Validation Important?
 
 ✅ **Prevents Overfitting & Underfitting** → Ensures the model generalizes well.  
 ✅ **Improves Prediction Accuracy** → Helps pick the best-performing model.  
@@ -332,7 +332,7 @@ Model training is the **core of machine learning**, enabling models to **learn f
 📌 **Example:**  
 A fraud detection system needs to **maximize accuracy** while **minimizing false positives**, requiring careful model selection and validation.
 
-### **How is Model Scoring Used to Assess Model Effectiveness?**
+### How is Model Scoring Used to Assess Model Effectiveness?
 
 **Model scoring** evaluates the effectiveness of a machine learning model using **performance metrics**. The choice of metric depends on the task:
 
@@ -345,17 +345,17 @@ A fraud detection system needs to **maximize accuracy** while **minimizing false
 📌 **Example:**  
 A **spam email classifier** is evaluated using **Precision and Recall** to balance spam detection and false positives.
 
-### **Final Thoughts**
+### Final Thoughts
 
 **Model selection & validation ensure that we choose the best model for the task, while model scoring helps measure its effectiveness.** 🚀
 
 ## <mark> 7) What are some key methods for validating a Machine Learning model? </mark>
 
-### **Key Methods for Validating a Machine Learning Model**
+### Key Methods for Validating a Machine Learning Model
 
 Model validation ensures that a machine learning model generalizes well to new, unseen data. Below are some commonly used **validation techniques**:
 
-### **1. Train-Test Split**
+### 1. Train-Test Split
 
 ✅ **Splits the dataset into two parts:**
 
@@ -367,7 +367,7 @@ Model validation ensures that a machine learning model generalizes well to new, 
 🔹 **Pros:** Simple, fast.  
 🔹 **Cons:** The model might overfit if the test set is too small.
 
-### **2. Cross-Validation (K-Fold Cross-Validation)**
+### 2. Cross-Validation (K-Fold Cross-Validation)
 
 ✅ **Splits the data into K subsets ("folds")** and trains the model multiple times:
 
@@ -380,7 +380,7 @@ Model validation ensures that a machine learning model generalizes well to new, 
 🔹 **Pros:** More reliable than train-test split.  
 🔹 **Cons:** Computationally expensive for large datasets.
 
-### **3. Stratified K-Fold Cross-Validation**
+### 3. Stratified K-Fold Cross-Validation
 
 ✅ A variation of K-Fold Cross-Validation that **ensures each fold has the same proportion of each class** in classification problems.
 
@@ -389,7 +389,7 @@ Model validation ensures that a machine learning model generalizes well to new, 
 🔹 **Pros:** Works well for imbalanced datasets.  
 🔹 **Cons:** Slightly more complex than standard K-Fold.
 
-### **4. Leave-One-Out Cross-Validation (LOOCV)**
+### 4. Leave-One-Out Cross-Validation (LOOCV)
 
 ✅ **A special case of K-Fold where $K=n$ (number of samples).**
 
@@ -400,7 +400,7 @@ Model validation ensures that a machine learning model generalizes well to new, 
 🔹 **Pros:** Uses maximum data for training.  
 🔹 **Cons:** Computationally expensive for large datasets.
 
-### **5. Holdout Validation**
+### 5. Holdout Validation
 
 ✅ **A simpler version of Train-Test Split** where a portion of the dataset is never used for training and is **held out** for final evaluation.
 
@@ -409,7 +409,7 @@ Model validation ensures that a machine learning model generalizes well to new, 
 🔹 **Pros:** Useful for final model testing.  
 🔹 **Cons:** Does not help in model selection.
 
-### **6. Bootstrapping**
+### 6. Bootstrapping
 
 ✅ **Random sampling with replacement** is used to generate multiple datasets, training the model on each sample.
 
@@ -418,7 +418,7 @@ Model validation ensures that a machine learning model generalizes well to new, 
 🔹 **Pros:** Works well for small datasets.  
 🔹 **Cons:** More variance in results.
 
-### **Final Thoughts**
+### Final Thoughts
 
 | **Validation Method**                      | **Best For**                       |
 | ------------------------------------------ | ---------------------------------- |
@@ -433,11 +433,11 @@ Using **cross-validation techniques** ensures that the model **generalizes well*
 
 ## <mark> 8) How does a trained model make predictions on new observations? </mark>
 
-### **How Does a Trained Model Make Predictions on New Observations?**
+### How Does a Trained Model Make Predictions on New Observations?
 
 Once a machine learning model is trained, it can **predict outcomes** for new, unseen data by applying the patterns it has learned. The prediction process follows these key steps:
 
-### **1. Input Features from New Observations**
+### 1. Input Features from New Observations
 
 - The new data (observation) is provided to the model as **feature values** (same format as the training data).
 - Example: If predicting house prices, the input could be:
@@ -445,7 +445,7 @@ Once a machine learning model is trained, it can **predict outcomes** for new, u
   \text{Size} = 1500 \text{ sq. ft.}, \quad \text{Bedrooms} = 3, \quad \text{Location} = Urban.
   $$
 
-### **2. Apply the Learned Model Parameters**
+### 2. Apply the Learned Model Parameters
 
 - The trained model applies its learned **patterns, weights, or decision rules** to the input.
 - The method depends on the model type:
@@ -467,7 +467,7 @@ Once a machine learning model is trained, it can **predict outcomes** for new, u
 
   - The input is passed through **layers of neurons** and transformed through activations like ReLU or Sigmoid.
 
-### **3. Compute the Output (Prediction)**
+### 3. Compute the Output (Prediction)
 
 - Based on the processed input, the model generates a prediction.
 - The output depends on the **type of machine learning task**:
@@ -478,14 +478,14 @@ Once a machine learning model is trained, it can **predict outcomes** for new, u
   | **Classification** | Classify email as spam or not | A probability score (e.g., 0.85 Spam) |
   | **Clustering**     | Group customers               | Cluster label (e.g., Customer Type A) |
 
-### **4. Post-Processing & Decision Making**
+### 4. Post-Processing & Decision Making
 
 - **For classification models**, if the model outputs probabilities, they can be converted into class labels using a threshold (e.g., Spam if probability > 0.5).
 - **For regression models**, post-processing can include rounding values or applying business rules.
 
 📌 **Example:** A credit risk model assigns a **risk score** → The bank decides whether to approve or deny a loan.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ A trained model makes predictions by **taking new input, applying learned patterns, and generating an output**.  
 ✅ The accuracy of predictions depends on **data quality, model training, and feature selection**.  
@@ -493,11 +493,11 @@ Once a machine learning model is trained, it can **predict outcomes** for new, u
 
 ## <mark> 9) List out and explain the role of various Python tools used in machine learning for data science. </mark>
 
-### **Python Tools for Machine Learning in Data Science**
+### Python Tools for Machine Learning in Data Science
 
 Python provides a rich ecosystem of libraries and tools for **data science and machine learning**. Below are some of the most commonly used ones:
 
-### **1. NumPy**
+### 1. NumPy
 
 📌 **Role:**
 
@@ -512,7 +512,7 @@ arr = np.array([1, 2, 3, 4])
 print(np.mean(arr))  # Calculate mean
 ```
 
-### **2. Pandas**
+### 2. Pandas
 
 📌 **Role:**
 
@@ -527,7 +527,7 @@ df = pd.read_csv("data.csv")  # Load a dataset
 print(df.head())  # View first 5 rows
 ```
 
-### **3. Matplotlib & Seaborn**
+### 3. Matplotlib & Seaborn
 
 📌 **Role:**
 
@@ -545,7 +545,7 @@ sns.histplot(df['age'], kde=True)  # Histogram with KDE
 plt.show()
 ```
 
-### **4. Scikit-learn**
+### 4. Scikit-learn
 
 📌 **Role:**
 
@@ -568,7 +568,7 @@ model.fit(X_train, y_train)  # Train the model
 print(model.predict(X_test))  # Make predictions
 ```
 
-### **5. TensorFlow & Keras**
+### 5. TensorFlow & Keras
 
 📌 **Role:**
 
@@ -590,7 +590,7 @@ model = keras.Sequential([
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 ```
 
-### **6. XGBoost & LightGBM**
+### 6. XGBoost & LightGBM
 
 📌 **Role:**
 
@@ -605,7 +605,7 @@ model = xgb.XGBClassifier()
 model.fit(X_train, y_train)
 ```
 
-### **7. OpenCV**
+### 7. OpenCV
 
 📌 **Role:**
 
@@ -622,7 +622,7 @@ cv2.imshow('Gray Image', gray_image)
 cv2.waitKey(0)
 ```
 
-### **8. NLTK & SpaCy**
+### 8. NLTK & SpaCy
 
 📌 **Role:**
 
@@ -640,7 +640,7 @@ for token in doc:
     print(token.text, token.pos_)
 ```
 
-### **9. PyTorch**
+### 9. PyTorch
 
 📌 **Role:**
 
@@ -655,7 +655,7 @@ x = torch.tensor([1.0, 2.0, 3.0])
 print(x)
 ```
 
-### **10. Statsmodels**
+### 10. Statsmodels
 
 📌 **Role:**
 
@@ -670,7 +670,7 @@ model = sm.OLS(y_train, X).fit()
 print(model.summary())
 ```
 
-### **Summary Table**
+### Summary Table
 
 | **Python Tool**          | **Primary Use**                         |
 | ------------------------ | --------------------------------------- |
@@ -685,13 +685,13 @@ print(model.summary())
 | **PyTorch**              | Deep learning, research.                |
 | **Statsmodels**          | Statistical analysis & regression.      |
 
-### **Final Thoughts**
+### Final Thoughts
 
 Python’s ecosystem provides **powerful tools** for **data preprocessing, model training, evaluation, and deployment** in machine learning. 🚀 Each library has a **specific role**, and using them effectively enhances the overall **data science workflow**.
 
 ## <mark> 10) What is Supervised Learning? How does it work? Explain the differences between Regression and Classification in Supervised Learning. </mark>
 
-### **What is Supervised Learning?**
+### What is Supervised Learning?
 
 ✅ **Supervised Learning** is a type of **Machine Learning (ML)** where a model is trained on **labeled data**—meaning each input data point has a corresponding **output (target)**. The goal is for the model to learn patterns and make predictions on new, unseen data.
 
@@ -700,7 +700,7 @@ Python’s ecosystem provides **powerful tools** for **data preprocessing, model
 - **Spam Detection:** Emails (input) labeled as **spam or not spam (output)**.
 - **House Price Prediction:** Features like **size, location (input)** predict **price (output)**.
 
-### **How Does Supervised Learning Work?**
+### How Does Supervised Learning Work?
 
 Supervised Learning follows these **key steps**:
 
@@ -728,7 +728,7 @@ Supervised Learning follows these **key steps**:
 
 - Test on unseen data, adjust hyperparameters, and improve accuracy.
 
-### **Regression vs. Classification in Supervised Learning**
+### Regression vs. Classification in Supervised Learning
 
 | **Feature**            | **Regression**                                     | **Classification**                      |
 | ---------------------- | -------------------------------------------------- | --------------------------------------- |
@@ -743,7 +743,7 @@ Supervised Learning follows these **key steps**:
 - **Regression:** Predicting a car’s **resale value ($20,000, $25,000, etc.)**.
 - **Classification:** Classifying whether an email is **Spam or Not Spam**.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **Supervised Learning is widely used** in finance, healthcare, marketing, and more.  
 ✅ **Regression is for predicting numbers**, while **Classification is for categorizing data**.  
@@ -751,7 +751,7 @@ Supervised Learning follows these **key steps**:
 
 ## <mark> 11) What is a Naïve Bayes classifier? Explain it in the context of the case study on handwritten digit recognition. </mark>
 
-### **What is a Naïve Bayes Classifier?**
+### What is a Naïve Bayes Classifier?
 
 ✅ **Naïve Bayes** is a **probabilistic classification algorithm** based on **Bayes' Theorem**, assuming that **features are independent** given the class label. It is widely used in **text classification, spam filtering, sentiment analysis, and handwritten digit recognition**.
 
@@ -770,7 +770,7 @@ where:
 
 **"Naïve" Assumption:** All features are **independent**, making computation simpler.
 
-### **Naïve Bayes for Handwritten Digit Recognition**
+### Naïve Bayes for Handwritten Digit Recognition
 
 Handwritten digit recognition is a classification problem where the goal is to classify **handwritten digits (0-9) based on pixel values**.
 
@@ -791,7 +791,7 @@ Handwritten digit recognition is a classification problem where the goal is to c
 - For a new digit image, the model calculates the probability of it belonging to each digit (0-9).
 - It assigns the digit with the **highest probability** as the predicted class.
 
-### **Advantages of Naïve Bayes in Digit Recognition**
+### Advantages of Naïve Bayes in Digit Recognition
 
 ✅ **Fast & Efficient:** Works well even with large datasets like MNIST.  
 ✅ **Low Computational Cost:** Requires fewer resources than deep learning models.  
@@ -806,14 +806,14 @@ $$
 
 Then, the model classifies it as **digit 3**, since it has the highest probability.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **Naïve Bayes is a simple but effective classifier** for **handwritten digit recognition**.  
 ✅ **Though deep learning (CNNs) outperforms it**, Naïve Bayes remains a **fast and interpretable choice** for classification problems. 🚀
 
 ## <mark> 12) What is Unsupervised Learning? How does it differ from Supervised Learning? </mark>
 
-### **What is Unsupervised Learning?**
+### What is Unsupervised Learning?
 
 ✅ **Unsupervised Learning** is a type of **Machine Learning (ML)** where the model learns patterns from **unlabeled data**. Unlike **Supervised Learning**, there are **no predefined outputs (labels)**. The model identifies **hidden structures, relationships, or groupings** within the data.
 
@@ -823,7 +823,7 @@ Then, the model classifies it as **digit 3**, since it has the highest probabili
 - **Anomaly Detection:** Identifying fraudulent transactions in banking.
 - **Dimensionality Reduction:** Reducing high-dimensional data for visualization.
 
-### **How Unsupervised Learning Differs from Supervised Learning**
+### How Unsupervised Learning Differs from Supervised Learning
 
 | **Feature**     | **Supervised Learning**              | **Unsupervised Learning**       |
 | --------------- | ------------------------------------ | ------------------------------- |
@@ -838,7 +838,7 @@ Then, the model classifies it as **digit 3**, since it has the highest probabili
 - **Supervised Learning:** Classifying emails as **Spam or Not Spam**.
 - **Unsupervised Learning:** Clustering emails into **different topics** without labels.
 
-### **Types of Unsupervised Learning**
+### Types of Unsupervised Learning
 
 1️⃣ **Clustering:** Groups similar data points together.
 
@@ -852,7 +852,7 @@ Then, the model classifies it as **digit 3**, since it has the highest probabili
 
 - Example: **Isolation Forest, Autoencoders**.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **Supervised Learning is for prediction**, while **Unsupervised Learning is for pattern discovery**.  
 ✅ **Unsupervised Learning helps in exploratory data analysis** where labels are unavailable.  
@@ -860,7 +860,7 @@ Then, the model classifies it as **digit 3**, since it has the highest probabili
 
 ## <mark> 13) Explain linear regression with suitable examples for supervised learning. </mark>
 
-### **Linear Regression in Supervised Learning**
+### Linear Regression in Supervised Learning
 
 ✅ **Linear Regression** is a **supervised learning algorithm** used for predicting **continuous numerical values** based on the relationship between **independent variables (features)** and a **dependent variable (target)**.
 
@@ -883,13 +883,13 @@ $$
 Y = w_1X_1 + w_2X_2 + ... + w_nX_n + b
 $$
 
-### **How Linear Regression Works in Supervised Learning**
+### How Linear Regression Works in Supervised Learning
 
 1️⃣ **Collect Labeled Data** → Dataset contains **features (X) and target (Y)**.  
 2️⃣ **Train the Model** → The model **learns the best-fit line** by minimizing error (using techniques like **Least Squares**).  
 3️⃣ **Make Predictions** → Given new input $X$, the model predicts $Y$ using the learned function.
 
-### **Examples of Linear Regression in Supervised Learning**
+### Examples of Linear Regression in Supervised Learning
 
 🔹 **Example 1: Predicting House Prices**
 
@@ -920,23 +920,23 @@ prediction = model.predict([[6]])  # Predict salary for 6 years experience
 print(prediction)  # Expected output ~ 55000
 ```
 
-### **Advantages of Linear Regression**
+### Advantages of Linear Regression
 
 ✅ **Simple & Interpretable** → Easy to understand and implement.  
 ✅ **Computationally Efficient** → Works well for small to medium-sized datasets.  
 ✅ **Good for Linearly Related Data** → Performs well when data follows a linear trend.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **Linear Regression is a foundational supervised learning algorithm** used in **prediction tasks** where the target variable is **continuous**. It is widely applied in **finance, healthcare, and marketing analytics**. 🚀
 
 ## <mark> 14) How can a confusion matrix help evaluate the performance of a classification model? </mark>
 
-### **Confusion Matrix in Evaluating Classification Models**
+### Confusion Matrix in Evaluating Classification Models
 
 ✅ A **Confusion Matrix** is a performance measurement tool for **classification models**. It shows how well a model predicts actual categories by comparing **predicted vs. actual values**.
 
-### **1. Structure of a Confusion Matrix**
+### 1. Structure of a Confusion Matrix
 
 | **Actual / Predicted**  | **Positive (1) Prediction** | **Negative (0) Prediction** |
 | ----------------------- | --------------------------- | --------------------------- |
@@ -950,7 +950,7 @@ print(prediction)  # Expected output ~ 55000
 - **False Positive (FP) (Type I Error)** → Model incorrectly predicts **positive** when it’s actually **negative**.
 - **False Negative (FN) (Type II Error)** → Model incorrectly predicts **negative** when it’s actually **positive**.
 
-### **2. How Confusion Matrix Helps Evaluate Performance**
+### 2. How Confusion Matrix Helps Evaluate Performance
 
 🔹 **Accuracy:**
 
@@ -992,7 +992,7 @@ $$
 
 ✅ **Important for fraud detection to reduce false alarms.**
 
-### **3. Example Confusion Matrix in Python**
+### 3. Example Confusion Matrix in Python
 
 ```python
 from sklearn.metrics import confusion_matrix
@@ -1016,13 +1016,13 @@ print(cm)
 - 1 False Negative (FN)
 - 5 True Positives (TP)
 
-### **4. When to Use the Confusion Matrix?**
+### 4. When to Use the Confusion Matrix?
 
 ✅ **Binary Classification** (Spam vs. Not Spam).  
 ✅ **Multi-Class Classification** (Classifying diseases).  
 ✅ **Imbalanced Datasets** (Fraud detection, Medical diagnosis).
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **The Confusion Matrix provides deeper insights than just accuracy.**  
 ✅ **Metrics like Precision, Recall, and F1-score help in model selection.**  
@@ -1030,7 +1030,7 @@ print(cm)
 
 ## <mark> 15) What role does principal component analysis (PCA) play in unsupervised learning? OR How does PCA help in reducing input variables while maintaining important information? </mark>
 
-### **Role of Principal Component Analysis (PCA) in Unsupervised Learning**
+### Role of Principal Component Analysis (PCA) in Unsupervised Learning
 
 ✅ **Principal Component Analysis (PCA)** is a **dimensionality reduction technique** used in **unsupervised learning** to reduce the number of input features while **retaining the most important information**. It transforms the original variables into a new set of **uncorrelated components (Principal Components)** that capture the maximum variance in the data.
 
@@ -1040,7 +1040,7 @@ print(cm)
 - **Visualizing complex data** (e.g., plotting multi-featured data in 2D/3D).
 - **Speeding up machine learning models** by eliminating redundant features.
 
-### **How Does PCA Reduce Input Variables While Keeping Important Information?**
+### How Does PCA Reduce Input Variables While Keeping Important Information?
 
 🔹 **Step 1: Standardize the Data**
 
@@ -1067,7 +1067,7 @@ print(cm)
 📌 **Example:**  
 A dataset has **100 features**, but **PCA finds that 5 components** capture **95% of the variance**. Instead of using all 100 features, we keep only **5**, reducing complexity while preserving essential information.
 
-### **Benefits of PCA in Machine Learning**
+### Benefits of PCA in Machine Learning
 
 ✅ **Reduces Dimensionality** → Fewer features mean **faster computation** and **less overfitting**.  
 ✅ **Removes Multicollinearity** → Eliminates redundant, highly correlated features.  
@@ -1077,7 +1077,7 @@ A dataset has **100 features**, but **PCA finds that 5 components** capture **95
 📌 **Real-World Example:**  
 In **handwritten digit recognition**, PCA helps reduce **784 pixel features** (28×28 images) to **50 principal components**, maintaining accuracy while speeding up computations.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **PCA is a powerful tool for feature reduction in unsupervised learning**.  
 ✅ **It helps simplify models, improve efficiency, and retain critical data patterns**.  
@@ -1085,12 +1085,12 @@ In **handwritten digit recognition**, PCA helps reduce **784 pixel features** (2
 
 ## <mark> 16) What are Clustering Algorithms? Explain their applications in Data Science. Explain K-means clustering algorithm with suitable examples. </mark>
 
-### **What are Clustering Algorithms?**
+### What are Clustering Algorithms?
 
 ✅ **Clustering algorithms** are **unsupervised learning techniques** used to group similar data points into clusters based on patterns or similarities.  
 ✅ Unlike classification, clustering works **without labeled data**, making it useful for **data exploration and pattern discovery**.
 
-### **Applications of Clustering in Data Science**
+### Applications of Clustering in Data Science
 
 📌 **1. Customer Segmentation**
 
@@ -1112,12 +1112,12 @@ In **handwritten digit recognition**, PCA helps reduce **784 pixel features** (2
 
 - Grouping users based on interests or online behavior.
 
-### **K-Means Clustering Algorithm**
+### K-Means Clustering Algorithm
 
 ✅ **K-Means is one of the most popular clustering algorithms**.  
 ✅ It partitions data into **K clusters**, where each data point belongs to the **nearest cluster centroid**.
 
-### **Steps of K-Means Algorithm**
+### Steps of K-Means Algorithm
 
 1️⃣ **Choose the number of clusters (K)** → Predefine the number of clusters.
 
@@ -1137,7 +1137,7 @@ $$
 
 where $ (x_1, y_1) $ and $ (x_2, y_2) $ are data points.
 
-### **Example of K-Means Clustering in Python**
+### Example of K-Means Clustering in Python
 
 ```python
 import numpy as np
@@ -1159,19 +1159,19 @@ plt.show()
 
 ✅ **Output:** Two distinct clusters with red **centroids**.
 
-### **Advantages of K-Means Clustering**
+### Advantages of K-Means Clustering
 
 ✔ **Simple and Fast** → Works well with large datasets.  
 ✔ **Scalable** → Handles high-dimensional data efficiently.  
 ✔ **Works well for spherical clusters** → Suitable for simple datasets.
 
-### **Limitations of K-Means**
+### Limitations of K-Means
 
 ❌ **Needs to predefine K** → Choosing the wrong K can lead to poor clustering.  
 ❌ **Sensitive to Outliers** → Outliers can distort centroids.  
 ❌ **Doesn’t work well for non-spherical clusters** → Struggles with irregular shapes.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **Clustering algorithms help discover hidden patterns in data.**  
 ✅ **K-Means is a widely used method for customer segmentation, anomaly detection, and image processing.**  
@@ -1179,12 +1179,12 @@ plt.show()
 
 ## <mark> 17) What are the key evaluation metrics for classification and regression models? Provide examples. </mark>
 
-#### **Key Evaluation Metrics for Classification and Regression Models**
+#### Key Evaluation Metrics for Classification and Regression Models
 
 ✅ **Evaluation metrics** help measure how well a **machine learning model** performs.  
 ✅ The choice of metric depends on whether the task is **classification** (predicting categories) or **regression** (predicting continuous values).
 
-### **1. Classification Model Evaluation Metrics**
+### 1. Classification Model Evaluation Metrics
 
 📌 **Example:** Predicting whether an email is **Spam (1) or Not Spam (0)**.
 
@@ -1196,7 +1196,7 @@ plt.show()
 | **F1-Score**             | $ \frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} $ | Balances Precision & Recall. Good for imbalanced data.                               |
 | **ROC-AUC Score**        | Based on True Positive Rate vs. False Positive Rate                                         | Measures how well the model distinguishes classes. Used in spam detection.           |
 
-#### **Example Confusion Matrix**
+#### Example Confusion Matrix
 
 | **Actual / Predicted**  | **Positive (Spam)** | **Negative (Not Spam)** |
 | ----------------------- | ------------------- | ----------------------- |
@@ -1213,7 +1213,7 @@ plt.show()
 - **High False Positives are costly (e.g., Spam Filters)?** → Use **Precision**.
 - **Balanced Approach?** → Use **F1-Score**.
 
-### **2. Regression Model Evaluation Metrics**
+### 2. Regression Model Evaluation Metrics
 
 📌 **Example:** Predicting house prices based on features like **size, location, and number of bedrooms**.
 
@@ -1224,7 +1224,7 @@ plt.show()
 | **Root Mean Squared Error (RMSE)**          | $ \sqrt{MSE} $                                            | Similar to MSE but gives errors in actual units.                      |
 | **R² Score (Coefficient of Determination)** | $ 1 - \frac{\sum (y - \hat{y})^2}{\sum (y - \bar{y})^2} $ | Measures how well the model explains variance. Closer to 1 is better. |
 
-#### **Example Predictions vs. Actual Values**
+#### Example Predictions vs. Actual Values
 
 | **House Size (sq. ft.)** | **Actual Price (y)** | **Predicted Price (ŷ)** |
 | ------------------------ | -------------------- | ----------------------- |
@@ -1244,7 +1244,7 @@ $$
 - **Want to penalize large errors?** → Use **MSE/RMSE**.
 - **Need overall model fit?** → Use **R² Score**.
 
-### **Final Thoughts**
+### Final Thoughts
 
 ✅ **Classification models use Accuracy, Precision, Recall, F1-score, and AUC.**  
 ✅ **Regression models use MAE, MSE, RMSE, and R².**  
@@ -1306,7 +1306,7 @@ Let's determine the linear regression equation $ y = mx + c $ using the given da
 | 1500          | 75                 |
 | 2000          | 100                |
 
-### **Step 1: Calculate the Slope (m)**
+### Step 1: Calculate the Slope (m)
 
 Using any two points, for example, $(1000,50)$ and $(1500,75)$:
 
@@ -1314,7 +1314,7 @@ $$
 m = \frac{75 - 50}{1500 - 1000} = \frac{25}{500} = 0.05.
 $$
 
-### **Step 2: Calculate the Intercept (c)**
+### Step 2: Calculate the Intercept (c)
 
 Using the point $(1000, 50)$:
 
@@ -1322,7 +1322,7 @@ $$
 50 = 0.05 \times 1000 + c \quad \Rightarrow \quad 50 = 50 + c \quad \Rightarrow \quad c = 0.
 $$
 
-### **Regression Equation**
+### Regression Equation
 
 The equation is:
 
@@ -1330,7 +1330,7 @@ $$
 y = 0.05x.
 $$
 
-### **Step 3: Predict the Price for a 1250 sq.ft. House**
+### Step 3: Predict the Price for a 1250 sq.ft. House
 
 Substitute $ x = 1250 $:
 
@@ -1363,7 +1363,7 @@ Given the data:
 
 We can see that the relationship is perfectly linear.
 
-### **Step 1: Determine the Linear Regression Model**
+### Step 1: Determine the Linear Regression Model
 
 We want an equation in the form:
 
@@ -1394,7 +1394,7 @@ where:
 - $x$ = Ad Spend (in Lakhs)
 - $y$ = Sales Revenue (in Crores)
 
-### **Step 2: Estimate Sales Revenue for Ad Spend of 2.5 Lakhs**
+### Step 2: Estimate Sales Revenue for Ad Spend of 2.5 Lakhs
 
 Substitute $ x = 2.5 $ into the equation:
 
@@ -1402,7 +1402,7 @@ $$
 y = 10 \times 2.5 = 25.
 $$
 
-### **Final Answer**
+### Final Answer
 
 The estimated sales revenue for an ad spend of **2.5 Lakhs** is **₹25 Crores**.
 
@@ -1439,7 +1439,7 @@ where:
 - $ m $ is the slope,
 - $ c $ is the intercept.
 
-### **Step 1: Calculate the Slope (m)**
+### Step 1: Calculate the Slope (m)
 
 Using any two points, for example, (2, 50) and (4, 60):
 
@@ -1447,7 +1447,7 @@ $$
 m = \frac{60 - 50}{4 - 2} = \frac{10}{2} = 5.
 $$
 
-### **Step 2: Calculate the Intercept (c)**
+### Step 2: Calculate the Intercept (c)
 
 Use one of the points (for example, (2, 50)):
 
@@ -1455,7 +1455,7 @@ $$
 50 = 5 \times 2 + c \quad \Rightarrow \quad c = 50 - 10 = 40.
 $$
 
-### **Regression Equation**
+### Regression Equation
 
 The linear regression equation is:
 
@@ -1463,7 +1463,7 @@ $$
 y = 5x + 40.
 $$
 
-### **Step 3: Predict the Score for a Student Who Studies 5 Hours**
+### Step 3: Predict the Score for a Student Who Studies 5 Hours
 
 Substitute $ x = 5 $ into the equation:
 
@@ -1471,7 +1471,7 @@ $$
 y = 5 \times 5 + 40 = 25 + 40 = 65.
 $$
 
-### **Final Answer**
+### Final Answer
 
 The linear regression equation is:
 
@@ -1512,7 +1512,7 @@ where:
 - $m$ is the slope,
 - $c$ is the intercept.
 
-### **Step 1: Calculate the Means**
+### Step 1: Calculate the Means
 
 $$
 \bar{x} = \frac{1 + 3 + 5}{3} = \frac{9}{3} = 3,
@@ -1522,7 +1522,7 @@ $$
 \bar{y} = \frac{3 + 6 + 9}{3} = \frac{18}{3} = 6.
 $$
 
-### **Step 2: Calculate the Slope (m)**
+### Step 2: Calculate the Slope (m)
 
 The slope $m$ is given by:
 
@@ -1569,7 +1569,7 @@ $$
 m = \frac{12}{8} = 1.5.
 $$
 
-### **Step 3: Calculate the Intercept (c)**
+### Step 3: Calculate the Intercept (c)
 
 The intercept $c$ is calculated by:
 
@@ -1577,7 +1577,7 @@ $$
 c = \bar{y} - m\bar{x} = 6 - 1.5 \times 3 = 6 - 4.5 = 1.5.
 $$
 
-### **Regression Equation**
+### Regression Equation
 
 The regression equation is:
 
@@ -1585,7 +1585,7 @@ $$
 \boxed{y = 1.5x + 1.5}
 $$
 
-### **Step 4: Predict the Salary for 4 Years of Experience**
+### Step 4: Predict the Salary for 4 Years of Experience
 
 For $x = 4$ years:
 
@@ -1754,7 +1754,7 @@ The new data point $(4,4)$ is classified as **Class B**.
 
 To classify the new fruit using KNN with $K=3$, we follow these steps:
 
-### **Step 1: List the Data Points**
+### Step 1: List the Data Points
 
 | Fruit Type | Weight (g) | Size (cm) |
 | ---------- | ---------- | --------- |
@@ -1765,7 +1765,7 @@ To classify the new fruit using KNN with $K=3$, we follow these steps:
 
 New fruit: Weight = 190 g, Size = 11 cm
 
-### **Step 2: Compute Euclidean Distances**
+### Step 2: Compute Euclidean Distances
 
 The Euclidean distance between two points $(w_1, s_1)$ and $(w_2, s_2)$ is:
 
@@ -1796,7 +1796,7 @@ $$
    d = \sqrt{(190-220)^2 + (11-14)^2} = \sqrt{(-30)^2 + (-3)^2} = \sqrt{900 + 9} = \sqrt{909} \approx 30.15.
    $$
 
-### **Step 3: Identify the 3 Nearest Neighbors**
+### Step 3: Identify the 3 Nearest Neighbors
 
 Order the distances:
 
@@ -1811,7 +1811,7 @@ The 3 nearest neighbors are:
 - **(200, 12)** → Orange
 - **(220, 14)** → Orange
 
-### **Step 4: Classify by Majority Vote**
+### Step 4: Classify by Majority Vote
 
 Among the 3 nearest neighbors:
 
@@ -1820,7 +1820,7 @@ Among the 3 nearest neighbors:
 
 The majority class is **Orange**.
 
-### **Final Answer**
+### Final Answer
 
 The new fruit with a weight of 190 g and a size of 11 cm is classified as **Orange** using KNN with $K=3$.
 
