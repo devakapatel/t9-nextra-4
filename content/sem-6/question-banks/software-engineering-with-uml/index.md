@@ -2,10 +2,25 @@
 asIndexPage: true
 ---
 
+import { Cards } from "nextra/components";
+
 # Software Engineering with UML
 
-- ### [Unit 1](./software-engineering-with-uml/unit-1)
-
-- ### [Unit 2](./software-engineering-with-uml/unit-2)
-
-- ### [Unit 3](./software-engineering-with-uml/unit-3)
+<Cards>
+  <Cards.Card
+    title="Unit 1"
+    href="./question-banks/software-engineering-with-uml/unit-1"
+  />
+  <Cards.Card
+    title="Unit 2"
+    href="./question-banks/software-engineering-with-uml/unit-2"
+  />
+  <Cards.Card
+    title="Unit 3"
+    href="./question-banks/software-engineering-with-uml/unit-3"
+  />
+  <Cards.Card
+    title="Unit 4"
+    href="./question-banks/software-engineering-with-uml/unit-4"
+  />
+</Cards>
