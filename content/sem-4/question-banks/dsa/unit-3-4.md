@@ -1665,7 +1665,7 @@ In summary:
 Inorder: B F G H P R S T W Y Z
 Preorder: P F B H G S R Y T W Z
 
-## _I am unable to find answer, send me via form mentioned on home page of T9, if you know the correct answer._
+![32.png](./32.png)
 
 ## 34) Prove that a binary tree with 20 nodes have 21 null branches.
 
