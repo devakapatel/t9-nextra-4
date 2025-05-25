@@ -263,7 +263,7 @@ Certainly! Here’s a **brief and easy-to-understand note** on **Activation Reco
 
 ---
 
-## Activation Record
+### Activation Record
 
 **Definition:**  
 An **activation record** (also called a stack frame) is a block of memory created on the stack whenever a function or procedure is called. It stores all the information needed to manage a single execution of that function.
@@ -282,7 +282,7 @@ When you call `sum(5, 10)`, an activation record for `sum` is pushed onto the st
 
 ---
 
-## Activation Tree
+### Activation Tree
 
 **Definition:**  
 An **activation tree** is a diagram that shows the calling relationships between different function activations (calls) during program execution. Each node represents an activation (a function call), and edges show which function called which.
@@ -313,7 +313,7 @@ If `main()` calls `A()`, and `A()` calls `B()` and `C()`, the activation tree lo
 
 ---
 
-### **In summary:**
+#### **In summary:**
 
 - **Activation record:** Memory block for managing a function call (stores parameters, locals, return address, etc.).
 - **Activation tree:** Diagram showing the structure and order of function calls during program execution.
