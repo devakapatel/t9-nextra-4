@@ -1348,10 +1348,10 @@ In summary, sequential search is a straightforward method for searching an unord
 
 ## 25) Given Inorder and Preorder traversal, find Postorder traversal.
 
-Inorder:Y B K C F A G X E D H Z
-Preorder:G B Y A C K F X D E Z H
+Inorder: Y B K C F A G X E D H Z
+Preorder: G B Y A C K F X D E Z H
 
-## _I am unable to find answer, send me via form mentioned on home page of T9, if you know the correct answer._
+![7.jpg](./7.jpg)
 
 ## 26) Explain collision in the context of hashing? Discuss collision resolution techniques.
 
