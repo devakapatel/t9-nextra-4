@@ -45,6 +45,6 @@ As the sole owner of this website, I make all decisions—but I value your input
 
 This project is my way of giving back to the tech community. It’s a space to share knowledge, tools, and resources with peers and beyond. Whether you’re exploring, learning, or just curious, this website is here to support you.
 
-Have feedback or suggestions? Feel free to share your ideas through the [Links Section](../links).
+Have feedback or suggestions? Feel free to share your ideas through the links mentioned on Home Page.
 
 Let’s build something great together!
