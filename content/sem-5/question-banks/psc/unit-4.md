@@ -1,6 +1,6 @@
 # Unit 4
 
-## 1) What is data alignment in Pandas, and how does it handle missing data in DataFrames?
+## <mark> 1) What is data alignment in Pandas, and how does it handle missing data in DataFrames? </mark>
 
 Data alignment in Pandas is a fundamental feature that ensures that data from different DataFrames or Series are synchronized based on their index and column labels. This process is crucial when performing operations that involve multiple data sources, as it allows for coherent data manipulation without losing the context of the data.
 
@@ -56,7 +56,7 @@ In this case, any missing values would be replaced with 0 instead of NaN.
 
 Overall, data alignment in Pandas is essential for ensuring that operations on multiple datasets maintain their integrity and context while effectively managing any missing data.
 
-## 2) Explain how Pandas aligns data automatically when performing operations between different DataFrames. Demonstrate this with an example, considering two DataFrames that have different row indices and column labels.
+## <mark> 2) Explain how Pandas aligns data automatically when performing operations between different DataFrames. Demonstrate this with an example, considering two DataFrames that have different row indices and column labels. </mark>
 
 Pandas automatically aligns data when performing operations between different DataFrames by matching their row indices and column labels. This feature ensures that calculations are performed on corresponding data points, even if the DataFrames have different shapes or labels. If any labels do not match, Pandas fills in the missing values with NaN (Not a Number) to indicate the absence of data.
 
@@ -138,7 +138,7 @@ Aligned DataFrame 2:
 
 This automatic alignment feature simplifies data manipulation tasks by ensuring that operations are performed on corresponding data points while handling discrepancies in structure effectively.
 
-## 3) What is data aggregation in Pandas? Provide an example of an aggregation function in Pandas.
+## <mark> 3) What is data aggregation in Pandas? Provide an example of an aggregation function in Pandas. </mark>
 
 Data aggregation in Pandas refers to the process of summarizing and transforming data by applying specific functions to groups or subsets of data within a DataFrame. This is a crucial step in data analysis, as it allows users to condense large datasets into meaningful summary statistics, making it easier to understand trends and insights.
 
@@ -213,7 +213,7 @@ In this example:
 
 This demonstrates how aggregation in Pandas can efficiently summarize data, allowing for quick insights into overall performance by product.
 
-## 4) Explain the process of grouping and aggregating data in Pandas using the groupby() function with an example.
+## <mark> 4) Explain the process of grouping and aggregating data in Pandas using the groupby() function with an example. </mark>
 
 Grouping and aggregating data in Pandas is a powerful technique that allows users to analyze and summarize large datasets efficiently. The `groupby()` function is central to this process, enabling users to split data into groups based on specified criteria, apply aggregation functions to these groups, and then combine the results.
 
@@ -289,7 +289,7 @@ print(aggregated_data)
 
 This example effectively demonstrates how to use the `groupby()` function in Pandas for grouping and aggregating data, allowing for efficient analysis of datasets by summarizing key metrics across different categories.
 
-## 5) Explain in detail how Pandas handles data alignment between DataFrames of different sizes and how you can deal with missing data (e.g., using fillna(), dropna()) with suitable examples.
+## <mark> 5) Explain in detail how Pandas handles data alignment between DataFrames of different sizes and how you can deal with missing data (e.g., using fillna(), dropna()) with suitable examples. </mark>
 
 Pandas handles data alignment between DataFrames of different sizes by automatically aligning them based on their row indices and column labels. When performing operations on DataFrames, Pandas aligns the data according to these labels, rather than their positions. If a label exists in one DataFrame but not in another, the resulting DataFrame will contain NaN (Not a Number) for those entries.
 
@@ -413,7 +413,7 @@ In this case, only rows with complete data would be retained.
 
 Pandas effectively manages data alignment between DataFrames of different sizes by aligning based on labels and filling in gaps with NaN where necessary. Users can handle these missing values through methods like `fillna()` to replace them or `dropna()` to remove them entirely from the dataset. This flexibility allows for robust data manipulation and analysis workflows in Pandas.
 
-## 6) Explain the role of Python Pandas in data alignment, aggregation, summarization, and computation.
+## <mark> 6) Explain the role of Python Pandas in data alignment, aggregation, summarization, and computation. </mark>
 
 Python Pandas plays a crucial role in data alignment, aggregation, summarization, and computation, making it an essential tool for data analysis and manipulation. Below is a detailed explanation of each of these functionalities.
 
@@ -550,7 +550,7 @@ In this example, a new column `Total` is computed by multiplying `Sales` by `Qua
 
 Pandas significantly enhances data analysis capabilities through its powerful features for data alignment, aggregation, summarization, and computation. By providing intuitive methods for manipulating and analyzing data efficiently, it has become an indispensable tool for data scientists and analysts alike.
 
-## 7) How do you use describe() to summarize the statistics of a DataFrame? Explain its output.
+## <mark> 7) How do you use describe() to summarize the statistics of a DataFrame? Explain its output. </mark>
 
 The `describe()` function in Pandas is a powerful tool used to generate descriptive statistics that summarize the central tendency, dispersion, and shape of a dataset's distribution. It provides a quick overview of the statistical properties of the data contained in a DataFrame.
 
@@ -620,7 +620,7 @@ max    45.000000   60000.000000
 
 The `describe()` function is an essential tool in Pandas for quickly obtaining a statistical summary of numeric columns in a DataFrame. It helps analysts understand the distribution and key statistics of their data at a glance, making it easier to identify trends and anomalies before conducting more detailed analyses or visualizations.
 
-## 8) Demonstrate how to calculate summary statistics (e.g., mean, count, sum) for each group in a Pandas DataFrame using a real-world example dataset.
+## <mark> 8) Demonstrate how to calculate summary statistics (e.g., mean, count, sum) for each group in a Pandas DataFrame using a real-world example dataset. </mark>
 
 To calculate summary statistics such as mean, count, and sum for each group in a Pandas DataFrame, you can utilize the `groupby()` method in combination with the `agg()` function. This allows you to group your data by one or more columns and apply various aggregation functions to summarize the data effectively.
 
@@ -692,7 +692,7 @@ In this example:
 
 This approach is highly effective for summarizing large datasets and extracting meaningful insights based on categorical groupings.
 
-## 9) Perform a detailed analysis on a real-world dataset using Pandas, demonstrating aggregation, summarization, and visualisation techniques. Include an example where you group data, calculate summary statistics, and plot a graph.
+## <mark> 9) Perform a detailed analysis on a real-world dataset using Pandas, demonstrating aggregation, summarization, and visualisation techniques. Include an example where you group data, calculate summary statistics, and plot a graph. </mark>
 
 To perform a detailed analysis using Pandas, we will utilize a real-world dataset, demonstrating aggregation, summarization, and visualization techniques. For this example, we'll use the Supermarket Sales dataset, which contains sales data for a supermarket. This dataset can typically be found on platforms like Kaggle.
 
@@ -777,7 +777,7 @@ plt.show()
 
 This analysis demonstrates how to effectively use Pandas for data aggregation and summarization. By grouping data and calculating summary statistics, we gain valuable insights into sales performance across different product lines. Visualizing this information enhances understanding and facilitates decision-making based on data-driven insights. This approach can be applied to various datasets to extract meaningful trends and patterns in business analytics.
 
-## 10) What are Pandas Series/Dataframe, and how do they use row headers (index) for data manipulation? Provide an example.
+## <mark> 10) What are Pandas Series/Dataframe, and how do they use row headers (index) for data manipulation? Provide an example. </mark>
 
 Pandas is a powerful data manipulation library in Python that provides two primary data structures: Series and DataFrame. Understanding these structures and how they utilize row headers (indices) for data manipulation is essential for effective data analysis.
 
@@ -899,7 +899,7 @@ Pandas Series and DataFrames are fundamental structures for data manipulation in
 
 The use of indices (row headers) facilitates efficient data access and manipulation, enabling users to perform operations such as filtering, selection, and aggregation seamlessly. This capability is essential for effective data analysis and processing in various applications.
 
-## 11) Discuss data retrieval methods in Pandas to select specific rows, columns, or individual data points based on various conditions, index values, or labels.
+## <mark> 11) Discuss data retrieval methods in Pandas to select specific rows, columns, or individual data points based on various conditions, index values, or labels. </mark>
 
 Pandas provides a variety of methods for data retrieval, allowing users to select specific rows, columns, or individual data points based on various conditions, index values, or labels. Below is an overview of these data retrieval methods, along with examples to illustrate their usage.
 
@@ -1019,7 +1019,7 @@ Pandas provides robust methods for data retrieval that facilitate efficient data
 
 These capabilities make Pandas an essential tool for data analysis in Python.
 
-## 12) Write a Pandas program to add, subtract, multiply, and divide two Pandas Series. Sample Series: [2, 4, 6, 8, 10] and [1, 3, 5, 7, 9].
+## <mark> 12) Write a Pandas program to add, subtract, multiply, and divide two Pandas Series. Sample Series: [2, 4, 6, 8, 10] and [1, 3, 5, 7, 9]. </mark>
 
 Certainly! Below is a Pandas program that demonstrates how to perform addition, subtraction, multiplication, and division on two Pandas Series. We'll use the sample Series `[2, 4, 6, 8, 10]` and `[1, 3, 5, 7, 9]`.
 
@@ -1122,7 +1122,7 @@ dtype: float64
 
 This program effectively demonstrates how to perform basic arithmetic operations on Pandas Series using simple syntax and built-in operators.
 
-## 13) How to search for a specific value based on certain conditions or combinations of conditions in Pandas?
+## <mark> 13) How to search for a specific value based on certain conditions or combinations of conditions in Pandas? </mark>
 
 To search for specific values in a Pandas DataFrame based on certain conditions or combinations of conditions, you can utilize various methods such as boolean indexing, the `.loc[]` method, and the `.query()` method. Below, we will discuss these methods in detail and provide examples to illustrate how to apply them effectively.
 
@@ -1233,7 +1233,7 @@ Rows where Age is less than or equal to 24:
 
 These methods are essential for data manipulation in Pandas, allowing you to efficiently search for specific values based on various conditions within your datasets.
 
-## 14) Write a Python program to get the first 3 rows of a given DataFrame using Pandas.
+## <mark> 14) Write a Python program to get the first 3 rows of a given DataFrame using Pandas. </mark>
 
 Sample DataFrame:
 Pandas. Sample DataFrame :
@@ -1316,7 +1316,7 @@ c       Keya   16.5        2     yes
 
 This output shows both the full DataFrame and just the first three rows as requested.
 
-## 15) Explain groupby() and sort_values() in Pandas.
+## <mark> 15) Explain groupby() and sort_values() in Pandas. </mark>
 
 #### Explanation of `groupby()` and `sort_values()` in Pandas
 
@@ -1419,7 +1419,7 @@ Both `groupby()` and `sort_values()` are essential tools in Pandas for data anal
 
 These methods help streamline data manipulation tasks and facilitate insightful analysis of datasets.
 
-## 16) Answer following w.r.t. given data frame in pandas:
+## <mark> 16) Answer following w.r.t. given data frame in pandas: </mark>
 
 data = { 'Department': ['HR', 'IT', 'HR', 'IT', 'Sales', 'Sales', 'IT', 'HR'], 'Employee':
 ['Alice', 'Bob', 'Charlie', 'David', 'Edward', 'Fiona', 'George', 'Henry'], 'Salary': [50000,
@@ -1675,7 +1675,7 @@ Name: 1, dtype: object
 
 This analysis provides a comprehensive view of employee distribution and salary structures across different departments using Pandas!
 
-## 17) Draw a plot for given data using Pylab/Matplotlib and Pandas.
+## <mark> 17) Draw a plot for given data using Pylab/Matplotlib and Pandas. </mark>
 
 To create a plot using the provided data in Pandas with Matplotlib, we will follow these steps:
 
@@ -1753,7 +1753,7 @@ Running this code will produce a bar chart that visualizes the total salary expe
 
 This approach demonstrates how to effectively utilize Pandas and Matplotlib to visualize data in Python.
 
-## 18) Write a Python program using Pandas for a Sports Scoreboard using a line plot.
+## <mark> 18) Write a Python program using Pandas for a Sports Scoreboard using a line plot. </mark>
 
 Creating a Sports Scoreboard using Pandas and visualizing it with a line plot is a great way to demonstrate data manipulation and visualization in Python. Below is a step-by-step Python program that simulates a scoreboard for a fictional sports event, such as a basketball game, and then plots the scores over time.
 
@@ -1836,7 +1836,7 @@ plt.show()
 
 Running this program will produce a line plot that visualizes the cumulative scores of Team A and Team B over four quarters (Q1 to Q4). This approach demonstrates how to effectively use Pandas for data manipulation and Matplotlib for visualization in Python.
 
-## 19) Explain the role of mean(), median(), and mode() in statistical data analysis using Python.Write a Python script to calculate the mean, median, and mode of a given dataset using NumPy and SciPy.
+## <mark> 19) Explain the role of mean(), median(), and mode() in statistical data analysis using Python.Write a Python script to calculate the mean, median, and mode of a given dataset using NumPy and SciPy. </mark>
 
 In statistical data analysis, the mean, median, and mode are fundamental measures of central tendency that provide insights into the distribution and characteristics of a dataset. Here's a brief explanation of each:
 
@@ -1917,7 +1917,7 @@ This output indicates that:
 
 The mean, median, and mode are essential statistics for understanding data distributions. This script illustrates how to compute these measures using Python's NumPy and SciPy libraries effectively. These statistics can help identify trends and inform decision-making processes based on data analysis.
 
-## 20) What is statistical data analysis in python? Explain the role of key Python libraries (NumPy, Pandas, SciPy, Matplotlib, Statsmodels) in scientific computation and data analysis.
+## <mark> 20) What is statistical data analysis in python? Explain the role of key Python libraries (NumPy, Pandas, SciPy, Matplotlib, Statsmodels) in scientific computation and data analysis. </mark>
 
 Statistical data analysis in Python involves using various libraries to perform data manipulation, statistical modeling, and visualization to extract insights from data. Python's ecosystem provides powerful tools that facilitate scientific computation and data analysis, making it a popular choice among data scientists and analysts.
 
@@ -1988,7 +1988,7 @@ When you run the above script:
 
 Statistical data analysis in Python leverages powerful libraries like NumPy, Pandas, SciPy, Matplotlib, and Statsmodels to perform comprehensive analyses on datasets. These libraries provide essential functionalities that facilitate efficient computation, data manipulation, statistical modeling, and visualization—all crucial components in extracting meaningful insights from data.
 
-## 21) Describe the steps involved in statistical data analysis.(Data Collection,Data Cleaning and Preprocessing,Exploratory Data Analysis (EDA),Statistical Testing,Modeling,Data Visualization,Interpretation of Results)
+## <mark> 21) Describe the steps involved in statistical data analysis.(Data Collection,Data Cleaning and Preprocessing,Exploratory Data Analysis (EDA),Statistical Testing,Modeling,Data Visualization,Interpretation of Results) </mark>
 
 Statistical data analysis is a systematic process used to collect, clean, analyze, and interpret data in order to extract meaningful insights and support decision-making. The process involves several key steps, each crucial for ensuring the accuracy and reliability of the results. Below are the steps involved in statistical data analysis:
 
@@ -2044,7 +2044,7 @@ To facilitate these steps in Python, several libraries are commonly used:
 
 These libraries provide powerful tools that streamline each phase of statistical data analysis, making Python a popular choice among data analysts and scientists.
 
-## 22) What is Exploratory Data Analysis (EDA)? List and explain key techniques used, including data cleaning and preprocessing.
+## <mark> 22) What is Exploratory Data Analysis (EDA)? List and explain key techniques used, including data cleaning and preprocessing. </mark>
 
 #### What is Exploratory Data Analysis (EDA)?
 
@@ -2124,7 +2124,7 @@ Before conducting EDA, it is essential to clean and preprocess the data to ensur
 
 Exploratory Data Analysis is a fundamental part of the data analysis process that allows analysts to uncover insights, identify patterns, and prepare for further statistical modeling. By employing various techniques such as descriptive statistics, visualization, correlation analysis, and handling missing values, EDA provides a comprehensive understanding of the dataset's structure and characteristics. This understanding is crucial for making informed decisions about subsequent analyses and modeling approaches.
 
-## 23) What are descriptive statistics, correlation analysis, and their importance in understanding a dataset?
+## <mark> 23) What are descriptive statistics, correlation analysis, and their importance in understanding a dataset? </mark>
 
 #### Descriptive Statistics and Correlation Analysis
 
@@ -2190,7 +2190,7 @@ Both descriptive statistics and correlation analysis play crucial roles in under
 
 These techniques are foundational for data analysis across various fields, including business, healthcare, social sciences, and more. By effectively utilizing these methods, analysts can derive actionable insights from their data.
 
-## 24) Write a Python script to perform a t-test between two independent samples and interpret the results.
+## <mark> 24) Write a Python script to perform a t-test between two independent samples and interpret the results. </mark>
 
 A t-test is a statistical test used to determine whether there is a significant difference between the means of two independent samples. In this script, we will use the `scipy.stats` library to perform an independent two-sample t-test.
 
@@ -2292,7 +2292,7 @@ In this example:
 
 This script provides a straightforward way to conduct a t-test in Python and interpret its results effectively.
 
-## 25) Using Python, write a script to compute the standard deviation and variance for a given dataset using NumPy.
+## <mark> 25) Using Python, write a script to compute the standard deviation and variance for a given dataset using NumPy. </mark>
 
 Certainly! Below is a Python script that demonstrates how to compute the standard deviation and variance for a given dataset using the NumPy library.
 
@@ -2354,7 +2354,7 @@ Standard Deviation: 4.19
 
 This script effectively demonstrates how to compute variance and standard deviation using NumPy in Python. These statistical measures are crucial for understanding the spread and dispersion of data points in a dataset.
 
-## 26) Write a Python program that performs correlation analysis between two variables using Pandas and Matplotlib to visualize the correlation.
+## <mark> 26) Write a Python program that performs correlation analysis between two variables using Pandas and Matplotlib to visualize the correlation. </mark>
 
 Certainly! Below is a Python program that demonstrates how to perform correlation analysis between two variables using the Pandas library. We will also use Matplotlib to visualize the correlation with a scatter plot and display the correlation coefficient.
 
@@ -2436,7 +2436,7 @@ And you will see a scatter plot showing points for Variable A versus Variable B 
 
 This program effectively demonstrates how to perform correlation analysis between two variables using Pandas and visualize the results with Matplotlib. The correlation coefficient provides insight into how closely related the two variables are, while the scatter plot visually represents their relationship.
 
-## 27) Write a Python script to conduct a simple linear regression analysis using the statsmodels library, and plot the regression line along with the data points using Matplotlib.
+## <mark> 27) Write a Python script to conduct a simple linear regression analysis using the statsmodels library, and plot the regression line along with the data points using Matplotlib. </mark>
 
 Certainly! Below is a Python script that demonstrates how to conduct a simple linear regression analysis using the `statsmodels` library. We will also visualize the regression line along with the data points using Matplotlib.
 
@@ -2566,7 +2566,7 @@ And you will see a scatter plot showing the data points along with a red regress
 
 This script effectively demonstrates how to conduct simple linear regression analysis using the `statsmodels` library in Python and visualize the results with Matplotlib. The summary output provides insights into the relationship between variables, while the plot visually represents this relationship along with predicted values from the regression model.
 
-## 28) Explain the importance of data visualization in scientific computation and list common techniques used for visualizing data.
+## <mark> 28) Explain the importance of data visualization in scientific computation and list common techniques used for visualizing data. </mark>
 
 #### Importance of Data Visualization in Scientific Computation
 
@@ -2651,7 +2651,7 @@ There are several techniques used for data visualization, each suited for differ
 
 Data visualization is an essential component of scientific computation that enhances understanding, communication, and decision-making based on complex datasets. By employing various visualization techniques—ranging from bar charts and line graphs to heat maps and scatter plots—analysts can effectively convey insights derived from their data analyses, ultimately leading to more informed conclusions and actions.
 
-## 29) What is regression analysis? Explain how it is used in statistical data analysis with an example.
+## <mark> 29) What is regression analysis? Explain how it is used in statistical data analysis with an example. </mark>
 
 #### What is Regression Analysis?
 
@@ -2746,7 +2746,7 @@ When you run this script:
 
 Regression analysis is a powerful tool in statistical data analysis that helps understand relationships between variables and make predictions based on historical data. By modeling these relationships, businesses can make informed decisions based on empirical evidence rather than intuition alone.
 
-## 30) Describe how Python libraries like NumPy, Pandas, and SciPy can be used together for advanced statistical data analysis. Provide an example where you compute descriptive statistics, perform hypothesis testing, and visualize the data.
+## <mark> 30) Describe how Python libraries like NumPy, Pandas, and SciPy can be used together for advanced statistical data analysis. Provide an example where you compute descriptive statistics, perform hypothesis testing, and visualize the data. </mark>
 
 Python libraries like NumPy, Pandas, and SciPy are essential tools for advanced statistical data analysis. They provide a robust framework for performing complex computations, manipulating data, conducting statistical tests, and visualizing results. Below, we will explore how these libraries can be used together in a cohesive workflow and provide a practical example that includes computing descriptive statistics, performing hypothesis testing, and visualizing the data.
 
@@ -2857,7 +2857,7 @@ When you run this script:
 
 By integrating NumPy, Pandas, and SciPy in this example, we effectively demonstrated how these libraries can be used together to perform advanced statistical data analysis. This workflow allows analysts to compute descriptive statistics, conduct hypothesis testing, and visualize results seamlessly—enhancing overall efficiency in data analysis tasks.
 
-## 31) What are some common libraries for image processing in Python? Mention at least two.
+## <mark> 31) What are some common libraries for image processing in Python? Mention at least two. </mark>
 
 Some common libraries for image processing in Python include:
 
@@ -2870,7 +2870,7 @@ Some common libraries for image processing in Python include:
 
 These libraries are essential tools for developers and researchers working on image-related projects, enabling them to perform complex image processing tasks effectively.
 
-## 32) Explain the process of converting an image to grayscale and applying edge detection using OpenCV in Python.
+## <mark> 32) Explain the process of converting an image to grayscale and applying edge detection using OpenCV in Python. </mark>
 
 Converting an image to grayscale and applying edge detection are common tasks in image processing, particularly in computer vision applications. Below is a detailed explanation of how to achieve this using the OpenCV library in Python.
 
@@ -2952,7 +2952,7 @@ plt.show()
 
 This example demonstrates how to convert an image to grayscale and apply edge detection using OpenCV in Python. Grayscale images are often used in various applications such as feature extraction and image enhancement because they simplify the data while retaining essential information. Edge detection is crucial for identifying boundaries within images and plays a significant role in object detection and recognition tasks.
 
-## 33) What is image resizing, and how can you implement it using Python's OpenCV library? Write a Python script to resize an image to a 256x256 resolution.
+## <mark> 33) What is image resizing, and how can you implement it using Python's OpenCV library? Write a Python script to resize an image to a 256x256 resolution. </mark>
 
 #### What is Image Resizing?
 
@@ -3024,7 +3024,7 @@ cv2.imwrite('resized_image.jpg', resized_image)
 
 Image resizing is a fundamental operation in image processing that allows you to adjust images for various applications. Using OpenCV in Python makes it straightforward to resize images programmatically while maintaining control over the output dimensions. This capability is essential for preparing images for machine learning models, optimizing web content, or simply adjusting images for better visual presentation.
 
-## 34) Explain the concept of image rotation. Write a Python script to rotate an image by 45 degrees using OpenCV.
+## <mark> 34) Explain the concept of image rotation. Write a Python script to rotate an image by 45 degrees using OpenCV. </mark>
 
 #### Concept of Image Rotation
 
@@ -3116,7 +3116,7 @@ cv2.imwrite('rotated_image.jpg', rotated_image)
 
 This script effectively demonstrates how to rotate an image by a specified angle using OpenCV in Python. Image rotation is a fundamental operation in many applications involving graphic manipulation and computer vision tasks. By utilizing OpenCV's capabilities, you can easily adjust images to meet specific requirements or enhance visual presentations.
 
-## 35) What is image translation, and how can it be implemented using NumPy and OpenCV? Provide a Python script to translate an image by 50 pixels along both axes.
+## <mark> 35) What is image translation, and how can it be implemented using NumPy and OpenCV? Provide a Python script to translate an image by 50 pixels along both axes. </mark>
 
 #### What is Image Translation?
 
@@ -3208,7 +3208,7 @@ cv2.imwrite('translated_image.jpg', translated_image)
 
 This script effectively demonstrates how to perform image translation using NumPy and OpenCV in Python. Image translation is a fundamental operation in image processing that allows you to reposition images for various applications such as aligning images in computer vision tasks or preparing images for further analysis or manipulation.
 
-## 36) Discuss image normalization and its importance in image processing. Write a Python script to normalize an image’s pixel values between 0 and 1.
+## <mark> 36) Discuss image normalization and its importance in image processing. Write a Python script to normalize an image’s pixel values between 0 and 1. </mark>
 
 #### Image Normalization
 
@@ -3293,7 +3293,7 @@ cv2.imwrite('normalized_image.jpg', normalized_image_uint8)
 
 Image normalization is a vital technique in image processing that enhances contrast and ensures consistency across images. By normalizing pixel values between a specified range (such as [0, 1]), we can improve visual quality and prepare images for further analysis or machine learning tasks effectively. The provided Python script illustrates how to perform this normalization using OpenCV and NumPy.
 
-## 37) What is the role of image blurring in reducing noise and details? Write a Python script that applies Gaussian blurring to an image using OpenCV.
+## <mark> 37) What is the role of image blurring in reducing noise and details? Write a Python script that applies Gaussian blurring to an image using OpenCV. </mark>
 
 #### Role of Image Blurring in Reducing Noise and Details
 
@@ -3376,7 +3376,7 @@ cv2.imwrite('blurred_image.jpg', blurred_image)
 
 Image blurring is an essential technique in image processing that helps reduce noise and smooth out details while preserving important features such as edges. By applying Gaussian blur using OpenCV in Python, we can effectively enhance images for various applications, including preprocessing for machine learning models or improving visual quality for presentation purposes.
 
-## 38) Define morphological image processing. Write a Python script to perform erosion and dilation on a binary image using OpenCV.
+## <mark> 38) Define morphological image processing. Write a Python script to perform erosion and dilation on a binary image using OpenCV. </mark>
 
 #### Morphological Image Processing
 
@@ -3476,7 +3476,7 @@ cv2.imwrite('dilated_image.jpg', dilated_image)
 
 Morphological image processing is a powerful technique for analyzing and manipulating shapes within images. By applying operations such as erosion and dilation using OpenCV in Python, we can effectively enhance images for various applications in computer vision and image analysis. The provided script illustrates how to perform these operations on a binary image while visualizing the results.
 
-## 39) What are the key applications of image processing in computer vision, medical imaging, and security? Discuss the use of image processing for data augmentation in machine learning.
+## <mark> 39) What are the key applications of image processing in computer vision, medical imaging, and security? Discuss the use of image processing for data augmentation in machine learning. </mark>
 
 #### Key Applications of Image Processing
 
@@ -3516,7 +3516,7 @@ These techniques help improve the robustness of machine learning models by expos
 
 Image processing is a cornerstone technology that finds applications across multiple domains such as computer vision, medical imaging, and security. Its ability to enhance image quality and extract meaningful information makes it indispensable for modern technological advancements. Additionally, utilizing image processing for data augmentation significantly enhances the performance of machine learning models by providing diverse training datasets.
 
-## 40) How can Python be used to perform data augmentation on images for training machine learning models? List and explain common image augmentation techniques.
+## <mark> 40) How can Python be used to perform data augmentation on images for training machine learning models? List and explain common image augmentation techniques. </mark>
 
 Python is widely used for performing data augmentation on images, which is a crucial technique in training machine learning models, especially in computer vision. Data augmentation artificially increases the diversity of the training dataset by applying various transformations to the original images. This helps improve the robustness and generalization of models, making them more effective when exposed to new, unseen data.
 
@@ -3651,7 +3651,7 @@ plt.show()
 
 Data augmentation is a powerful technique used in machine learning to enhance training datasets artificially by applying various transformations to images. By employing these techniques, models can achieve better generalization and robustness against variations found in real-world data. The provided Python script illustrates how easy it is to implement data augmentation using libraries like `imgaug`, which can significantly improve model performance in computer vision tasks.
 
-## 41) Why is image preprocessing, such as resizing, normalization, and edge detection, crucial for machine learning models? Provide code examples to demonstrate these preprocessing techniques.
+## <mark> 41) Why is image preprocessing, such as resizing, normalization, and edge detection, crucial for machine learning models? Provide code examples to demonstrate these preprocessing techniques. </mark>
 
 #### Importance of Image Preprocessing for Machine Learning Models
 
@@ -3763,7 +3763,7 @@ plt.show()
 
 Image preprocessing techniques such as resizing, normalization, and edge detection are crucial for enhancing the performance of machine learning models in computer vision tasks. By applying these techniques effectively using Python libraries like OpenCV, we can ensure that our models receive high-quality input data that improves their ability to learn and generalize from training datasets. Proper preprocessing not only enhances model accuracy but also reduces training time and improves overall model robustness against variations in input data.
 
-## 42) What is Flask, and why is it commonly used for web development?
+## <mark> 42) What is Flask, and why is it commonly used for web development? </mark>
 
 Flask is a popular micro web framework for Python that enables developers to build web applications quickly and efficiently. It is designed to be lightweight and modular, allowing for flexibility in development and easy scalability of applications.
 
@@ -3816,7 +3816,7 @@ if __name__ == '__main__':
 
 Flask is a powerful yet simple framework that allows developers to build web applications efficiently. Its flexibility, scalability, and active community support make it an excellent choice for both beginners and experienced developers looking to create robust web solutions.
 
-## 43) Describe the basic structure of a Flask web application, highlighting key components like routes, templates, and request handling.
+## <mark> 43) Describe the basic structure of a Flask web application, highlighting key components like routes, templates, and request handling. </mark>
 
 #### Basic Structure of a Flask Web Application
 
@@ -3896,7 +3896,7 @@ my_flask_app/
 
 The basic structure of a Flask web application revolves around routes, templates, and request handling. By defining routes, rendering templates, and managing requests effectively, developers can create dynamic web applications that respond to user interactions. Flask's simplicity and flexibility make it an excellent choice for both small projects and larger applications.
 
-## 44) Develop a simple Flask web application that takes input from a user through a form, processes it (e.g., performs basic calculations or operations), and displays the result on another page. Explain how Flask handles HTTP requests and responses, routing, and templates.
+## <mark> 44) Develop a simple Flask web application that takes input from a user through a form, processes it (e.g., performs basic calculations or operations), and displays the result on another page. Explain how Flask handles HTTP requests and responses, routing, and templates. </mark>
 
 To develop a simple Flask web application that takes user input through a form, processes it, and displays the result on another page, we will cover the following components:
 
@@ -4028,7 +4028,7 @@ To run this application:
 
 This simple Flask web application demonstrates how to handle HTTP requests and responses, define routes, process user input through forms, and use templates for dynamic content rendering. By understanding these fundamental concepts, you can build more complex applications that meet various requirements in web development.
 
-## 45) What is TensorFlow? Explain its main use in machine learning.
+## <mark> 45) What is TensorFlow? Explain its main use in machine learning. </mark>
 
 TensorFlow is an open-source machine learning framework developed by Google that provides a comprehensive platform for building and deploying machine learning models. It is widely used for both traditional machine learning and deep learning applications, making it a versatile tool for data scientists and developers.
 
@@ -4060,7 +4060,7 @@ TensorFlow is an open-source machine learning framework developed by Google that
 
 TensorFlow is a powerful framework that has become a cornerstone in the field of machine learning and deep learning. Its ability to handle complex computations efficiently, combined with its flexibility and extensive community support, makes it a popular choice among developers and researchers alike. Whether for building sophisticated deep learning models or deploying machine learning applications at scale, TensorFlow provides the tools necessary to succeed in various AI tasks.
 
-## 46) Explain the core components of TensorFlow, including tensors, computational graphs, and sessions.
+## <mark> 46) Explain the core components of TensorFlow, including tensors, computational graphs, and sessions. </mark>
 
 TensorFlow is a powerful open-source framework developed by Google for building and deploying machine learning models. It provides a comprehensive ecosystem for working with deep learning and other machine learning techniques. Understanding its core components is essential for effectively utilizing TensorFlow in various applications.
 
@@ -4119,7 +4119,7 @@ print("Result of addition:\n", result.numpy())  ## Output will be [[6 8], [10 12
 
 Understanding the core components of TensorFlow—tensors, computational graphs, and sessions—is crucial for effectively leveraging this powerful framework for machine learning tasks. Tensors serve as the primary data structure for representing information, while computational graphs provide an efficient way to organize and execute complex calculations. With eager execution in TensorFlow 2.x simplifying many workflows, developers can focus more on building and training models without worrying about managing sessions explicitly.
 
-## 47) Explain how TensorFlow is used for building and training neural networks. Write a code example where you create a simple neural network for a classification task, train it using a dataset, and evaluate its performance.
+## <mark> 47) Explain how TensorFlow is used for building and training neural networks. Write a code example where you create a simple neural network for a classification task, train it using a dataset, and evaluate its performance. </mark>
 
 TensorFlow is an open-source machine learning framework developed by Google that is widely used for building and training neural networks. It provides a flexible and efficient platform for developing machine learning models, particularly in deep learning applications. Below, we will discuss how TensorFlow is used for building and training neural networks, followed by a code example that demonstrates creating a simple neural network for a classification task.
 

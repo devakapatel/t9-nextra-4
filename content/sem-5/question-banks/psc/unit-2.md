@@ -1,6 +1,6 @@
 # Unit 2
 
-## 1) Explain various OOPS concepts used in Python.
+## <mark> 1) Explain various OOPS concepts used in Python. </mark>
 
 ### Object-Oriented Programming (OOP) Concepts in Python
 
@@ -102,7 +102,7 @@ for animal in animals:
 
 These OOP concepts in Python allow you to write modular, reusable, and maintainable code by organizing it into classes and objects. They promote code encapsulation, abstraction, and polymorphism, making it easier to manage complex systems.
 
-## 2) Explain the concept of class and object with a suitable Python script example.
+## <mark> 2) Explain the concept of class and object with a suitable Python script example. </mark>
 
 ### Concept of Class and Object in Python
 
@@ -158,7 +158,7 @@ print(my_dog.get_age())      ## Output: Buddy is 3 years old.
 
 Classes and objects are essential components of OOP in Python. They allow you to encapsulate data and functionality, making your code more modular, reusable, and easier to manage. By defining classes and creating objects, you can model real-world entities effectively in your programs.
 
-## 3) Explain the following concepts with suitable Python script examples:
+## <mark> 3) Explain the following concepts with suitable Python script examples: </mark>
 
 - Single Inheritance
 - Multilevel inheritance
@@ -294,7 +294,7 @@ print(my_cat.meow())   ## Output: Cat meows
 
 These concepts help in organizing code better, making it more modular and easier to maintain by promoting code reuse and establishing clear relationships between different classes.
 
-## 4) Explain the concept of polymorphism in Python with method overloading and method overriding with a suitable Python example.
+## <mark> 4) Explain the concept of polymorphism in Python with method overloading and method overriding with a suitable Python example. </mark>
 
 ### Polymorphism in Python
 
@@ -369,7 +369,7 @@ print(math_ops.add(5, 10, 15))   ## Output: 30 (5 + 10 + 15)
 
 These concepts enhance code flexibility and reusability, allowing developers to write more general and adaptable code structures.
 
-## 5) Explain Operator Overloading (for + operator) in Python with an example.
+## <mark> 5) Explain Operator Overloading (for + operator) in Python with an example. </mark>
 
 ### Operator Overloading in Python
 
@@ -426,7 +426,7 @@ print("Result of v1 + v2:", result)  ## Output: Result of v1 + v2: Vector(6, 8)
 
 Operator overloading in Python allows you to define how operators like `+`, `-`, etc., behave with instances of user-defined classes. This enhances code readability and allows for intuitive manipulation of objects. By implementing special methods such as `__add__()`, you can customize how operations are performed on your objects, making your classes more versatile and user-friendly.
 
-## 6) Differentiate between Data Abstraction and Data Hiding.
+## <mark> 6) Differentiate between Data Abstraction and Data Hiding. </mark>
 
 ### Difference Between Data Abstraction and Data Hiding
 
@@ -507,7 +507,7 @@ print("Current Balance:", account.get_balance())  ## Output: Current Balance: 15
 
 Both data abstraction and data hiding are essential in OOP for managing complexity and enhancing security. While abstraction focuses on simplifying interactions with objects by exposing only necessary features, hiding protects sensitive data from unauthorized access, ensuring that the internal state of objects remains secure and intact. Understanding these concepts helps in designing robust and maintainable software systems.
 
-## 7) Explain isinstance(), issubclass(), super(), and init method.
+## <mark> 7) Explain isinstance(), issubclass(), super(), and init method. </mark>
 
 Here's an explanation of the concepts you mentioned:
 
@@ -576,7 +576,7 @@ In this example, the `__init__` method takes two parameters, `name` and `age`, a
 
 These concepts are fundamental in object-oriented programming and help in creating reusable, modular, and maintainable code in Python.
 
-## 8) Discuss Encapsulation with getter and setter methods.
+## <mark> 8) Discuss Encapsulation with getter and setter methods. </mark>
 
 ### Encapsulation in Python with Getter and Setter Methods
 
@@ -661,7 +661,7 @@ except ValueError as e:
 
 Encapsulation is a powerful concept in OOP that enhances data security and integrity by restricting direct access to an object's attributes. By using getter and setter methods, you can control how attributes are accessed and modified, allowing for validation and maintaining consistency within your objects. This leads to more robust and maintainable code.
 
-## 9) What is Abstract Data Types (ADT) in Python programming? Explain features and advantages of ADT.
+## <mark> 9) What is Abstract Data Types (ADT) in Python programming? Explain features and advantages of ADT. </mark>
 
 ### Abstract Data Types (ADT) in Python Programming
 
@@ -743,7 +743,7 @@ print("Stack size after pop:", my_stack.size())  ## Output: Stack size after pop
 
 Abstract Data Types (ADT) provide a powerful way to define and work with complex data structures while hiding implementation details from users. This leads to improved code readability, maintainability, reusability, and security. Understanding and utilizing ADTs is essential for building robust software systems in Python and other programming languages.
 
-## 10) Write a short note on:
+## <mark> 10) Write a short note on: </mark>
 
 - Stack ADT
 - Queue ADT
@@ -888,7 +888,7 @@ print(my_list.length())    ## Output: 1
 
 These abstract data types are fundamental in programming as they provide structured ways to manage data efficiently and effectively.
 
-## 11) Write a Python script to implement linear search/binary search (Recursive/Non-Recursive).
+## <mark> 11) Write a Python script to implement linear search/binary search (Recursive/Non-Recursive). </mark>
 
 Here's a Python script that implements linear search and binary search (recursive and non-recursive versions) on a sorted list:
 
@@ -978,7 +978,7 @@ The script demonstrates the usage of each search algorithm by providing an examp
 
 Note: The list must be sorted for binary search to work correctly.
 
-## 12) Write a Python script to implement Bubble/Selection/Tim sort.
+## <mark> 12) Write a Python script to implement Bubble/Selection/Tim sort. </mark>
 
 Certainly! Below are Python implementations for three common sorting algorithms: Bubble Sort, Selection Sort, and Tim Sort. Each sorting algorithm is provided with a brief explanation of how it works, followed by the code implementation.
 
@@ -1105,7 +1105,7 @@ print("Tim Sorted array:", arr)
 
 These implementations provide a clear understanding of how each sorting algorithm works in Python. You can run these scripts to see how they sort arrays of integers effectively!
 
-## 13) Explain the following concepts with suitable Python script examples: <br> - Encapsulation for private and protected members <br> - Discuss Encapsulation with getter and setter method. <br> - Differentiate between Data Abstraction and Data Hiding.
+## <mark> 13) Explain the following concepts with suitable Python script examples: <br> - Encapsulation for private and protected members <br> - Discuss Encapsulation with getter and setter method. <br> - Differentiate between Data Abstraction and Data Hiding. </mark>
 
 ### Encapsulation in Python
 
@@ -1221,7 +1221,7 @@ emp.set_salary(-1000)  # Output: Salary cannot be negative
 
 Encapsulation is a key principle in OOP that enhances data security and maintainability by controlling access to class members. By using private and protected members along with getter and setter methods, developers can ensure that internal states are modified only in controlled ways. Understanding the distinction between data abstraction and data hiding further helps in designing robust systems that prioritize user interaction simplicity while safeguarding internal complexities.
 
-## 14) Write a Python script to implement linear search/binary search (Recursive/Non-Recursive).
+## <mark> 14) Write a Python script to implement linear search/binary search (Recursive/Non-Recursive). </mark>
 
 Certainly! Below are Python implementations for both **Linear Search** and **Binary Search** (both recursive and non-recursive). Each search algorithm is explained, followed by the code implementation.
 
@@ -1340,7 +1340,7 @@ else:
 
 These implementations provide clear examples of how to perform both linear and binary searches using Python. You can run these scripts to see how they work with different datasets!
 
-## 15) What is a regular expression? How to use RegEx in Python? Explain any 4 metacharacters in Python with suitable examples.
+## <mark> 15) What is a regular expression? How to use RegEx in Python? Explain any 4 metacharacters in Python with suitable examples. </mark>
 
 ### What is a Regular Expression?
 
@@ -1438,7 +1438,7 @@ Metacharacters are characters that have special meanings in regular expressions.
 
 Regular expressions are powerful tools for text processing and manipulation in Python. They allow you to define complex search patterns using metacharacters, enabling efficient data validation and extraction tasks. Understanding how to use regex effectively can significantly enhance your ability to work with strings in programming.
 
-## 16) Describe various methods used for regular expressions in Python programming with suitable examples (re.search(), re.escape(), re.sub(), re.split(), re.compile(), re.findall()).
+## <mark> 16) Describe various methods used for regular expressions in Python programming with suitable examples (re.search(), re.escape(), re.sub(), re.split(), re.compile(), re.findall()). </mark>
 
 Regular expressions (regex) are powerful tools for pattern matching and manipulation in strings. In Python, the `re` module provides various methods to work with regular expressions. Below, I will describe several commonly used methods in the `re` module, along with suitable examples for each.
 
@@ -1553,7 +1553,7 @@ print(f"Escaped string: {escaped_string}")
 
 These methods provide powerful capabilities for working with strings and patterns in Python using regular expressions. You can use them to validate input, extract information, and manipulate text efficiently.
 
-## 17) What is a special sequence character in a regular expression? Explain the use of any 4 of the special sequence characters with suitable examples.
+## <mark> 17) What is a special sequence character in a regular expression? Explain the use of any 4 of the special sequence characters with suitable examples. </mark>
 
 In regular expressions, **special sequences** are predefined patterns that provide a shorthand way to match specific types of characters or positions in a string. They are typically denoted by a backslash (`\`) followed by a character. Special sequences simplify the creation of complex regex patterns by allowing you to express common matching criteria without having to write out the full character class.
 
@@ -1629,7 +1629,7 @@ Here are four commonly used special sequence characters in regular expressions, 
 
 Special sequences in regular expressions provide a concise and powerful way to match specific patterns within strings. By using these sequences, you can simplify your regex patterns and make them easier to read and maintain. The examples above illustrate how to use these special sequences effectively in Python using the `re` module.
 
-## 18) Explain the concept of sets in a regular expression with a suitable example.
+## <mark> 18) Explain the concept of sets in a regular expression with a suitable example. </mark>
 
 ### Concept of Sets in Regular Expressions
 
@@ -1706,7 +1706,7 @@ Here, the regex pattern `[a-zA-Z0-9]` matches any alphanumeric character (both l
 
 Sets in regular expressions provide a powerful way to match specific groups of characters efficiently. By using square brackets to define sets, you can create more flexible and concise patterns for string matching. This feature is particularly useful when you need to match multiple potential characters without writing out each possibility explicitly.
 
-## 19) Explain Decorators (wrapper function) in Python with a suitable example.
+## <mark> 19) Explain Decorators (wrapper function) in Python with a suitable example. </mark>
 
 ### Decorators in Python
 
@@ -1807,7 +1807,7 @@ Hello, Alice!
 
 Decorators in Python provide a flexible way to modify or enhance functions without changing their code directly. They are widely used for logging, access control, memoization, and more. Understanding how to create and use decorators can significantly improve your ability to write clean and maintainable code in Python.
 
-## 20) Write a Python script using regular expressions to check if a binary string contains at least three 1s.
+## <mark> 20) Write a Python script using regular expressions to check if a binary string contains at least three 1s. </mark>
 
 To check if a binary string contains at least three '1's using regular expressions in Python, you can use the `re` module. Specifically, you can create a regex pattern that matches three or more occurrences of '1'.
 
@@ -1872,7 +1872,7 @@ Binary string '001001' contains at least three 1s: False
 
 This output indicates which binary strings contain at least three occurrences of '1'.
 
-## 21) Write a Python script using regular expressions to check if a binary string starts with 0 and has an odd length, or starts with 1 and has an even length.
+## <mark> 21) Write a Python script using regular expressions to check if a binary string starts with 0 and has an odd length, or starts with 1 and has an even length. </mark>
 
 To check if a binary string meets the criteria of starting with '0' and having an odd length, or starting with '1' and having an even length using regular expressions in Python, you can use the `re` module.
 
@@ -1953,7 +1953,7 @@ Binary string '10010' matches criteria: True
 
 This output indicates which binary strings meet the specified conditions regarding their starting character and length.
 
-## 22) What is networking in Python? Explain the concept of socket.
+## <mark> 22) What is networking in Python? Explain the concept of socket. </mark>
 
 ### Networking in Python
 
@@ -2076,7 +2076,7 @@ When you run both scripts:
 
 Networking in Python allows developers to create applications that can communicate over networks using sockets. Sockets serve as fundamental building blocks for establishing connections between clients and servers, enabling real-time data exchange across various applications. By utilizing Python's built-in `socket` module, developers can implement both simple and complex networking functionalities with ease.
 
-## 23) Explain various methods for socket connection.
+## <mark> 23) Explain various methods for socket connection. </mark>
 
 ### Methods for Socket Connection in Python
 
@@ -2253,7 +2253,7 @@ finally:
 
 Socket programming in Python provides powerful capabilities for network communication through various methods available in the `socket` module. Understanding these methods allows developers to create robust client-server applications that can exchange data over networks efficiently.
 
-## 24) Discuss Thread Control Block (TCB).
+## <mark> 24) Discuss Thread Control Block (TCB). </mark>
 
 ### Thread Control Block (TCB)
 
@@ -2319,7 +2319,7 @@ class ThreadControlBlock:
 
 The Thread Control Block (TCB) is a fundamental component of multithreading in operating systems. It encapsulates all essential information about a thread, enabling efficient management, scheduling, and execution of threads within processes. Understanding TCBs is crucial for grasping how modern operating systems handle concurrency and parallelism effectively.
 
-## 25) Explain Multithreading in Python with Thread Creation Methods.
+## <mark> 25) Explain Multithreading in Python with Thread Creation Methods. </mark>
 
 ### Multithreading in Python
 
@@ -2458,7 +2458,7 @@ print("Main program finished.")
 
 Multithreading in Python allows developers to perform multiple operations concurrently, enhancing the efficiency of applications, especially those involving I/O operations. The `threading` module provides various methods to create and manage threads, including using functions, extending the `Thread` class, and creating daemon threads. Understanding these methods helps developers effectively utilize multithreading to improve application performance.
 
-## 26) Explain Multithreading with lock() synchronization.
+## <mark> 26) Explain Multithreading with lock() synchronization. </mark>
 
 ### Multithreading with Lock Synchronization in Python
 

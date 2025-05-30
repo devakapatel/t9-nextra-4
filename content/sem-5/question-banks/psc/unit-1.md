@@ -1,6 +1,6 @@
 # Unit 1
 
-## 1) Explain why python is important for scientific computing with various advantages provided by it.
+## <mark> 1) Explain why python is important for scientific computing with various advantages provided by it. </mark>
 
 ### Importance of Python in Scientific Computing
 
@@ -53,7 +53,7 @@ As the field of machine learning grows within scientific research, Python's libr
 
 In summary, Python's importance in scientific computing stems from its ease of use, rich ecosystem of libraries, cross-platform compatibility, integration capabilities, strong community support, rapid prototyping abilities, effective data handling features, powerful visualization tools, and support for machine learning. These advantages make it an invaluable tool for researchers across various scientific disciplines looking to analyze data efficiently and innovate continuously.
 
-## 2) List out various operators in python. Explain any one with a suitable example.
+## <mark> 2) List out various operators in python. Explain any one with a suitable example. </mark>
 
 ### Various Operators in Python
 
@@ -148,7 +148,7 @@ The sum of 10 and 5 is: 15
 
 This demonstrates how straightforward it is to use operators in Python to perform basic arithmetic operations.
 
-## 3) Explain Identity and Membership Operator with an example(is , is not ,in , not in).
+## <mark> 3) Explain Identity and Membership Operator with an example(is , is not ,in , not in). </mark>
 
 ### Identity and Membership Operators
 
@@ -198,7 +198,7 @@ In the second example, we check if the string values are present in the `colors`
 
 The identity operators are useful for comparing object references, while the membership operators are helpful for checking if a value exists in a sequence.
 
-## 4) Explain the input function of python that demonstrates type casting.
+## <mark> 4) Explain the input function of python that demonstrates type casting. </mark>
 
 ### The `input()` Function and Type Casting in Python
 
@@ -258,7 +258,8 @@ In this example, the user input is:
 
 The `input()` function always returns a string, so it's important to convert the input to the desired data type using functions like `int()` or `float()` if you want to perform arithmetic operations or comparisons with the input values.
 
-## 5) Explain the following data structures of python with suitable examples.
+## <mark> 5) Explain the following data structures of python with suitable examples. </mark>
+
 a. Set
 b. List
 c. Tuple
@@ -374,7 +375,7 @@ print(person)
 
 These data structures provide flexibility and efficiency when handling different types of data in Python programming.
 
-## 6) Explain various operations on Strings, Tuples, Lists and Dictionaries with suitable examples. ( any 4 OR any 6)
+## <mark> 6) Explain various operations on Strings, Tuples, Lists and Dictionaries with suitable examples. ( any 4 OR any 6) </mark>
 
 ### Operations on Strings
 
@@ -569,7 +570,7 @@ for key in person:
 
 These examples demonstrate the basic operations available for strings, tuples, lists, and dictionaries in Python. They are fundamental data structures used in various programming tasks.
 
-## 7) Differentiate List and Tuple in Python.
+## <mark> 7) Differentiate List and Tuple in Python. </mark>
 
 ### Differentiating List and Tuple in Python
 
@@ -642,17 +643,17 @@ print(my_tuple.index(3))    ## Output: 2
 
 #### Summary Table
 
-| Feature | List | Tuple |
-| --- | --- | --- |
-| Mutability | Mutable | Immutable |
-| Syntax | Square brackets `[]` | Parentheses `()` |
-| Performance | Slower due to mutability | Faster due to immutability |
-| Use Cases | Dynamic data | Fixed data |
-| Methods | Many (e.g., append, sort) | Few (e.g., count, index) |
+| Feature     | List                      | Tuple                      |
+| ----------- | ------------------------- | -------------------------- |
+| Mutability  | Mutable                   | Immutable                  |
+| Syntax      | Square brackets `[]`      | Parentheses `()`           |
+| Performance | Slower due to mutability  | Faster due to immutability |
+| Use Cases   | Dynamic data              | Fixed data                 |
+| Methods     | Many (e.g., append, sort) | Few (e.g., count, index)   |
 
 In conclusion, while both lists and tuples serve the purpose of storing collections of items in Python, their differences in mutability, syntax, performance, and use cases make them suitable for different scenarios. Lists are preferable when you need a dynamic collection that can be modified, while tuples are ideal for fixed collections where immutability is desired.
 
-## 8) Is String a mutable data type? Also explain the string operations length, indexing and slicing in detail with an appropriate example. OR Explain strings and operations on string type. (slicing, indexing, stride, etc..)
+## <mark> 8) Is String a mutable data type? Also explain the string operations length, indexing and slicing in detail with an appropriate example. OR Explain strings and operations on string type. (slicing, indexing, stride, etc..) </mark>
 
 ### Are Strings Mutable in Python?
 
@@ -731,7 +732,7 @@ print("Sliced with stride:", sliced_with_stride)  ## Output: Sliced with stride:
 
 These operations provide powerful ways to manipulate and analyze strings in Python, making it easy to work with textual data effectively.
 
-## 9) Explain branching in the context of python. (if, else, else..if,break)
+## <mark> 9) Explain branching in the context of python. (if, else, else..if,break) </mark>
 
 ### Branching in Python
 
@@ -865,7 +866,7 @@ In this example, the loop stops when `i` becomes 3 because of the **`break`** st
 
 Branching statements allow your Python program to make decisions and execute different blocks of code based on specific conditions. They are essential for creating programs with dynamic behavior.
 
-## 10) Discuss control structure in context of python. (for, while)
+## <mark> 10) Discuss control structure in context of python. (for, while) </mark>
 
 ### Control Structures in Python: Loops
 
@@ -992,7 +993,7 @@ for i in range(10):
 
 These control structures are fundamental for implementing repetitive tasks and managing the flow of execution in your Python programs. Understanding how to use them effectively can significantly enhance your programming capabilities.
 
-## 11) What are User Defined Functions in python? Explain with examples.
+## <mark> 11) What are User Defined Functions in python? Explain with examples. </mark>
 
 ### User-Defined Functions in Python
 
@@ -1106,7 +1107,7 @@ print("Factorial of 5 is:", result)  ## Output: Factorial of 5 is: 120
 
 User-defined functions enhance code readability and reusability, making them an essential feature in Python programming.
 
-## 12) Explain various types of Argument passing methods in python programming each with appropriate Arguments/Keyword Arguments/Default examples. Arguments/Variable (Positional length arguments)
+## <mark> 12) Explain various types of Argument passing methods in python programming each with appropriate Arguments/Keyword Arguments/Default examples. Arguments/Variable (Positional length arguments) </mark>
 
 In Python, functions can accept arguments in various ways, allowing for flexibility and adaptability in how data is passed to functions. Below are the different types of argument passing methods, including positional arguments, keyword arguments, default arguments, and variable-length arguments.
 
@@ -1194,16 +1195,16 @@ display_info(name="Alice", age=25, city="New York")
 
 #### Summary of Argument Passing Methods
 
-| Argument Type | Description | Example |
-| --- | --- | --- |
-| Positional Arguments | Passed in order; must match the function definition. | `multiply(4, 5)` |
-| Keyword Arguments | Passed by explicitly naming each parameter; allows changing order. | `introduce(name="Alice", age=25)` |
-| Default Arguments | Parameters can have default values; used if no value is provided during the call. | `greet(name="Bob")` |
-| Variable-Length Args | Allows passing a variable number of non-keyword (`*args`) or keyword (`**kwargs`) arguments. | `add_numbers(1, 2, 3)` |
+| Argument Type        | Description                                                                                  | Example                           |
+| -------------------- | -------------------------------------------------------------------------------------------- | --------------------------------- |
+| Positional Arguments | Passed in order; must match the function definition.                                         | `multiply(4, 5)`                  |
+| Keyword Arguments    | Passed by explicitly naming each parameter; allows changing order.                           | `introduce(name="Alice", age=25)` |
+| Default Arguments    | Parameters can have default values; used if no value is provided during the call.            | `greet(name="Bob")`               |
+| Variable-Length Args | Allows passing a variable number of non-keyword (`*args`) or keyword (`**kwargs`) arguments. | `add_numbers(1, 2, 3)`            |
 
 These argument passing methods provide flexibility when defining functions in Python and allow for more readable and maintainable code.
 
-## 13) Explain pass by value and pass by reference in python with appropriate example.
+## <mark> 13) Explain pass by value and pass by reference in python with appropriate example. </mark>
 
 ### Pass by Value and Pass by Reference in Python
 
@@ -1287,12 +1288,12 @@ In this case, even though strings are technically passed by reference, they are 
 - **Pass by Value**: A copy of the variable's value is passed to the function. Changes made inside the function do not affect the original variable.
 - **Pass by Reference**: A reference to the actual object is passed to the function. Changes made inside the function can affect the original object if it is mutable.
 - In Python:
-    - Immutable types (like integers, strings, and tuples) behave like pass-by-value.
-    - Mutable types (like lists and dictionaries) behave like pass-by-reference.
+  - Immutable types (like integers, strings, and tuples) behave like pass-by-value.
+  - Mutable types (like lists and dictionaries) behave like pass-by-reference.
 
 Understanding these concepts helps in predicting how data will be affected when passed into functions, leading to better code management and fewer bugs.
 
-## 14) Discuss function scope in python with sample code.(local/Global)
+## <mark> 14) Discuss function scope in python with sample code.(local/Global) </mark>
 
 ### Function Scope in Python
 
@@ -1360,7 +1361,7 @@ print("Counter after increment:", counter)  ## Output: Counter after increment: 
 
 Understanding variable scope is crucial for managing data and ensuring that your functions behave as expected in Python programs. It helps prevent naming conflicts and makes your code more organized and easier to debug.
 
-## 15) Explain the concept of recursion in python with suitable examples.
+## <mark> 15) Explain the concept of recursion in python with suitable examples. </mark>
 
 ### Recursion in Python
 
@@ -1371,10 +1372,10 @@ Recursion is a programming technique where a function calls itself in order to s
 
 #### Example of Recursion: Factorial Function
 
-One of the classic examples of recursion is calculating the factorial of a number. The factorial of a non-negative integer  $n$  (denoted as  $n!$ ) is the product of all positive integers less than or equal to  $n$ . The factorial can be defined recursively as follows:
+One of the classic examples of recursion is calculating the factorial of a number. The factorial of a non-negative integer $n$ (denoted as $n!$ ) is the product of all positive integers less than or equal to $n$ . The factorial can be defined recursively as follows:
 
-- **Base Case**:  $0! = 1$
-- **Recursive Case**:  $n! = n \times (n - 1)!$
+- **Base Case**: $0! = 1$
+- **Recursive Case**: $n! = n \times (n - 1)!$
 
 #### Implementation:
 
@@ -1403,9 +1404,9 @@ print(factorial(0))  ## Output: 1
 Another common example of recursion is calculating numbers in the Fibonacci sequence, where each number is the sum of the two preceding ones.
 
 - **Base Cases**:
-    - $F(0) = 0$
-    - $F(1) = 1$
-- **Recursive Case**:  $F(n) = F(n - 1) + F(n - 2)$
+  - $F(0) = 0$
+  - $F(1) = 1$
+- **Recursive Case**: $F(n) = F(n - 1) + F(n - 2)$
 
 #### Implementation:
 
@@ -1447,7 +1448,7 @@ print(fibonacci(10)) ## Output: 55
 
 Recursion is a powerful concept in Python that allows functions to call themselves to solve problems. By understanding how to define base cases and recursive cases, you can effectively use recursion for various computational tasks. However, it's essential to be mindful of its potential drawbacks regarding performance and memory usage.
 
-## 16) Explain different types of python modules. How are modules used in Python? Explain creation of user defined modules in python with a suitable example.
+## <mark> 16) Explain different types of python modules. How are modules used in Python? Explain creation of user defined modules in python with a suitable example. </mark>
 
 ### Python Modules
 
@@ -1456,13 +1457,13 @@ In Python, a **module** is a file containing Python code that can define functio
 #### Types of Python Modules
 
 1. **Built-in Modules**: These are modules that come with Python's standard library. Examples include:
-    - `math`: Provides mathematical functions.
-    - `os`: Provides functions for interacting with the operating system.
-    - `sys`: Provides access to system-specific parameters and functions.
+   - `math`: Provides mathematical functions.
+   - `os`: Provides functions for interacting with the operating system.
+   - `sys`: Provides access to system-specific parameters and functions.
 2. **Third-Party Modules**: These are modules created by the community and can be installed using package managers like `pip`. Examples include:
-    - `numpy`: A library for numerical computations.
-    - `pandas`: A library for data manipulation and analysis.
-    - `requests`: A library for making HTTP requests.
+   - `numpy`: A library for numerical computations.
+   - `pandas`: A library for data manipulation and analysis.
+   - `requests`: A library for making HTTP requests.
 3. **User-Defined Modules**: These are custom modules created by the user to encapsulate specific functionality.
 
 #### How Modules Are Used in Python
@@ -1531,7 +1532,7 @@ print("Sum:", sum_result)  ## Output: Sum: 8
 
 This modular approach enhances code readability, maintainability, and reusability in Python programming.
 
-## 17) Explain any 4 built in modules in Python programming.
+## <mark> 17) Explain any 4 built in modules in Python programming. </mark>
 
 Python provides a rich set of built-in modules that facilitate various functionalities, from mathematical operations to file handling and system interactions. Here are four commonly used built-in modules in Python:
 
@@ -1623,27 +1624,27 @@ print("Shuffled List:", choices)
 
 These built-in modules enhance Python's capabilities, making it easier to perform complex tasks with minimal code. You can import these modules and use their functions as demonstrated in the examples above.
 
-## 18) Describe the concept of mutability in Python. Compare mutability of strings, tuples, lists, sets, and dictionaries.
+## <mark> 18) Describe the concept of mutability in Python. Compare mutability of strings, tuples, lists, sets, and dictionaries. </mark>
 
 In Python, mutability refers to the ability to change an object after it has been created. Some objects are mutable, meaning their internal state can be modified, while others are immutable, meaning their state cannot be changed once created.
 
 Here's a comparison of mutability for different data types in Python:
 
 1. **Strings**:
-    - Strings are immutable. Once a string is created, its individual characters cannot be modified.
-    - Operations like concatenation or slicing create a new string object rather than modifying the original.
+   - Strings are immutable. Once a string is created, its individual characters cannot be modified.
+   - Operations like concatenation or slicing create a new string object rather than modifying the original.
 2. **Tuples**:
-    - Tuples are immutable. The elements of a tuple cannot be changed after it is created.
-    - However, if a tuple contains mutable objects like lists, those objects can be modified internally.
+   - Tuples are immutable. The elements of a tuple cannot be changed after it is created.
+   - However, if a tuple contains mutable objects like lists, those objects can be modified internally.
 3. **Lists**:
-    - Lists are mutable. Elements of a list can be added, removed, or modified after the list is created.
-    - List methods like `append()`, `insert()`, `remove()`, and `pop()` allow modifying the list in-place.
+   - Lists are mutable. Elements of a list can be added, removed, or modified after the list is created.
+   - List methods like `append()`, `insert()`, `remove()`, and `pop()` allow modifying the list in-place.
 4. **Sets**:
-    - Sets are mutable. Elements can be added or removed from a set after it is created.
-    - Set methods like `add()`, `discard()`, and `remove()` allow modifying the set in-place.
+   - Sets are mutable. Elements can be added or removed from a set after it is created.
+   - Set methods like `add()`, `discard()`, and `remove()` allow modifying the set in-place.
 5. **Dictionaries**:
-    - Dictionaries are mutable. Key-value pairs can be added, modified, or removed from a dictionary after it is created.
-    - Dictionary methods like `update()` and `pop()` allow modifying the dictionary in-place.
+   - Dictionaries are mutable. Key-value pairs can be added, modified, or removed from a dictionary after it is created.
+   - Dictionary methods like `update()` and `pop()` allow modifying the dictionary in-place.
 
 In summary:
 
@@ -1653,7 +1654,7 @@ In summary:
 
 Understanding mutability is important when working with data structures in Python, as it affects how you can manipulate and interact with objects.
 
-## 19) Why File handling useful in python ? Explain any one of file handling functions with appropriate python script.(Create,Read, Write ,Open,close)
+## <mark> 19) Why File handling useful in python ? Explain any one of file handling functions with appropriate python script.(Create,Read, Write ,Open,close) </mark>
 
 ### Importance of File Handling in Python
 
@@ -1729,20 +1730,20 @@ with open("example.txt", "r") as file:
 #### Explanation:
 
 - **Creating and Writing**:
-    - The `open()` function is used with mode `'w'` to create (or overwrite) a text file named `example.txt`.
-    - The `write()` method writes strings to the file.
-    - The `close()` method is called to ensure that all data is flushed and resources are released.
+  - The `open()` function is used with mode `'w'` to create (or overwrite) a text file named `example.txt`.
+  - The `write()` method writes strings to the file.
+  - The `close()` method is called to ensure that all data is flushed and resources are released.
 - **Reading**:
-    - The `open()` function is used again with mode `'r'` to read from the existing `example.txt`.
-    - The `read()` method retrieves all content from the file.
-    - Again, using `close()` ensures proper resource management.
+  - The `open()` function is used again with mode `'r'` to read from the existing `example.txt`.
+  - The `read()` method retrieves all content from the file.
+  - Again, using `close()` ensures proper resource management.
 - **Using `with` Statement**: The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks. It automatically closes the file when exiting the block.
 
 #### Conclusion
 
 File handling in Python is essential for managing data persistence, sharing information between applications, and maintaining configurations. Understanding how to create, read, write, and close files allows developers to build robust applications that interact with external data sources effectively.
 
-## 20) Explain various file handling modes with examples.
+## <mark> 20) Explain various file handling modes with examples. </mark>
 
 ### File Handling Modes in Python
 
@@ -1827,7 +1828,7 @@ with open('example.txt', 'r') as file:
 
 Understanding file handling modes is crucial when working with files in Python. Choose the appropriate mode based on your specific requirements, such as reading, writing, appending, or handling binary data.
 
-## 21) How can a function be passed as an object in python? Explain with examples.
+## <mark> 21) How can a function be passed as an object in python? Explain with examples. </mark>
 
 In Python, functions are first-class objects, meaning they can be passed around as arguments, returned from other functions, and assigned to variables. This allows for a high level of flexibility in programming. You can pass a function as an object to another function, enabling you to create higher-order functions.
 
@@ -1902,7 +1903,7 @@ print("Sorted by Absolute Value:", sorted_numbers)  ## Output: Sorted by Absolut
 
 In Python, functions can be treated like any other object. You can pass them as arguments to other functions or return them from functions. This capability allows for powerful programming techniques such as callbacks and higher-order functions. Understanding how to work with functions as objects is essential for writing flexible and reusable code in Python.
 
-## 22) Explain the importance of higher order functions in python.
+## <mark> 22) Explain the importance of higher order functions in python. </mark>
 
 ### Importance of Higher-Order Functions in Python
 
@@ -1992,7 +1993,7 @@ print("Double of 5 is:", result)  ## Output: Double of 5 is: 10
 
 Higher-order functions are a powerful feature in Python that allows for more flexible and reusable code. They enable you to pass functions as arguments and return them from other functions, facilitating various programming paradigms such as functional programming. By leveraging higher-order functions like `map()`, `filter()`, and custom-defined functions, you can create cleaner and more efficient code structures that enhance the overall design of your applications.
 
-## 23) Explain following terms in python with suitable python example.(1) lambda (2) map (3) filter (4) reduce 5)Zip-unzip 6) Enumerate
+## <mark> 23) Explain following terms in python with suitable python example.(1) lambda (2) map (3) filter (4) reduce 5)Zip-unzip 6) Enumerate </mark>
 
 In Python, several functional programming concepts can enhance the way you write and organize your code. Here’s an explanation of the following terms, along with suitable examples for each: **lambda**, **map**, **filter**, **reduce**, **zip/unzip**, and **enumerate**.
 
@@ -2114,7 +2115,7 @@ Index 2: cherry
 
 These functional programming concepts—**lambda**, **map**, **filter**, **reduce**, **zip/unzip**, and **enumerate**—enhance Python's capabilities for writing concise and expressive code. They allow for more functional programming styles and make it easier to work with collections of data efficiently. Understanding these concepts will help you write cleaner and more maintainable code in Python.
 
-## 24) Is lambda a higher order function? Explain how lambda function is useful in higher order functions?
+## <mark> 24) Is lambda a higher order function? Explain how lambda function is useful in higher order functions? </mark>
 
 Yes, lambda functions in Python are considered higher-order functions. A higher-order function is a function that takes another function as an argument, returns a function, or both.
 
@@ -2123,7 +2124,7 @@ Lambda functions are anonymous functions, meaning they are defined without a nam
 Here's how lambda functions are useful in higher-order functions:
 
 1. **Passing lambda functions as arguments**:
-You can pass a lambda function as an argument to another function. This is particularly useful when you need a simple function as a callback or a predicate.
+   You can pass a lambda function as an argument to another function. This is particularly useful when you need a simple function as a callback or a predicate.
 
 Example:
 
@@ -2137,7 +2138,7 @@ print(doubled_numbers)  ## Output: [2, 4, 6, 8, 10]
 In this example, `map()` is a higher-order function that takes a function and an iterable as arguments. We pass a lambda function `lambda x: x * 2` to `map()` to double each element in the `numbers` list.
 
 1. **Returning lambda functions from functions**:
-A higher-order function can return a lambda function. This is useful when you want to create a function factory or a closure.
+   A higher-order function can return a lambda function. This is useful when you want to create a function factory or a closure.
 
 Example:
 
@@ -2153,7 +2154,7 @@ print(triple(5))  ## Output: 15
 In this example, `make_multiplier()` is a higher-order function that returns a lambda function. The returned lambda function captures the value of `n` from the enclosing scope, creating a closure.
 
 1. **Using lambda functions with other higher-order functions**:
-Lambda functions are often used with other higher-order functions like `filter()`, `reduce()`, and list comprehensions.
+   Lambda functions are often used with other higher-order functions like `filter()`, `reduce()`, and list comprehensions.
 
 Example:
 
@@ -2170,7 +2171,8 @@ In this example, `reduce()` is a higher-order function that takes a function and
 
 Lambda functions are concise and convenient when you need a simple function for a short period of time. They are particularly useful in higher-order functions, where you can pass them as arguments, return them from functions, or use them with other higher-order functions to create more expressive and readable code.
 
-## 25) Write the difference between
+## <mark> 25) Write the difference between </mark>
+
 i) Map and Filter ii) set and frozen set
 
 Here’s a detailed explanation of the differences between **map** and **filter**, as well as **set** and **frozenset** in Python.
@@ -2217,12 +2219,12 @@ print("Even Numbers:", even_numbers)  ## Output: Even Numbers: [2, 4]
 
 #### Summary of Differences between Map and Filter
 
-| Feature | Map | Filter |
-| --- | --- | --- |
-| Purpose | Transforms items in an iterable | Filters items based on a condition |
-| Output | Returns transformed items | Returns items that satisfy the condition |
-| Function Type | Takes a function that transforms data | Takes a function that returns boolean |
-| Result Type | Returns a map object (can be converted to list) | Returns an iterator (can be converted to list) |
+| Feature       | Map                                             | Filter                                         |
+| ------------- | ----------------------------------------------- | ---------------------------------------------- |
+| Purpose       | Transforms items in an iterable                 | Filters items based on a condition             |
+| Output        | Returns transformed items                       | Returns items that satisfy the condition       |
+| Function Type | Takes a function that transforms data           | Takes a function that returns boolean          |
+| Result Type   | Returns a map object (can be converted to list) | Returns an iterator (can be converted to list) |
 
 ---
 
@@ -2272,11 +2274,11 @@ print("Frozenset:", my_frozenset)  ## Output: Frozenset: frozenset({1, 2, 3})
 
 #### Summary of Differences between Set and Frozenset
 
-| Feature | Set | Frozenset |
-| --- | --- | --- |
-| Mutability | Mutable | Immutable |
-| Syntax | `{}` or `set()` | `frozenset()` |
-| Methods | Supports methods like `.add()`, `.remove()`, etc. | Does not support methods that modify the set |
-| Use Cases | When you need a modifiable collection of unique items | When you need a fixed collection of unique items |
+| Feature    | Set                                                   | Frozenset                                        |
+| ---------- | ----------------------------------------------------- | ------------------------------------------------ |
+| Mutability | Mutable                                               | Immutable                                        |
+| Syntax     | `{}` or `set()`                                       | `frozenset()`                                    |
+| Methods    | Supports methods like `.add()`, `.remove()`, etc.     | Does not support methods that modify the set     |
+| Use Cases  | When you need a modifiable collection of unique items | When you need a fixed collection of unique items |
 
 These differences highlight how `map` and `filter` serve distinct roles in functional programming while `set` and `frozenset` provide options for mutable and immutable collections in Python.

@@ -1,6 +1,6 @@
 # Unit 3
 
-## 1) What are the different ways to create arrays in Python?
+## <mark> 1) What are the different ways to create arrays in Python? </mark>
 
 In Python, there are several ways to create arrays, which are data structures that store multiple items of the same type. Below are some common methods for creating arrays in Python, along with examples:
 
@@ -92,7 +92,7 @@ print("Deep Copied List:", deep_copied_list)
 
 These methods provide flexibility depending on your needs for performance and functionality when working with collections of data in Python.
 
-## 2) Explain the concept of array computing in Python. How does NumPy facilitate efficient array operations compared to standard Python lists? Provide examples.
+## <mark> 2) Explain the concept of array computing in Python. How does NumPy facilitate efficient array operations compared to standard Python lists? Provide examples. </mark>
 
 #### Concept of Array Computing in Python
 
@@ -183,7 +183,7 @@ print("Sum of All Elements:", sum_value)  ## Output: Sum of All Elements: 21
 
 Array computing in Python is efficiently handled by libraries like NumPy, which provide powerful tools for creating and manipulating arrays. The advantages of using NumPy over standard Python lists include better performance, ease of use through vectorized operations and broadcasting, and access to a rich set of mathematical functions. This makes NumPy an essential library for scientific computing and data analysis in Python.
 
-## 3) How do you create a NumPy array? Explain with suitable examples.
+## <mark> 3) How do you create a NumPy array? Explain with suitable examples. </mark>
 
 #### Creating NumPy Arrays in Python
 
@@ -264,7 +264,7 @@ NumPy provides various methods for creating arrays:
 
 These methods make it easy to create and manipulate arrays in Python for scientific computing and data analysis tasks.
 
-## 4) Write the difference between rand, randn, and randint methods in numpy.
+## <mark> 4) Write the difference between rand, randn, and randint methods in numpy. </mark>
 
 In NumPy, there are three primary functions for generating random numbers: `rand()`, `randn()`, and `randint()`. Each of these functions serves a different purpose and generates random numbers in distinct ways. Here’s a breakdown of the differences between them:
 
@@ -326,11 +326,11 @@ print("2D Array of Random Integers (1 to 99):\\n", randint_array_2d)
 
 #### Summary of Differences
 
-| Function | Distribution Type | Range | Output Shape Specification |
-| --- | --- | --- | --- |
-| `np.random.rand()` | Uniform [0, 1) | [0.0, 1.0) | Yes |
-| `np.random.randn()` | Standard Normal (mean=0) | (-∞, ∞) | Yes |
-| `np.random.randint()` | Uniform Integers | [low, high) | Yes |
+| Function              | Distribution Type        | Range       | Output Shape Specification |
+| --------------------- | ------------------------ | ----------- | -------------------------- |
+| `np.random.rand()`    | Uniform [0, 1)           | [0.0, 1.0)  | Yes                        |
+| `np.random.randn()`   | Standard Normal (mean=0) | (-∞, ∞)     | Yes                        |
+| `np.random.randint()` | Uniform Integers         | [low, high) | Yes                        |
 
 #### Conclusion
 
@@ -340,7 +340,7 @@ print("2D Array of Random Integers (1 to 99):\\n", randint_array_2d)
 
 These functions are essential for performing simulations, generating test data, or any scenario where randomness is required in numerical computations.
 
-## 5) Explain a random module in python.
+## <mark> 5) Explain a random module in python. </mark>
 
 #### Random Module in Python
 
@@ -351,64 +351,69 @@ The **`random` module** in Python is a built-in library that provides functions 
 Here are some of the most commonly used functions in the `random` module:
 
 1. **`random.random()`**:
-    - Generates a random float number between `0.0` to `1.0`.
-    
-    ```python
-    import random
-    
-    rand_float = random.random()
-    print("Random Float:", rand_float)  ## Output: Random Float: (e.g., 0.37444887175646646)
-    
-    ```
-    
+
+   - Generates a random float number between `0.0` to `1.0`.
+
+   ```python
+   import random
+
+   rand_float = random.random()
+   print("Random Float:", rand_float)  ## Output: Random Float: (e.g., 0.37444887175646646)
+
+   ```
+
 2. **`random.randint(a, b)`**:
-    - Returns a random integer `N` such that `a <= N <= b`.
-    
-    ```python
-    rand_int = random.randint(1, 10)
-    print("Random Integer between 1 and 10:", rand_int)  ## Output: Random Integer between 1 and 10: (e.g., 7)
-    
-    ```
-    
+
+   - Returns a random integer `N` such that `a <= N <= b`.
+
+   ```python
+   rand_int = random.randint(1, 10)
+   print("Random Integer between 1 and 10:", rand_int)  ## Output: Random Integer between 1 and 10: (e.g., 7)
+
+   ```
+
 3. **`random.choice(sequence)`**:
-    - Returns a randomly selected element from a non-empty sequence (like a list or tuple).
-    
-    ```python
-    items = ['apple', 'banana', 'cherry']
-    rand_choice = random.choice(items)
-    print("Random Choice from List:", rand_choice)  ## Output: Random Choice from List: (e.g., 'banana')
-    
-    ```
-    
+
+   - Returns a randomly selected element from a non-empty sequence (like a list or tuple).
+
+   ```python
+   items = ['apple', 'banana', 'cherry']
+   rand_choice = random.choice(items)
+   print("Random Choice from List:", rand_choice)  ## Output: Random Choice from List: (e.g., 'banana')
+
+   ```
+
 4. **`random.sample(population, k)`**:
-    - Returns a list of `k` unique elements chosen from the population sequence or set.
-    
-    ```python
-    population = range(100)  ## A population of numbers from 0 to 99
-    sample = random.sample(population, 5)
-    print("Random Sample of 5 Elements:", sample)  ## Output: Random Sample of 5 Elements: (e.g., [12, 45, 67, 89, 34])
-    
-    ```
-    
+
+   - Returns a list of `k` unique elements chosen from the population sequence or set.
+
+   ```python
+   population = range(100)  ## A population of numbers from 0 to 99
+   sample = random.sample(population, 5)
+   print("Random Sample of 5 Elements:", sample)  ## Output: Random Sample of 5 Elements: (e.g., [12, 45, 67, 89, 34])
+
+   ```
+
 5. **`random.shuffle(x)`**:
-    - Shuffles the elements of the list `x` in place.
-    
-    ```python
-    deck = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10']
-    random.shuffle(deck)
-    print("Shuffled Deck:", deck)  ## Output: Shuffled Deck: (e.g., ['3', 'A', '10', '6', '2', ...])
-    
-    ```
-    
+
+   - Shuffles the elements of the list `x` in place.
+
+   ```python
+   deck = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+   random.shuffle(deck)
+   print("Shuffled Deck:", deck)  ## Output: Shuffled Deck: (e.g., ['3', 'A', '10', '6', '2', ...])
+
+   ```
+
 6. **`random.uniform(a, b)`**:
-    - Returns a random float number between `a` and `b`.
-    
-    ```python
-    rand_uniform = random.uniform(1.5, 10.5)
-    print("Random Float between 1.5 and 10.5:", rand_uniform)  ## Output: Random Float between 1.5 and 10.5: (e.g., 7.234)
-    
-    ```
-    
+
+   - Returns a random float number between `a` and `b`.
+
+   ```python
+   rand_uniform = random.uniform(1.5, 10.5)
+   print("Random Float between 1.5 and 10.5:", rand_uniform)  ## Output: Random Float between 1.5 and 10.5: (e.g., 7.234)
+
+   ```
 
 #### Example Usage
 
@@ -444,7 +449,7 @@ print("Random Float between -10 and 10:", random.uniform(-10, 10))
 
 The `random` module in Python provides a variety of functions for generating pseudo-random numbers and performing random operations. It is an essential tool for simulations, games, and any application that requires randomness. Understanding how to use this module can significantly enhance your ability to create dynamic and interactive programs.
 
-## 6) Explain reshape, arange, linspace, eye, ones, zeros, transpose, shape, flatten.
+## <mark> 6) Explain reshape, arange, linspace, eye, ones, zeros, transpose, shape, flatten. </mark>
 
 In NumPy, several functions are essential for creating and manipulating arrays. Below is an explanation of the following functions: `reshape`, `arange`, `linspace`, `eye`, `ones`, `zeros`, `transpose`, `shape`, and `flatten`.
 
@@ -600,7 +605,7 @@ These functions in NumPy provide powerful tools for creating and manipulating ar
 
 These tools are essential for scientific computing and data analysis in Python using NumPy.
 
-## 7) Explain slicing in 1D, 2D and 3D arrays using numpy.
+## <mark> 7) Explain slicing in 1D, 2D and 3D arrays using numpy. </mark>
 
 #### Slicing in NumPy Arrays
 
@@ -698,7 +703,7 @@ print("All Layers for First Column:\\n", slice_3d_specific)
 
 Slicing in NumPy provides an efficient way to access and manipulate subsets of data within arrays. This capability is essential for data analysis and scientific computing tasks where working with large datasets is common. Understanding how to effectively slice arrays can greatly enhance your ability to work with numerical data in Python.
 
-## 8) Describe the process of matrix multiplication using NumPy. Provide an example where you multiply two matrices and explain each step.
+## <mark> 8) Describe the process of matrix multiplication using NumPy. Provide an example where you multiply two matrices and explain each step. </mark>
 
 #### Matrix Multiplication Using NumPy
 
@@ -776,31 +781,31 @@ Result of A @ B:
 #### Explanation of Each Step in Matrix Multiplication
 
 1. **Element Calculation**:
-    - Each element of the resulting matrix is computed as follows:
-        - For element at position (0,0):
-        $$
-        (1*7) + (2*9) + (3*11) = 7 + 18 + 33 = 58
-        $$
-        - For element at position (0,1):
-        $$
-        (1*8) + (2*10) + (3*12) = 8 + 20 + 36 = 64
-        $$
-        - For element at position (1,0):
-        $$
-        (4*7) + (5*9) + (6*11) = 28 + 45 + 66 = 139
-        $$
-        - For element at position (1,1):
-        $$
-        (4*8) + (5*10) + (6*12) = 32 + 50 + 72 = 154
-        $$
+   - Each element of the resulting matrix is computed as follows:
+     - For element at position (0,0):
+       $$
+       (1*7) + (2*9) + (3*11) = 7 + 18 + 33 = 58
+       $$
+     - For element at position (0,1):
+       $$
+       (1*8) + (2*10) + (3*12) = 8 + 20 + 36 = 64
+       $$
+     - For element at position (1,0):
+       $$
+       (4*7) + (5*9) + (6*11) = 28 + 45 + 66 = 139
+       $$
+     - For element at position (1,1):
+       $$
+       (4*8) + (5*10) + (6*12) = 32 + 50 + 72 = 154
+       $$
 2. **Resulting Matrix Size**:
-    - The resulting matrix from multiplying a $$2 \times 3$$ matrix by a $$3 \times 2$$ matrix will be a $$2 \times 2$$ matrix.
+   - The resulting matrix from multiplying a $$2 \times 3$$ matrix by a $$3 \times 2$$ matrix will be a $$2 \times 2$$ matrix.
 
 #### Conclusion
 
 Matrix multiplication using NumPy is straightforward and efficient. By defining your matrices and using either the `@` operator or `numpy.dot()`, you can perform complex linear algebra operations with ease. This capability makes NumPy an essential tool for scientific computing and data analysis in Python.
 
-## 9) When should you use the reshape method in NumPy? Explain with an example.
+## <mark> 9) When should you use the reshape method in NumPy? Explain with an example. </mark>
 
 #### When to Use the `reshape` Method in NumPy
 
@@ -909,7 +914,7 @@ Automatically Reshaped Array:
 
 The `reshape` method in NumPy is a versatile tool that allows you to change the shape of arrays for various applications without altering their data. It is particularly useful in scenarios where you need to prepare data for mathematical operations or machine learning algorithms. Understanding how and when to use `reshape` can significantly enhance your ability to manipulate and analyze numerical data efficiently in Python.
 
-## 10) Demonstrate the use of arithmetic, relational, and logical operators on vectors using NumPy.
+## <mark> 10) Demonstrate the use of arithmetic, relational, and logical operators on vectors using NumPy. </mark>
 
 In NumPy, you can perform various operations on vectors (1D arrays) using arithmetic, relational, and logical operators. Below, I will demonstrate how to use these operators with examples for each category.
 
@@ -996,7 +1001,7 @@ print("Logical NOT A:", logical_not_A)  ## Output: [False  True False]
 
 #### Summary of Operations
 
-- **Arithmetic Operators** (`+`, ``, ``, `/`): Perform element-wise arithmetic operations on arrays.
+- **Arithmetic Operators** (`+`, `, `, `/`): Perform element-wise arithmetic operations on arrays.
 - **Relational Operators** (`>`, `<`, `>=`, `<=`, `==`, `!=`): Compare elements of arrays and return a boolean array.
 - **Logical Operators** (`np.logical_and()`, `np.logical_or()`, `np.logical_not()`): Combine boolean arrays using logical operations.
 
@@ -1004,7 +1009,7 @@ print("Logical NOT A:", logical_not_A)  ## Output: [False  True False]
 
 Using NumPy's arithmetic, relational, and logical operators allows for efficient manipulation and analysis of vector data. The operations are performed element-wise, making it easy to work with large datasets in scientific computing and data analysis tasks.
 
-## 11) Explain the concept of compound conditions in NumPy with an example.
+## <mark> 11) Explain the concept of compound conditions in NumPy with an example. </mark>
 
 #### Compound Conditions in NumPy
 
@@ -1083,8 +1088,8 @@ Filtered Data: [20 25 30]
 
 1. **Creating the Array**: We created a NumPy array called `data` containing integers from `10` to `40`.
 2. **Defining Conditions**:
-    - `condition1`: Checks which elements are greater than `15`.
-    - `condition2`: Checks which elements are less than or equal to `30`.
+   - `condition1`: Checks which elements are greater than `15`.
+   - `condition2`: Checks which elements are less than or equal to `30`.
 3. **Combining Conditions**: We combined the two conditions using the logical AND operator (`&`). The result is a boolean array where each element indicates whether both conditions are satisfied for the corresponding element in the original array.
 4. **Filtering the Array**: Finally, we used the combined condition to filter the original array, resulting in an array containing only those elements that meet both criteria.
 
@@ -1092,7 +1097,7 @@ Filtered Data: [20 25 30]
 
 Compound conditions in NumPy allow for powerful filtering and selection of data based on multiple criteria. By using logical operators like `&`, `|`, and `~`, you can create complex boolean expressions that facilitate advanced data manipulation and analysis. This capability is particularly useful in data science and scientific computing tasks where you need to work with large datasets efficiently.
 
-## 12) How do you create an alias of an array in NumPy? Explain with an example.
+## <mark> 12) How do you create an alias of an array in NumPy? Explain with an example. </mark>
 
 #### Creating an Alias of an Array in NumPy
 
@@ -1189,7 +1194,8 @@ print("Original Array remains unchanged:", original_array)   ## Output: [10 2 3 
 
 Creating an alias in NumPy is a straightforward process that allows multiple variable names to reference the same underlying data. This can be useful for efficient memory usage but requires careful management to avoid unintended side effects from modifications. If you need a separate copy of an array, always use the `copy()` method to prevent changes in one array from affecting another.
 
-## 13) Write a Python program to get the common items between array1 and array2.
+## <mark> 13) Write a Python program to get the common items between array1 and array2. </mark>
+
 Input:
 array1 = [1, 2, 3, 2, 3, 4, 3, 4, 5, 6]
 array2 = [7, 2, 10, 2, 7, 4, 9, 4, 9, 8]
@@ -1219,8 +1225,8 @@ print("Common items between array1 and array2:", common_items)
 1. **Importing NumPy**: The program begins by importing the NumPy library, which is essential for numerical operations in Python.
 2. **Defining Input Arrays**: Two NumPy arrays (`array1` and `array2`) are defined with the specified values.
 3. **Finding Common Items**:
-    - The `np.intersect1d()` function is used to find the unique common elements between the two arrays.
-    - This function returns a sorted array of unique values that are present in both input arrays.
+   - The `np.intersect1d()` function is used to find the unique common elements between the two arrays.
+   - This function returns a sorted array of unique values that are present in both input arrays.
 4. **Printing the Result**: Finally, the program prints the common items found.
 
 #### Desired Output
@@ -1240,7 +1246,7 @@ Common items between array1 and array2: [2 4]
 
 This approach demonstrates how to leverage NumPy for efficient array operations in Python.
 
-## 14) Describe how to perform array slicing and indexing in NumPy. Provide examples that demonstrate accessing elements, rows, and columns in a 2D array.
+## <mark> 14) Describe how to perform array slicing and indexing in NumPy. Provide examples that demonstrate accessing elements, rows, and columns in a 2D array. </mark>
 
 #### Array Slicing and Indexing in NumPy
 
@@ -1351,7 +1357,7 @@ Sub-array (rows:0-1, columns:1-2):
 
 Slicing and indexing in NumPy provide efficient ways to access and manipulate data within arrays. Understanding these operations is essential for effective data analysis and scientific computing. The examples above illustrate how to work with a simple two-dimensional array, making it easy to apply these concepts to more complex datasets.
 
-## 15) Discuss the importance of curve plotting in data analysis. Demonstrate how to create and customize a simple line plot using Matplotlib and PyLab.
+## <mark> 15) Discuss the importance of curve plotting in data analysis. Demonstrate how to create and customize a simple line plot using Matplotlib and PyLab. </mark>
 
 #### Importance of Curve Plotting in Data Analysis
 
@@ -1408,25 +1414,25 @@ plt.show()
 #### Explanation of Each Step
 
 1. **Create Sample Data**:
-    - We use `np.linspace()` to generate 100 evenly spaced values between `0` and `10`.
-    - We calculate the sine of these values using `np.sin()`.
+   - We use `np.linspace()` to generate 100 evenly spaced values between `0` and `10`.
+   - We calculate the sine of these values using `np.sin()`.
 2. **Create the Plot**:
-    - We use `plt.plot()` to create a line plot with the x-values and y-values.
-    - The parameters `label`, `color`, `linestyle`, and `linewidth` are used to customize the appearance of the line.
+   - We use `plt.plot()` to create a line plot with the x-values and y-values.
+   - The parameters `label`, `color`, `linestyle`, and `linewidth` are used to customize the appearance of the line.
 3. **Customize the Plot**:
-    - We add a title using `plt.title()`.
-    - We label the x-axis and y-axis with `plt.xlabel()` and `plt.ylabel()`.
-    - We add horizontal and vertical dashed lines at y=0 and x=0 using `plt.axhline()` and `plt.axvline()`.
-    - We enable the grid for better readability with `plt.grid()`.
-    - We display a legend using `plt.legend()`.
+   - We add a title using `plt.title()`.
+   - We label the x-axis and y-axis with `plt.xlabel()` and `plt.ylabel()`.
+   - We add horizontal and vertical dashed lines at y=0 and x=0 using `plt.axhline()` and `plt.axvline()`.
+   - We enable the grid for better readability with `plt.grid()`.
+   - We display a legend using `plt.legend()`.
 4. **Show the Plot**:
-    - Finally, we call `plt.show()` to display the plot in a window.
+   - Finally, we call `plt.show()` to display the plot in a window.
 
 #### Conclusion
 
 Curve plotting is an essential tool in data analysis that helps visualize relationships within data effectively. Using libraries like Matplotlib in Python allows for easy creation and customization of plots. The example provided demonstrates how to create a simple line plot of a sine function while customizing its appearance with titles, labels, grids, and legends. This capability is vital for effective data communication and analysis in various fields such as science, engineering, finance, and more.
 
-## 16) How can you create and visualize a scatter plot using Matplotlib? Include an example where you plot data points and customize the plot with labels, colors, and a legend. OR Draw a plot for the given data using PyLab/Matplotlib and NumPy. (Provide anyplot example.)
+## <mark> 16) How can you create and visualize a scatter plot using Matplotlib? Include an example where you plot data points and customize the plot with labels, colors, and a legend. OR Draw a plot for the given data using PyLab/Matplotlib and NumPy. (Provide anyplot example.) </mark>
 
 #### Creating and Visualizing a Scatter Plot Using Matplotlib
 
@@ -1489,8 +1495,8 @@ plt.show()
 1. **Importing Libraries**: We import NumPy for numerical operations and Matplotlib's `pyplot` for plotting.
 2. **Creating Sample Data**: We define two NumPy arrays: `height` and `weight`, which represent the height in centimeters and weight in kilograms of individuals.
 3. **Creating the Scatter Plot**:
-    - We use `plt.scatter()` to create a scatter plot. The parameters specify the x-values (`height`), y-values (`weight`), color of the points (`color='blue'`), marker style (`marker='o'`), and a label for the legend.
-    - We then customize the plot by adding a title with `plt.title()`, labeling the axes with `plt.xlabel()` and `plt.ylabel()`, enabling a grid with `plt.grid()`, and displaying a legend using `plt.legend()`.
+   - We use `plt.scatter()` to create a scatter plot. The parameters specify the x-values (`height`), y-values (`weight`), color of the points (`color='blue'`), marker style (`marker='o'`), and a label for the legend.
+   - We then customize the plot by adding a title with `plt.title()`, labeling the axes with `plt.xlabel()` and `plt.ylabel()`, enabling a grid with `plt.grid()`, and displaying a legend using `plt.legend()`.
 4. **Displaying the Plot**: Finally, we call `plt.show()` to display the scatter plot.
 
 #### Resulting Output
@@ -1501,7 +1507,7 @@ When you run this code, you will see a scatter plot displaying height on the x-a
 
 Creating and customizing scatter plots using Matplotlib is straightforward and allows for effective visualization of relationships between variables. By adjusting colors, markers, titles, labels, and legends, you can enhance your plots to communicate your findings more effectively. This capability is essential in data analysis and scientific research where visual representation of data is crucial for understanding trends and patterns.
 
-## 17) How can you use Matplotlib to plot multiple graphs on the same figure? Provide an example of plotting two different functions on the same graph with different styles and colors.
+## <mark> 17) How can you use Matplotlib to plot multiple graphs on the same figure? Provide an example of plotting two different functions on the same graph with different styles and colors. </mark>
 
 #### Plotting Multiple Graphs on the Same Figure Using Matplotlib
 
@@ -1574,17 +1580,17 @@ plt.show()
 
 1. **Importing Libraries**: We import NumPy for numerical operations and Matplotlib's `pyplot` for plotting.
 2. **Creating Sample Data**:
-    - We define an array `x` that contains 100 evenly spaced values between `0` and `2π`.
-    - We calculate the sine and cosine values for these x-values using `np.sin()` and `np.cos()`.
+   - We define an array `x` that contains 100 evenly spaced values between `0` and `2π`.
+   - We calculate the sine and cosine values for these x-values using `np.sin()` and `np.cos()`.
 3. **Creating the Plot**:
-    - We create a figure with a specified size using `plt.figure()`.
-    - We use `plt.plot()` to plot the sine function with a solid blue line and the cosine function with a dashed orange line.
-    - The parameters include labels for each function, colors, line styles, and line widths.
+   - We create a figure with a specified size using `plt.figure()`.
+   - We use `plt.plot()` to plot the sine function with a solid blue line and the cosine function with a dashed orange line.
+   - The parameters include labels for each function, colors, line styles, and line widths.
 4. **Customizing the Plot**:
-    - We add a title and labels for the x-axis and y-axis.
-    - We draw horizontal and vertical lines at y=0 and x=0 to improve readability.
-    - We enable the grid for better visualization.
-    - We display a legend to differentiate between the two functions.
+   - We add a title and labels for the x-axis and y-axis.
+   - We draw horizontal and vertical lines at y=0 and x=0 to improve readability.
+   - We enable the grid for better visualization.
+   - We display a legend to differentiate between the two functions.
 5. **Displaying the Plot**: Finally, we call `plt.show()` to display the plot in a window.
 
 #### Resulting Output
@@ -1595,11 +1601,11 @@ When you run this code, you will see a plot displaying both the sine and cosine 
 
 Using Matplotlib to plot multiple graphs on the same figure is straightforward. By customizing colors, line styles, titles, labels, and legends, you can create informative visualizations that effectively communicate your data analysis findings. This capability is essential in scientific computing, data analysis, and any field that relies on visual data representation.
 
-## 18) Draw a bar plot, horizontal bar plot, Pie chart, line plots, scatter plots, and histograms, with attributes for the data.(any one for 5 marks or any two for 10 Marks)
+## <mark> 18) Draw a bar plot, horizontal bar plot, Pie chart, line plots, scatter plots, and histograms, with attributes for the data.(any one for 5 marks or any two for 10 Marks) </mark>
 
-### *We do not have solution to this, if you have, please send via form or WhatsApp.*
+### _We do not have solution to this, if you have, please send via form or WhatsApp._
 
-## 19) Describe Matplotlib and its role in scientific visualization.
+## <mark> 19) Describe Matplotlib and its role in scientific visualization. </mark>
 
 #### Matplotlib: An Overview
 
@@ -1675,23 +1681,23 @@ plt.show()
 
 1. **Importing Libraries**: We import NumPy for numerical operations and Matplotlib's `pyplot` for plotting.
 2. **Creating Sample Data**:
-    - We generate an array `x` containing 100 evenly spaced values between `0` and `2π`.
-    - We calculate the sine and cosine values for these x-values using `np.sin()` and `np.cos()`.
+   - We generate an array `x` containing 100 evenly spaced values between `0` and `2π`.
+   - We calculate the sine and cosine values for these x-values using `np.sin()` and `np.cos()`.
 3. **Creating the Scatter Plot**:
-    - We use `plt.scatter()` to create scatter plots for both sine and cosine functions.
-    - Different colors (`blue` for sine and `orange` for cosine) and markers (`o` for sine and `x` for cosine) are specified.
+   - We use `plt.scatter()` to create scatter plots for both sine and cosine functions.
+   - Different colors (`blue` for sine and `orange` for cosine) and markers (`o` for sine and `x` for cosine) are specified.
 4. **Customizing the Plot**:
-    - We add a title and labels for the x-axis and y-axis.
-    - We draw horizontal and vertical lines at y=0 and x=0 to improve readability.
-    - We enable the grid for better visualization.
-    - We display a legend to differentiate between the two functions.
+   - We add a title and labels for the x-axis and y-axis.
+   - We draw horizontal and vertical lines at y=0 and x=0 to improve readability.
+   - We enable the grid for better visualization.
+   - We display a legend to differentiate between the two functions.
 5. **Displaying the Plot**: Finally, we call `plt.show()` to display the plot in a window.
 
 #### Conclusion
 
 Matplotlib plays a crucial role in scientific visualization by providing tools to create high-quality plots that help researchers analyze data effectively. The example above demonstrates how to create a scatter plot with multiple datasets while customizing its appearance. This capability is essential in various fields such as data science, engineering, finance, and more, where visual representation of data is key to understanding complex information.
 
-## 20) What are the key roles of NumPy in scientific computing? OR How does NumPy support array operations in Python ?
+## <mark> 20) What are the key roles of NumPy in scientific computing? OR How does NumPy support array operations in Python ? </mark>
 
 NumPy (Numerical Python) plays a crucial role in scientific computing in Python by providing efficient support for array operations. Here are some of the key roles of NumPy in scientific computing:
 
@@ -1705,7 +1711,7 @@ NumPy (Numerical Python) plays a crucial role in scientific computing in Python 
 
 In summary, NumPy is a crucial library for scientific computing in Python, providing efficient data structures, vectorized operations, mathematical functions, and interfaces for working with arrays and matrices. Its performance and integration with other scientific libraries make it an essential tool for numerical and scientific computing tasks in Python.
 
-## 21) What is SciPy, and how does it extend the functionalities of NumPy? OR How can SciPy be used for integration optimization, and other scientific computations?
+## <mark> 21) What is SciPy, and how does it extend the functionalities of NumPy? OR How can SciPy be used for integration optimization, and other scientific computations? </mark>
 
 #### What is SciPy?
 
@@ -1814,7 +1820,7 @@ plt.show()
 
 SciPy significantly extends the capabilities of NumPy by providing specialized functions for optimization, integration, interpolation, and more complex scientific computations. Its seamless integration with NumPy allows users to perform advanced numerical analyses efficiently. The example provided demonstrates how easy it is to use SciPy for numerical integration while also visualizing the function involved in the computation. This combination makes SciPy a powerful tool in scientific computing and data analysis in Python.
 
-## 22) How do you create a simple chat application with client and server code using Python's socket module?
+## <mark> 22) How do you create a simple chat application with client and server code using Python's socket module? </mark>
 
 Creating a simple chat application using Python's `socket` module involves setting up a server that listens for incoming connections and a client that connects to the server to send and receive messages. Below, I will provide an example of both the server and client code to demonstrate how this can be accomplished.
 
@@ -1908,74 +1914,76 @@ if __name__ == "__main__":
 #### Explanation of the Code
 
 1. **Server Code**:
-    - The server creates a socket and binds it to a specific host and port.
-    - It listens for incoming connections and accepts them when a client connects.
-    - It enters a loop where it receives messages from the connected client, prints them, and sends responses back.
-    - The loop continues until an empty message is received, indicating that the client has disconnected.
+   - The server creates a socket and binds it to a specific host and port.
+   - It listens for incoming connections and accepts them when a client connects.
+   - It enters a loop where it receives messages from the connected client, prints them, and sends responses back.
+   - The loop continues until an empty message is received, indicating that the client has disconnected.
 2. **Client Code**:
-    - The client creates a socket and connects to the server using its hostname and port.
-    - It enters a loop where it takes user input as messages, sends them to the server, and waits for responses.
-    - The loop continues until the user types "exit", at which point it closes the connection.
+   - The client creates a socket and connects to the server using its hostname and port.
+   - It enters a loop where it takes user input as messages, sends them to the server, and waits for responses.
+   - The loop continues until the user types "exit", at which point it closes the connection.
 
 #### How to Run the Chat Application
 
 1. **Run the Server**:
-    - Save the server code in a file named `server.py`.
-    - Open a terminal or command prompt and run `python server.py`.
+   - Save the server code in a file named `server.py`.
+   - Open a terminal or command prompt and run `python server.py`.
 2. **Run the Client**:
-    - Save the client code in another file named `client.py`.
-    - Open another terminal or command prompt and run `python client.py`.
+   - Save the client code in another file named `client.py`.
+   - Open another terminal or command prompt and run `python client.py`.
 3. **Chat**:
-    - You can now send messages between the server and client. Type your message in the client's terminal, hit Enter, and see it appear in the server's terminal. The server can then respond back.
+   - You can now send messages between the server and client. Type your message in the client's terminal, hit Enter, and see it appear in the server's terminal. The server can then respond back.
 
 #### Conclusion
 
 This simple chat application demonstrates how to use Python's `socket` module for networking. It allows for real-time communication between a server and multiple clients. This foundational knowledge can be expanded upon for more complex applications such as multi-client chat servers or integrating with graphical user interfaces (GUIs).
 
-## 23) Explain methods used for connection between client and server.
+## <mark> 23) Explain methods used for connection between client and server. </mark>
 
 #### Connection Methods Between Client and Server
 
 When creating a client-server application, establishing a reliable connection between the client and server is crucial. The connection methods can vary based on the requirements of the application, but here are some common methods used in Python's socket programming:
 
 1. **TCP (Transmission Control Protocol)**:
-    - **Description**: TCP is a connection-oriented protocol that ensures reliable communication between client and server. It establishes a connection before data transfer and guarantees that packets are delivered in order and without errors.
-    - **Usage**: Most chat applications, file transfers, and web services use TCP for its reliability.
-    - **Implementation**: In Python, you can create a TCP socket using `socket.SOCK_STREAM`.
-    
-    ```python
-    import socket
-    
-    ## Create a TCP socket
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    
-    ```
-    
+
+   - **Description**: TCP is a connection-oriented protocol that ensures reliable communication between client and server. It establishes a connection before data transfer and guarantees that packets are delivered in order and without errors.
+   - **Usage**: Most chat applications, file transfers, and web services use TCP for its reliability.
+   - **Implementation**: In Python, you can create a TCP socket using `socket.SOCK_STREAM`.
+
+   ```python
+   import socket
+
+   ## Create a TCP socket
+   server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+   ```
+
 2. **UDP (User Datagram Protocol)**:
-    - **Description**: UDP is a connectionless protocol that sends messages (datagrams) without establishing a connection. It does not guarantee delivery, order, or error checking, making it faster but less reliable than TCP.
-    - **Usage**: Applications that require speed over reliability, such as online gaming or streaming media, often use UDP.
-    - **Implementation**: In Python, you can create a UDP socket using `socket.SOCK_DGRAM`.
-    
-    ```python
-    import socket
-    
-    ## Create a UDP socket
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    
-    ```
-    
+
+   - **Description**: UDP is a connectionless protocol that sends messages (datagrams) without establishing a connection. It does not guarantee delivery, order, or error checking, making it faster but less reliable than TCP.
+   - **Usage**: Applications that require speed over reliability, such as online gaming or streaming media, often use UDP.
+   - **Implementation**: In Python, you can create a UDP socket using `socket.SOCK_DGRAM`.
+
+   ```python
+   import socket
+
+   ## Create a UDP socket
+   server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+   ```
+
 3. **HTTP (Hypertext Transfer Protocol)**:
-    - **Description**: HTTP is an application layer protocol used primarily for transferring web pages on the internet. It is built on top of TCP and is stateless.
-    - **Usage**: Web servers and clients (browsers) communicate using HTTP to request and serve web content.
-    - **Implementation**: While you can implement HTTP using sockets directly, libraries like `Flask` or `Django` provide higher-level abstractions for building web applications.
+   - **Description**: HTTP is an application layer protocol used primarily for transferring web pages on the internet. It is built on top of TCP and is stateless.
+   - **Usage**: Web servers and clients (browsers) communicate using HTTP to request and serve web content.
+   - **Implementation**: While you can implement HTTP using sockets directly, libraries like `Flask` or `Django` provide higher-level abstractions for building web applications.
 4. **WebSockets**:
-    - **Description**: WebSockets provide full-duplex communication channels over a single TCP connection. They allow for persistent connections that enable real-time data exchange between client and server.
-    - **Usage**: Ideal for applications requiring real-time updates like chat applications or live notifications.
-    - **Implementation**: Libraries like `websocket-client` for clients and `websockets` for servers can be used in Python.
+   - **Description**: WebSockets provide full-duplex communication channels over a single TCP connection. They allow for persistent connections that enable real-time data exchange between client and server.
+   - **Usage**: Ideal for applications requiring real-time updates like chat applications or live notifications.
+   - **Implementation**: Libraries like `websocket-client` for clients and `websockets` for servers can be used in Python.
 5. **SSH (Secure Shell)**:
-    - **Description**: SSH is a protocol for secure remote login and other secure network services over an unsecured network.
-    - **Usage**: Used for secure command-line access to remote systems.
-    - **Implementation**: Libraries like `paramiko` in Python can be used to create SSH connections.
+   - **Description**: SSH is a protocol for secure remote login and other secure network services over an unsecured network.
+   - **Usage**: Used for secure command-line access to remote systems.
+   - **Implementation**: Libraries like `paramiko` in Python can be used to create SSH connections.
 
 #### Example of TCP Connection in Python
 
@@ -2033,18 +2041,18 @@ if __name__ == "__main__":
 #### Explanation of the Code
 
 1. **Server Code**:
-    - The server creates a TCP socket and binds it to a specified host and port.
-    - It listens for incoming connections and accepts them when clients connect.
-    - Upon accepting a connection, it sends a greeting message to the connected client.
+   - The server creates a TCP socket and binds it to a specified host and port.
+   - It listens for incoming connections and accepts them when clients connect.
+   - Upon accepting a connection, it sends a greeting message to the connected client.
 2. **Client Code**:
-    - The client creates a TCP socket and connects to the server using its hostname and port.
-    - It receives the message sent by the server and prints it.
+   - The client creates a TCP socket and connects to the server using its hostname and port.
+   - It receives the message sent by the server and prints it.
 
 #### Conclusion
 
 The choice of connection method between client and server depends on the specific requirements of your application. TCP is commonly used for its reliability, while UDP may be chosen for speed in applications where some data loss is acceptable. Understanding these methods allows developers to design effective communication protocols tailored to their application's needs.
 
-## 24) Discuss the basics of graphics programming in Python. How can you draw basic shapes using the Turtle module? Provide an example of drawing a triangle with custom colors.
+## <mark> 24) Discuss the basics of graphics programming in Python. How can you draw basic shapes using the Turtle module? Provide an example of drawing a triangle with custom colors. </mark>
 
 #### Graphics Programming in Python
 
@@ -2109,7 +2117,7 @@ When you run this code, it will create a window with a light green background an
 
 The `turtle` module provides many other functions for controlling the turtle's movement, such as `forward()`, `backward()`, `left()`, `right()`, `penup()`, `pendown()`, and more. You can use these functions to create various shapes, patterns, and animations.
 
-## 25) How can you create and use custom shapes in Turtle graphics? Write a Python program to draw a pentagon using the Turtle module and customize it with different colors and line thickness.
+## <mark> 25) How can you create and use custom shapes in Turtle graphics? Write a Python program to draw a pentagon using the Turtle module and customize it with different colors and line thickness. </mark>
 
 #### Creating Custom Shapes in Turtle Graphics
 
@@ -2155,23 +2163,23 @@ turtle.done()                         ## Keep the window open until closed
 
 1. **Importing Turtle**: We start by importing the Turtle module, which contains all necessary functions for drawing.
 2. **Defining `draw_pentagon` Function**:
-    - This function takes `side_length` as an argument, which determines how long each side of the pentagon will be.
-    - A loop runs five times (once for each side of the pentagon).
-    - Inside the loop, `turtle.forward(side_length)` moves the turtle forward by `side_length`, and `turtle.right(72)` turns it right by 72 degrees (since $$360° / 5 = 72°$$).
+   - This function takes `side_length` as an argument, which determines how long each side of the pentagon will be.
+   - A loop runs five times (once for each side of the pentagon).
+   - Inside the loop, `turtle.forward(side_length)` moves the turtle forward by `side_length`, and `turtle.right(72)` turns it right by 72 degrees (since $$360° / 5 = 72°$$).
 3. **Setting Up the Turtle**:
-    - We set the background color of the drawing canvas to light blue using `turtle.bgcolor()`.
-    - We set the pen color to orange using `turtle.color()`.
-    - The line thickness is set to 3 pixels using `turtle.pensize()`.
+   - We set the background color of the drawing canvas to light blue using `turtle.bgcolor()`.
+   - We set the pen color to orange using `turtle.color()`.
+   - The line thickness is set to 3 pixels using `turtle.pensize()`.
 4. **Drawing the Pentagon**: We call `draw_pentagon(100)` to draw a pentagon with each side measuring 100 units.
 5. **Finishing Up**:
-    - The turtle cursor is hidden with `turtle.hideturtle()`.
-    - Finally, we call `turtle.done()` to keep the window open until it is closed manually.
+   - The turtle cursor is hidden with `turtle.hideturtle()`.
+   - Finally, we call `turtle.done()` to keep the window open until it is closed manually.
 
 #### Conclusion
 
 Using Python's Turtle graphics module, you can easily create custom shapes like a pentagon while customizing colors and line thickness. This example demonstrates how straightforward it is to use Turtle for basic graphics programming in Python, making it an excellent tool for beginners to learn programming concepts visually.
 
-## 26) Write a Python program using Turtle to draw a rectangle with a blue border and a yellow-filled interior.
+## <mark> 26) Write a Python program using Turtle to draw a rectangle with a blue border and a yellow-filled interior. </mark>
 
 Here's a Python program using the Turtle library to draw a rectangle with a blue border and a yellow-filled interior:
 
@@ -2233,7 +2241,7 @@ Explanation of the code:
 
 When you run this code, it will create a window with a light green background and a rectangle with a blue border and a yellow-filled interior.
 
-## 27) Write a Python program using Turtle to draw a star and explore various attributes like background color, line fill, border color, etc.
+## <mark> 27) Write a Python program using Turtle to draw a star and explore various attributes like background color, line fill, border color, etc. </mark>
 
 Here's a Python program using the Turtle module to draw a star with customizable attributes such as background color, line color, fill color, and line thickness.
 
@@ -2280,19 +2288,19 @@ turtle.done()
 
 1. **Importing Turtle**: We start by importing the Turtle module.
 2. **Defining `draw_star` Function**:
-    - This function takes `size` as an argument, which determines how long each point of the star will be.
-    - A loop runs five times (once for each point of the star).
-    - Inside the loop, `turtle.forward(size)` moves the turtle forward by `size`, and `turtle.right(144)` turns it right by 144 degrees (the angle needed to create a star shape).
+   - This function takes `size` as an argument, which determines how long each point of the star will be.
+   - A loop runs five times (once for each point of the star).
+   - Inside the loop, `turtle.forward(size)` moves the turtle forward by `size`, and `turtle.right(144)` turns it right by 144 degrees (the angle needed to create a star shape).
 3. **Setting Up the Turtle**:
-    - We set the background color of the drawing canvas to light blue using `turtle.bgcolor()`.
-    - We set the pen (border) color to blue using `turtle.color()`.
-    - The fill color is set to yellow using `turtle.fillcolor()`.
-    - The line thickness is set to 3 pixels using `turtle.pensize()`.
+   - We set the background color of the drawing canvas to light blue using `turtle.bgcolor()`.
+   - We set the pen (border) color to blue using `turtle.color()`.
+   - The fill color is set to yellow using `turtle.fillcolor()`.
+   - The line thickness is set to 3 pixels using `turtle.pensize()`.
 4. **Moving to Starting Position**: We use `t.penup()` to lift the pen so that moving does not draw lines. We then move the turtle to a specific position using `t.goto()` and put the pen down again with `t.pendown()`.
 5. **Drawing and Filling**:
-    - We begin filling the shape with `t.begin_fill()`.
-    - We call `draw_star(100)` to draw a star with each point measuring 100 units.
-    - After drawing, we end filling with `t.end_fill()`.
+   - We begin filling the shape with `t.begin_fill()`.
+   - We call `draw_star(100)` to draw a star with each point measuring 100 units.
+   - After drawing, we end filling with `t.end_fill()`.
 6. **Finishing Up**: We hide the turtle cursor using `t.hideturtle()` and call `turtle.done()` to keep the window open until it is closed manually.
 
 #### Result
@@ -2301,43 +2309,43 @@ When you run this code, it will create a window with a light blue background fea
 
 This example demonstrates how you can use various attributes in Turtle graphics to create visually appealing shapes while customizing their appearance. You can experiment further by changing colors, sizes, and positions!
 
-## 28) List and explain the methods supported by the Turtle module in Python.
+## <mark> 28) List and explain the methods supported by the Turtle module in Python. </mark>
 
 The Turtle module in Python provides a simple and intuitive way to create graphics and drawings. It is particularly useful for beginners learning programming concepts and for educational purposes. Below is a list of some key methods supported by the Turtle module, along with explanations of their functionality.
 
 #### Key Methods of the Turtle Module
 
 1. **Basic Movement Methods**:
-    - **`forward(distance)`**: Moves the turtle forward by the specified distance.
-    - **`backward(distance)`**: Moves the turtle backward by the specified distance.
-    - **`right(angle)`**: Turns the turtle clockwise by the specified angle (in degrees).
-    - **`left(angle)`**: Turns the turtle counterclockwise by the specified angle (in degrees).
+   - **`forward(distance)`**: Moves the turtle forward by the specified distance.
+   - **`backward(distance)`**: Moves the turtle backward by the specified distance.
+   - **`right(angle)`**: Turns the turtle clockwise by the specified angle (in degrees).
+   - **`left(angle)`**: Turns the turtle counterclockwise by the specified angle (in degrees).
 2. **Pen Control Methods**:
-    - **`penup()` or `pu()`**: Lifts the pen so that moving the turtle does not draw a line.
-    - **`pendown()` or `pd()`**: Lowers the pen so that moving the turtle draws a line.
-    - **`pensize(width)`**: Sets the width of the pen (line thickness).
-    - **`color(colorname)`**: Sets the color of the pen (border color).
-    - **`fillcolor(colorname)`**: Sets the fill color for shapes.
+   - **`penup()` or `pu()`**: Lifts the pen so that moving the turtle does not draw a line.
+   - **`pendown()` or `pd()`**: Lowers the pen so that moving the turtle draws a line.
+   - **`pensize(width)`**: Sets the width of the pen (line thickness).
+   - **`color(colorname)`**: Sets the color of the pen (border color).
+   - **`fillcolor(colorname)`**: Sets the fill color for shapes.
 3. **Filling Shapes**:
-    - **`begin_fill()`**: Begins filling a shape with the current fill color.
-    - **`end_fill()`**: Ends filling a shape.
+   - **`begin_fill()`**: Begins filling a shape with the current fill color.
+   - **`end_fill()`**: Ends filling a shape.
 4. **Positioning Methods**:
-    - **`goto(x, y)`**: Moves the turtle to an absolute position on the screen.
-    - **`setposition(x, y)` or `setpos(x, y)`**: Another way to move to an absolute position.
-    - **`setheading(angle)` or `seth(angle)`**: Sets the direction of the turtle to a specific angle.
+   - **`goto(x, y)`**: Moves the turtle to an absolute position on the screen.
+   - **`setposition(x, y)` or `setpos(x, y)`**: Another way to move to an absolute position.
+   - **`setheading(angle)` or `seth(angle)`**: Sets the direction of the turtle to a specific angle.
 5. **Screen Control Methods**:
-    - **`bgcolor(colorname)`**: Sets the background color of the drawing window.
-    - **`title(string)`**: Sets the title of the drawing window.
-    - **`done()`**: Finishes drawing and keeps the window open until it is closed.
+   - **`bgcolor(colorname)`**: Sets the background color of the drawing window.
+   - **`title(string)`**: Sets the title of the drawing window.
+   - **`done()`**: Finishes drawing and keeps the window open until it is closed.
 6. **Shape Control Methods**:
-    - **`shape(shapename)`**: Changes the shape of the turtle (e.g., "turtle", "arrow", "circle").
-    - **`stamps()`**: Creates a stamp of the turtle's current shape at its current position.
+   - **`shape(shapename)`**: Changes the shape of the turtle (e.g., "turtle", "arrow", "circle").
+   - **`stamps()`**: Creates a stamp of the turtle's current shape at its current position.
 7. **Speed Control Methods**:
-    - **`speed(speedvalue)`**: Sets the speed of turtle movement (0 = no animation, 1 = slowest, 10 = fastest).
+   - **`speed(speedvalue)`**: Sets the speed of turtle movement (0 = no animation, 1 = slowest, 10 = fastest).
 8. **Miscellaneous Methods**:
-    - **`hideturtle()` or `ht()`**: Hides the turtle cursor.
-    - **`showturtle()` or `st()`**: Shows the turtle cursor if it is hidden.
-    - **`clear()` or `cls()`**: Clears all drawings from the screen but keeps the turtle in its current position.
+   - **`hideturtle()` or `ht()`**: Hides the turtle cursor.
+   - **`showturtle()` or `st()`**: Shows the turtle cursor if it is hidden.
+   - **`clear()` or `cls()`**: Clears all drawings from the screen but keeps the turtle in its current position.
 
 #### Example Program to Draw a Star Using Turtle
 
@@ -2390,7 +2398,7 @@ turtle.done()                   ## Keep window open until closed
 
 The Turtle module in Python provides a straightforward way to create graphics and drawings using various methods for movement, pen control, shape filling, and screen management. This makes it an excellent tool for beginners to learn programming concepts while having fun with visual output. You can experiment with different shapes and colors using these methods to create your own designs!
 
-## 29) Using the Turtle module in Python, draw a square and explore various attributes like background color, line fill, border color, etc.
+## <mark> 29) Using the Turtle module in Python, draw a square and explore various attributes like background color, line fill, border color, etc. </mark>
 
 Here’s a Python program using the Turtle module to draw a square while exploring various attributes such as background color, line fill, border color, and line thickness.
 
@@ -2439,24 +2447,24 @@ turtle.done()
 
 1. **Importing Turtle**: We start by importing the Turtle module, which provides functions for drawing.
 2. **Setting Up the Environment**:
-    - `turtle.bgcolor("lightblue")`: Sets the background color of the drawing canvas to light blue.
-    - `turtle.title("Turtle Square")`: Sets the title of the window.
+   - `turtle.bgcolor("lightblue")`: Sets the background color of the drawing canvas to light blue.
+   - `turtle.title("Turtle Square")`: Sets the title of the window.
 3. **Creating a Turtle Object**: We create a turtle object named `t` that will be used to draw.
 4. **Customizing Turtle Appearance**:
-    - `t.color("blue")`: Sets the border color of the square to blue.
-    - `t.fillcolor("yellow")`: Sets the fill color of the square to yellow.
-    - `t.pensize(5)`: Sets the thickness of the lines to 5 pixels.
+   - `t.color("blue")`: Sets the border color of the square to blue.
+   - `t.fillcolor("yellow")`: Sets the fill color of the square to yellow.
+   - `t.pensize(5)`: Sets the thickness of the lines to 5 pixels.
 5. **Moving to Starting Position**:
-    - `t.penup()`: Lifts the pen so that moving does not draw lines.
-    - `t.goto(-50, -50)`: Moves the turtle to a specific starting position on the canvas.
-    - `t.pendown()`: Lowers the pen so that moving will draw lines.
+   - `t.penup()`: Lifts the pen so that moving does not draw lines.
+   - `t.goto(-50, -50)`: Moves the turtle to a specific starting position on the canvas.
+   - `t.pendown()`: Lowers the pen so that moving will draw lines.
 6. **Drawing and Filling**:
-    - `t.begin_fill()`: Begins filling the shape with the current fill color.
-    - A loop runs four times (once for each side of the square), moving forward by 100 units and turning left by 90 degrees.
-    - `t.end_fill()`: Ends filling the shape after it has been drawn.
+   - `t.begin_fill()`: Begins filling the shape with the current fill color.
+   - A loop runs four times (once for each side of the square), moving forward by 100 units and turning left by 90 degrees.
+   - `t.end_fill()`: Ends filling the shape after it has been drawn.
 7. **Finishing Up**:
-    - `t.hideturtle()`: Hides the turtle cursor after drawing is complete.
-    - `turtle.done()`: Keeps the window open until it is closed manually.
+   - `t.hideturtle()`: Hides the turtle cursor after drawing is complete.
+   - `turtle.done()`: Keeps the window open until it is closed manually.
 
 #### Result
 
@@ -2466,7 +2474,7 @@ When you run this code, it will create a window with a light blue background fea
 
 This example demonstrates how to use various attributes in Turtle graphics to create shapes with customized appearances. You can experiment further by changing colors, sizes, and positions or even adding more shapes! The Turtle module is an excellent tool for visual programming and learning basic programming concepts in Python.
 
-## 30) How do you create basic GUI elements like labels, buttons, and entry fields using Tkinter? OR How can you place widgets in a Tkinter window using grid(), pack(), and place() methods?
+## <mark> 30) How do you create basic GUI elements like labels, buttons, and entry fields using Tkinter? OR How can you place widgets in a Tkinter window using grid(), pack(), and place() methods? </mark>
 
 To create basic GUI elements like labels, buttons, and entry fields using Tkinter, you can follow these steps:
 
@@ -2581,7 +2589,7 @@ In this example:
 
 The choice of layout method depends on your specific requirements and the desired appearance of your GUI.
 
-## 31) How can you handle events in a Tkinter application, such as changing the background color or updating a label's text when a button is clicked?
+## <mark> 31) How can you handle events in a Tkinter application, such as changing the background color or updating a label's text when a button is clicked? </mark>
 
 To handle events in a Tkinter application, such as changing the background color or updating a label's text when a button is clicked, you can use event binding. This involves associating a function (event handler) with a specific event (like a button click). Below is a simple example demonstrating how to achieve this in Tkinter.
 
@@ -2618,13 +2626,13 @@ root.mainloop()
 
 1. **Importing Tkinter**: We start by importing the Tkinter module.
 2. **Defining the Event Handler**:
-    - The function `change_color_and_text()` changes the background color of the main window to light green using `root.config(bg="lightgreen")`.
-    - It also updates the text of the label to indicate that the background color has changed.
+   - The function `change_color_and_text()` changes the background color of the main window to light green using `root.config(bg="lightgreen")`.
+   - It also updates the text of the label to indicate that the background color has changed.
 3. **Creating the Main Window**:
-    - We create a main window using `tk.Tk()` and set its title with `root.title()`.
+   - We create a main window using `tk.Tk()` and set its title with `root.title()`.
 4. **Creating Widgets**:
-    - A label is created with initial text, and it is packed into the window using `pack()`.
-    - A button is created with the text "Change Color". The `command` parameter is set to call the `change_color_and_text` function when clicked.
+   - A label is created with initial text, and it is packed into the window using `pack()`.
+   - A button is created with the text "Change Color". The `command` parameter is set to call the `change_color_and_text` function when clicked.
 5. **Starting the Main Event Loop**: The application enters its main loop with `root.mainloop()`, waiting for events like button clicks.
 
 #### How It Works
@@ -2636,7 +2644,7 @@ root.mainloop()
 
 This example demonstrates how to handle events in a Tkinter application by binding functions to widget actions (like button clicks). You can expand upon this concept to create more complex interactions in your GUI applications, such as handling keyboard events, mouse events, and more.
 
-## 32) What is the IntVar class in Tkinter, and how can it be used to store and manipulate integer values linked to widgets?
+## <mark> 32) What is the IntVar class in Tkinter, and how can it be used to store and manipulate integer values linked to widgets? </mark>
 
 #### Understanding the `IntVar` Class in Tkinter
 
@@ -2690,17 +2698,17 @@ root.mainloop()
 
 1. **Importing Tkinter**: We start by importing the Tkinter module.
 2. **Defining the Update Function**:
-    - The function `update_label()` checks the value of `check_var` using `check_var.get()`.
-    - If the value is `1` (checked), it updates the label text to indicate that the checkbox is checked. If it’s `0` (unchecked), it updates the label accordingly.
+   - The function `update_label()` checks the value of `check_var` using `check_var.get()`.
+   - If the value is `1` (checked), it updates the label text to indicate that the checkbox is checked. If it’s `0` (unchecked), it updates the label accordingly.
 3. **Creating the Main Window**:
-    - We create a main window using `tk.Tk()` and set its title.
+   - We create a main window using `tk.Tk()` and set its title.
 4. **Creating an IntVar**:
-    - We create an instance of `IntVar` named `check_var`.
+   - We create an instance of `IntVar` named `check_var`.
 5. **Creating a Checkbox**:
-    - We create a checkbox using `tk.Checkbutton()`, linking it to `check_var` using the `variable` parameter.
-    - The `command` parameter specifies that `update_label()` should be called whenever the checkbox state changes.
+   - We create a checkbox using `tk.Checkbutton()`, linking it to `check_var` using the `variable` parameter.
+   - The `command` parameter specifies that `update_label()` should be called whenever the checkbox state changes.
 6. **Creating a Label**:
-    - A label is created to display whether the checkbox is checked or unchecked.
+   - A label is created to display whether the checkbox is checked or unchecked.
 7. **Starting the Main Event Loop**: The application enters its main loop with `root.mainloop()`, waiting for events like button clicks or checkbox toggles.
 
 #### Conclusion
