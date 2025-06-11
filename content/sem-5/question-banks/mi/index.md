@@ -2,26 +2,13 @@
 asIndexPage: true
 ---
 
+import { Cards } from "nextra/components";
+
 # Microprocessor and Interfaces
 
-### 📚 Unit 1
-
-[View Here](./mi/unit-1)
-
----
-
-### 📚 Unit 2
-
-[View Here](./mi/unit-2)
-
----
-
-### 📚 Unit 3
-
-[View Here](./mi/unit-3)
-
----
-
-### 📚 Unit 4
-
-[View Here](./mi/unit-4)
+<Cards>
+  <Cards.Card title="Unit 1" href="./mi/unit-1" />
+  <Cards.Card title="Unit 2" href="./mi/unit-2" />
+  <Cards.Card title="Unit 3" href="./mi/unit-3" />
+  <Cards.Card title="Unit 4" href="./mi/unit-4" />
+</Cards>
