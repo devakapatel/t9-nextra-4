@@ -451,153 +451,36 @@ Both techniques are essential for maintaining data integrity in communication pr
 
 ## 10) Compute CRC for a data sequence 10110111 for which the generator is 110011.
 
-To compute the CRC (Cyclic Redundancy Check) for the data sequence `10110111` using the generator `110011`, we will follow these steps:
+Generator $G = 110011$ has length 6 → CRC length = 5.
+Append 5 zeros to the data:
+Dividend = `10110111` + `00000` = **`1011011100000`**.
 
-1. **Append Zeros**: Append a number of zeros to the end of the data sequence equal to the length of the generator minus one. The generator `110011` has a length of 6, so we append 5 zeros to the data sequence.
-   - Data sequence: `10110111`
-   - Appended data: `1011011100000`
-2. **Binary Division**: Perform binary division of the appended data by the generator using XOR operations. The division process is similar to long division in decimal, but we use XOR instead of subtraction.
-
-### Step-by-Step Calculation
-
-1. **Initial Setup**:
-   - Data: `1011011100000`
-   - Generator: `110011`
-2. **Performing the Division**:
-   - Align the generator with the leftmost bits of the data.
-   - Perform XOR operation and bring down the next bit, repeating until all bits have been processed.
-
-### Division Process
-
-- Initial Data: `1011011100000`
-- Generator: `110011`
-
-**1st Step**:
+Perform binary long division (XOR) by `110011`. Doing the XOR steps (only showing when the current leading bit is 1):
 
 ```
-  1011011100000
-- 110011
------------
-  011010
-
+1011011100000  (dividend)
+110011
+-------
+ 011110110000   (after XOR at position 0)
+  110011
+-------
+   00110111000  (after XOR at position 1 -> since leading bit 0, skip until next 1)
+    110011
+-------
+    0010111000
+     110011
+-------
+     000101010
+      110011
+-------
+      000011001
+       110011
+-------
+       0000001001  (remainder bits)
 ```
 
-**2nd Step** (bring down the next bit):
+Final remainder (CRC) = **`01001`**.
 
-```
-  0110100
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0110100
+So the transmitted frame (data + CRC) = **`10110111 01001`** → **`1011011101001`**.
 
-```
-
-**3rd Step**:
-
-```
-  0110100
-- 110011
------------
-  001111
-
-```
-
-**4th Step** (bring down the next bit):
-
-```
-  0011110
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0011110
-
-```
-
-**5th Step**:
-
-```
-  0011110
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0011110
-
-```
-
-**6th Step**:
-
-```
-  0011110
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0011110
-
-```
-
-**7th Step**:
-
-```
-  0011110
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0011110
-
-```
-
-**8th Step**:
-
-```
-  0011110
-- 110011
------------
-  000100
-
-```
-
-**9th Step** (bring down the next bit):
-
-```
-  0001000
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0001000
-
-```
-
-**10th Step**:
-
-```
-  0001000
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0001000
-
-```
-
-**11th Step**:
-
-```
-  0001000
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0001000
-
-```
-
-**12th Step**:
-
-```
-  0001000
-- 0000000 (no XOR since generator can't be subtracted)
------------
-  0001000
-
-```
-
-**Final Remainder**: After processing all bits, the remainder is `000100`.
-
-### Final CRC Calculation
-
-The CRC is the remainder obtained after the division. Since we appended 5 zeros initially, the CRC will be the last few bits of the result. The remainder `000100` is the CRC.
-
-### Conclusion
-
-The CRC for the data sequence `10110111` using the generator `110011` is `000100`. Therefore, the complete transmitted data would be `10110111` followed by the CRC `000100`, resulting in `10110111000100`.
+(Quick check: dividing `1011011101001` by `110011` gives remainder `00000`, so CRC is correct.)
