@@ -11,11 +11,14 @@ const withNextra = nextra({
   // ... Add other Nextra-specific options here
 });
 
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 // Define your regular Next.js configurations separately
 const regularNextConfig = {
-  output: 'export', // Uncomment if you need static export
+  output: 'export',
+  basePath: isGitHubPages ? '/t9-nextra-4' : '',
   images: {
-    unoptimized: true // Uncomment if you need static export and have images
+    unoptimized: true
   },
 
   // Add the webpack configuration here
